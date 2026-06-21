@@ -35,7 +35,7 @@ A mediocre one opens with the sender's company, lists three features, claims to 
 
 ## If it's a sequence
 
-For a multi-touch sequence, vary the angle across steps — signal-based open, a proof point or customer story, a different persona or a soft breakup — never the same pitch louder each time. Build it with `swan-build-sequence`, set `outreachReasoning` for each step, and keep `sendAutomatically: false` so the user reviews before anything sends.
+For a multi-touch sequence, vary the angle across steps — signal-based open, a proof point or customer story, a different persona or a soft breakup — never the same pitch louder each time. Give each step its own reasoning, and never let the sequence send automatically: the user reviews every step before anything goes out.
 
 ## MUST / NEVER
 
