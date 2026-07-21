@@ -1,0 +1,33 @@
+# Tells the Swan backend to re-sync the library after skill content lands on main.
+# The backend does the actual upsert (idempotent, content columns only — never
+# operational flags or stats). This workflow just pings it.
+#
+# Inert until two repo secrets are set: SYNC_WEBHOOK_URL and SYNC_WEBHOOK_TOKEN.
+# workflow_dispatch allows a manual full re-sync / backfill at any time.
+
+name: sync-to-library
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+  workflow_dispatch: {}
+
+jobs:
+  notify-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger library sync
+        env:
+          SYNC_WEBHOOK_URL: ${{ secrets.SYNC_WEBHOOK_URL }}
+          SYNC_WEBHOOK_TOKEN: ${{ secrets.SYNC_WEBHOOK_TOKEN }}
+        run: |
+          if [ -z "$SYNC_WEBHOOK_URL" ]; then
+            echo "sync not configured yet (SYNC_WEBHOOK_URL unset) — skipping"
+            exit 0
+          fi
+          curl -fsS -X POST "$SYNC_WEBHOOK_URL" \
+            -H "Authorization: Bearer $SYNC_WEBHOOK_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"ref": "${{ github.sha }}", "repo": "${{ github.repository }}"}'
