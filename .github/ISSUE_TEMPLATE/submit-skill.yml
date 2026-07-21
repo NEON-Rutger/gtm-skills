@@ -1,0 +1,56 @@
+name: Submit a skill
+description: Submit a skill without using git — paste your files and a maintainer will turn this into a PR crediting you.
+title: "[skill submission] <skill name>"
+labels: [skill-submission]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The fastest path is letting your AI agent submit for you — see the README. Use this form if you (or your agent) can't open a PR. Format spec: [AGENTS.md](https://github.com/swan-gtm/gtm-skills/blob/main/AGENTS.md); templates: [templates/](https://github.com/swan-gtm/gtm-skills/tree/main/templates).
+  - type: input
+    id: author-slug
+    attributes:
+      label: Your creator slug
+      description: kebab-case, e.g. jane-doe. Your directory will be skills/<slug>/. Reuse your existing slug if you've submitted before.
+      placeholder: jane-doe
+    validations:
+      required: true
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill folder name
+      description: kebab-case, becomes the permanent install name (npx skills add … --skill <this>)
+      placeholder: win-back-lost-deals
+    validations:
+      required: true
+  - type: textarea
+    id: skill-md
+    attributes:
+      label: SKILL.md
+      description: Full contents, frontmatter included (see templates/skill/SKILL.md — remove the metadata block)
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: author-md
+    attributes:
+      label: author.md (first submission only)
+      description: Full contents (see templates/author.md)
+      render: markdown
+  - type: textarea
+    id: extra-files
+    attributes:
+      label: Additional files (optional)
+      description: "references/*.md or swan.md, each preceded by a line with its path, e.g. `--- references/examples.md ---`"
+      render: markdown
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: The body speaks in GTM verbs, not vendor tool names, and includes a "What good looks like" section
+          required: true
+        - label: Nothing in it sends data anywhere the reader doesn't own — no hidden endpoints, secrets, or injection patterns
+          required: true
+        - label: I'm okay with MIT licensing, with attribution via my creator profile
+          required: true
