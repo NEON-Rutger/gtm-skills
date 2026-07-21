@@ -2,8 +2,8 @@
 # The backend does the actual upsert (idempotent, content columns only — never
 # operational flags or stats). This workflow just pings it.
 #
-# Inert until two repo secrets are set: SYNC_WEBHOOK_URL and SYNC_WEBHOOK_TOKEN.
-# workflow_dispatch allows a manual full re-sync / backfill at any time.
+# Config: repo secrets SYNC_WEBHOOK_URL and SYNC_WEBHOOK_TOKEN.
+# workflow_dispatch allows a manual full re-sync at any time.
 
 name: sync-to-library
 
@@ -24,7 +24,7 @@ jobs:
           SYNC_WEBHOOK_TOKEN: ${{ secrets.SYNC_WEBHOOK_TOKEN }}
         run: |
           if [ -z "$SYNC_WEBHOOK_URL" ]; then
-            echo "sync not configured yet (SYNC_WEBHOOK_URL unset) — skipping"
+            echo "no sync endpoint configured for this repository — skipping"
             exit 0
           fi
           curl -fsS -X POST "$SYNC_WEBHOOK_URL" \
