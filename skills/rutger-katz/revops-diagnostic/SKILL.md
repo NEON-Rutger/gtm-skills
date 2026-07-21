@@ -3,7 +3,6 @@ name: "revops-diagnostic"
 title: RevOps diagnostic
 description: "Revenue operations diagnostic frameworks for identifying system constraints and root causes in B2B GTM organizations. Use when the user mentions diagnosing revenue problems, finding the constraint, IFA diagnostic, six stages of check, system thinking, root cause analysis, A3 analysis, GTM health check, revenue system audit, or figuring out what's wrong with their revenue engine. Also trigger when someone describes symptoms like weak pipeline, wrong forecast, underperforming reps, or leadership chaos. If someone says \"we keep missing plan\" or \"everyone is busy but nothing moves,\" activate this skill. This is the diagnostic skill — find the real constraint before recommending what to fix."
 category: RevOps
-prefix: default
 ---
 
 # RevOps Diagnostic

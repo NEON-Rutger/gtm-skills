@@ -3,7 +3,6 @@ name: "influencer-post-engager-capture"
 title: Influencer post engager capture
 description: "Use this skill when a tracked influencer publishes a LinkedIn post focused on your product (sponsored, review, or organic mention) and you want to capture the engagers as leads. It verifies the post is genuinely about you, scrapes the full engager list, filters to ICP-fit companies and buyer personas, runs lead scoring, and posts per-lead alerts plus a reconciled digest. Detection and scoring only — no outreach."
 category: Signals
-prefix: default
 ---
 
 ## Template placeholders

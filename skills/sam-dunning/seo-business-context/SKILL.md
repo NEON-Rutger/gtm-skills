@@ -3,7 +3,6 @@ name: "seo-business-context"
 title: Business context ingestion
 description: "Use this skill when starting SEO or content work for a client and you need a complete account intelligence document first — what they sell, who they sell to, what they want to sell more of, and what already works. Fires on \"onboard this SEO client\", \"build account context\", or before any keyword research. Pulls the live website, Ahrefs site data, call transcripts, and client comms into one confirmed picture. Phase 1 of the SEO topic research pipeline; runs standalone."
 category: SEO
-prefix: default
 ---
 
 Build a complete account intelligence document before any keyword research begins. The system needs to understand the account — what they sell, who they sell to, what they want to sell more of, and what already works — or it produces keyword output disconnected from commercial reality.

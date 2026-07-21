@@ -3,7 +3,6 @@ name: "marketing-operations"
 title: Marketing operations
 description: "Marketing operations for B2B revenue teams — lead scoring, attribution, campaign tracking, and handoff protocols. Use when the user mentions marketing operations, marops, lead scoring, MQL definition, MQL to SQL handoff, lead routing, attribution modeling, multi-touch attribution, W-shaped attribution, marketing sourced pipeline, campaign operations, UTM taxonomy, demand gen ops, channel mix, marketing SLA, speed to lead, ICP fit scoring, SPICED lead scoring, ICP fit matrix, selection fit, urgency fit, qualification tier scoring, T1 T2 T3 leads, or ICP fit scoring. Also trigger when someone says \"sales says our leads are garbage\" or \"we can't attribute revenue to campaigns.\" BOUNDARY: Covers marketing OPERATIONS (lead management, attribution, campaign ops). For HubSpot, see revops-hubspot. For funnel math, see revops-metrics. For ICP BUILDING methodology (GAP method, customer interviews), see neon-icp."
 category: RevOps
-prefix: default
 ---
 
 # Marketing Operations

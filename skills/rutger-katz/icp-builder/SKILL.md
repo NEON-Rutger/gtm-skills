@@ -3,7 +3,6 @@ name: "icp-builder"
 title: ICP builder
 description: "Build, validate, or expand a client's ICP (Ideal Customer Profile) using the GAP method, SPICED framework, and customer interview pipeline. Triggers on 'build their ICP,' 'check their ICP,' 'ICP validation,' 'ICP quality,' 'they don't have an ICP,' 'ICP is too broad,' 'who should they sell to,' 'segment their market,' 'ICP workshop,' 'customer interviews for ICP,' 'GAP method,' 'ICP expansion,' 'Goldilocks zone,' 'tier their customers,' 'A/B/C segmentation,' 'are they targeting the right customers,' 'segmentation check,' 'ICP review,' 'who are they actually selling to,' or any client engagement where the ICP is missing, broken, or needs validation. This skill covers the full ICP lifecycle: validate what exists, build from scratch, refine with interviews, and plan expansion. BOUNDARY: For positioning/messaging (step AFTER ICP), see positioning-messaging-designer."
 category: RevOps
-prefix: default
 ---
 
 # ICP Builder — Validate, Build & Expand

@@ -6,7 +6,6 @@ description: |
 
   Triggers: Meta report, Meta dashboard, Meta performance, analyze Meta ads, cost per lead, CPL report, Meta account audit, weekly Meta report, client dashboard, ad spend report.
 category: Ads
-prefix: default
 ---
 
 # Meta Ads Reporting and Dashboards

@@ -3,7 +3,6 @@ name: "handle-linkedin-profile-view-signal"
 title: Handle LinkedIn profile view signal
 description: "Use this skill when a profile-view webhook (e.g. LeadShark) fires for a new view on a team member's LinkedIn profile. It resolves the viewer's identity and company, applies dedup, internal, relationship, and ICP gates, and routes qualified viewers into the MQL pipeline — treating a profile view exactly like a website visit. The CRM is never polluted: only fully resolved, ICP-matched viewers reach a CRM write."
 category: Signals
-prefix: default
 ---
 
 ## Template placeholders

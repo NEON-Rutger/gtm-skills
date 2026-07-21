@@ -3,7 +3,6 @@ name: "conference-recommendation"
 title: Conference recommendation
 description: "Recommends which conferences, trade shows, and vendor events a company should attend, exhibit at, or sponsor next. Use when the user needs to pick events for a field-sales or field-marketing motion, build a scored shortlist against ICP, justify event spend, or plan a conference calendar. Scores each event on ICP relevance, decision-maker accessibility, and buying mindset — and returns a ranked, tiered list, not a pile of famous names."
 category: Events
-prefix: default
 ---
 
 *Setup state.* Not yet configured for this org. Load the Readme sub-page and walk the user through locking their ICP (buyer roles, target verticals, ACV range, sales-cycle length), geographic scope, B2B/B2C classification, and any events to force-include or force-exclude before scoring anything. (After setup completes, rewrite this paragraph to capture the locked profile — buyer roles, verticals, ACV band, geo scope, classification, exclusions, and last-refreshed date — so future runs proceed without re-asking.)

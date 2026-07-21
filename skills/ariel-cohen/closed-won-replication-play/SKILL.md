@@ -3,7 +3,6 @@ name: "closed-won-replication-play"
 title: "Closed-won replication play"
 description: "Use this skill when a deal closes won and you want to turn the win into pipeline immediately. It extracts the win profile, finds lookalike companies not yet in your CRM, researches the right persona contact at each, drafts outreach from the deal owner using an anonymized win reference, and queues a single batch review task — nothing sends without human approval."
 category: Prospecting
-prefix: default
 ---
 
 ## Template placeholders

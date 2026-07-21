@@ -3,7 +3,6 @@ name: "revops-salesforce"
 title: Salesforce implementation for RevOps
 description: "Salesforce implementation patterns for revenue operations teams. Use when the user mentions Salesforce, SFDC, Salesforce setup, Salesforce object model, Salesforce Flows, record-triggered flows, Salesforce automation, Salesforce properties, Salesforce reporting, Salesforce dashboards, opportunity stages in Salesforce, Salesforce pipeline, collaborative forecasting, Einstein, CRM Analytics, Pipeline Inspection, Salesforce data model, Salesforce migration, Process Builder replacement, Salesforce field governance, Salesforce territory management, or Salesforce integrations. Also trigger on 'our Salesforce is a mess,' 'how should we set up Salesforce,' 'migrate from Process Builder to Flow,' or any CRM architecture question where the team uses Salesforce. BOUNDARY: Covers Salesforce-specific implementation. For CRM-agnostic strategy, see revops-strategy. For HubSpot, see revops-hubspot. For generic enrichment, see data-enrichment. For generic routing, see lead-routing."
 category: RevOps
-prefix: default
 ---
 
 # Salesforce Implementation for B2B Revenue Operations

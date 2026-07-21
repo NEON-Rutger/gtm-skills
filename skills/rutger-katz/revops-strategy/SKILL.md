@@ -3,7 +3,6 @@ name: "revops-strategy"
 title: RevOps strategy and pipeline architecture
 description: "Revenue operations strategy, pipeline architecture, and strategic advisory for B2B companies. Use this skill when the user mentions RevOps, revenue operations, pipeline architecture, bow tie model, bowtie funnel, funnel stages, revenue leaks, KPI frameworks, sales-marketing alignment, GTM strategy, data hygiene, tech stack audit, revenue engine, or when they need help framing a strategic response to a client or stakeholder about revenue operations topics. Also trigger on pushing back on vanity metrics, translating problems into RevOps language, diagnosing pipeline problems, or building KPI frameworks. Even without \"RevOps\" — funnel conversion, pipeline velocity, lead handoffs, revenue alignment all trigger this. Also covers ICP-to-messaging alignment and operating system architecture. BOUNDARY: Covers strategic FRAMING and pipeline architecture. For ICP building, see revops-icp-building. For CRM implementation, see revops-hubspot. For operating system design, see revops-operating-system."
 category: RevOps
-prefix: default
 ---
 
 # RevOps Strategy

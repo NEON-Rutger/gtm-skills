@@ -3,7 +3,6 @@ name: "deal-velocity-engineer"
 title: Deal velocity engineering
 description: "Diagnose and fix deal velocity problems. Sales cycle diagnostics, stage exit criteria, pipeline deflation, zombie deal elimination, multi-threading, mutual action plans, and compression tactics with sourced benchmarks. Trigger on 'deal velocity,' 'sales cycle too long,' 'deals stalling,' 'pipeline velocity,' 'stage exit criteria,' 'zombie deals,' 'pipeline deflation,' 'deals stuck,' 'multi-threading,' 'mutual action plan,' 'deal inspection,' 'pipeline hygiene,' 'cycle time,' 'stage conversion,' 'deals die in negotiation,' 'we keep slipping deals,' 'reps can't close,' or 'pipeline is bloated but nothing closes.' Connects stage gates, deal scoring, inspection cadence, and pipeline deflation into the operating cadence. BOUNDARY: For forecast methodology see revops-forecasting. For pipeline visibility and dashboards see pipeline-visibility. For sales methodology (SPICED/MEDDPICC) see sales-methodology. For operating cadence see revenue-operating-cadence."
 category: RevOps
-prefix: default
 ---
 
 # Deal Velocity Engineer

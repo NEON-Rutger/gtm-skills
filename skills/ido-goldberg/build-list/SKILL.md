@@ -3,7 +3,6 @@ name: "build-list"
 title: Build list
 description: "Builds prospect lists of companies, contacts, or both. Use when the user asks for target accounts, ICP-fit prospects, decision-makers, enrichment, or a list ready for CRM, Swan, or sequence activation."
 category: Prospecting
-prefix: "default:auto"
 ---
 
 ## Instructions

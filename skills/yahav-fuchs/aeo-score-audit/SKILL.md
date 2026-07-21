@@ -3,7 +3,6 @@ name: "aeo-score-audit"
 title: AEO score audit
 description: "Use this skill when an AI-visibility score needs to be trusted, explained, or challenged — \"why did our AEO score drop,\" \"prove this visibility number to the client,\" \"this scan result looks wrong.\" Traces any aggregate visibility or sentiment score down to the individual scans behind it, and from there to the raw AI answer text — an audit trail from headline number to evidence."
 category: AEO
-prefix: default
 ---
 
 Use when a visibility score moves unexpectedly, a client wants receipts, or a scan result looks off. Produces an audit trail: aggregate → contributing scans → raw AI answers. Never explain a score movement from the aggregate alone — decompose first.

@@ -3,7 +3,6 @@ name: "visitor-radar"
 title: Visitor radar
 description: "Acts on content or website engagement from prospects. Qualifies the person, identifies the engagement hook, and drafts contextual follow-up based on their interest."
 category: Signals
-prefix: "default:auto"
 ---
 
 ## Instructions

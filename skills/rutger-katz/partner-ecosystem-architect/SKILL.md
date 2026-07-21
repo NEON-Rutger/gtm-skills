@@ -3,7 +3,6 @@ name: "partner-ecosystem-architect"
 title: Partner ecosystem architect
 description: "Design and install partner ecosystem strategies for B2B SaaS clients using ecosystem-led growth (ELG) and nearbound methodology. Use when someone mentions 'partner strategy,' 'ecosystem-led growth,' 'nearbound,' 'partner ecosystem,' 'build a partner programme,' 'co-selling strategy,' 'account mapping,' 'Crossbeam,' 'Reveal,' 'partner motion,' 'referral programme,' or 'partner revenue.' Also trigger on 'we need partners to grow,' 'partner programme isn't working,' or 'partners should be our next GTM motion.' Also trigger on 'Crossbeam Reveal,' 'Introw,' 'PRM tools,' 'partner tools,' 'cloud marketplace strategy,' 'partner benchmark,' or 'partner economics.' Designs partner strategy and architecture — why this partner type, why now, how it fits the system. BOUNDARY: For partner operational plumbing (deal registration, health scoring, CRM properties), see partner-channel-operations. For handoffs see revops-handoffs."
 category: RevOps
-prefix: default
 ---
 
 # Partner Ecosystem Architect

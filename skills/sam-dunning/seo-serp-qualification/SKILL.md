@@ -3,7 +3,6 @@ name: "seo-serp-qualification"
 title: SERP qualification
 description: "Use this skill when a keyword list needs a reality check against what actually ranks — intent clarity, rewarded content format, competitive landscape, and beatable gaps, ending in QUALIFY / CONDITIONAL / KILL verdicts per keyword. Many topics die here; that's the point. Fires on \"can we rank for this\", \"check the SERPs\", \"qualify these keywords\". Phase 4 of the SEO topic research pipeline; runs standalone if you paste the keyword candidates."
 category: SEO
-prefix: default
 ---
 
 Check what actually ranks for each keyword candidate. Ahrefs numbers alone are useless without understanding the SERP. This step qualifies or kills individual keyword candidates based on intent clarity, format signals, competitive landscape, and whether the rankings are beatable.

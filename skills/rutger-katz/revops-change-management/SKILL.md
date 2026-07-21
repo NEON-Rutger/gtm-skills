@@ -3,7 +3,6 @@ name: "revops-change-management"
 title: RevOps change management
 description: "Revenue change management — plan change, design enablement, make it stick, measure adoption. Trigger on change management, enablement design, adoption failure, rollout plan, communication plan, stakeholder management, training that doesn't stick, behaviour change, coaching programme, process change, system migration, comp plan change, territory change, Kotter, ADKAR, spaced repetition, forgetting curve, reverse salient, traffic light model, Bloom's taxonomy, \"nobody follows the new process,\" \"we trained them but nothing changed,\" \"the tool is built but nobody uses it,\" \"how do we get buy-in,\" \"people are pushing back,\" AI change management, FOBO, shadow AI, AI adoption, works council AI, AI governance framework, AI rollout, or fear of becoming obsolete. BOUNDARY: For HubSpot adoption, see revops-hubspot. For GTM org change, see gtm-planning. For AI Readiness Day, see neon-ai-readiness-day."
 category: RevOps
-prefix: default
 ---
 
 # RevOps Change Management

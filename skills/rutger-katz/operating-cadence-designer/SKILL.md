@@ -3,7 +3,6 @@ name: "operating-cadence-designer"
 title: Operating cadence designer
 description: "Design and install the operating cadence for a client — the calendar that makes the revenue operating system real. Connects the strategy scorecard (strategy), the revenue dashboard (visibility), and weekly/monthly rituals (execution). Use whenever the user mentions 'operating cadence,' 'cadence design,' 'meeting architecture,' 'install the cadence,' 'ritual design,' 'revenue meetings,' '5P meetings,' 'breach rhythm,' 'WIP limits,' 'decision cadence,' 'signal trigger action,' 'decision rules,' or any engagement where meetings need restructuring. Also trigger on 'our meetings are status updates,' 'nobody makes decisions,' 'nothing gets done,' 'the board keeps getting surprised,' or 'we need a rhythm.' Also trigger on 'forecast calls,' 'pipeline review,' 'QBR,' 'board meeting,' 'board deck,' 'monthly business review,' 'sales standup,' or 'deal review.' BOUNDARY: For the revenue dashboard build itself, see pipeline-visibility."
 category: RevOps
-prefix: default
 ---
 
 # Operating Cadence Designer

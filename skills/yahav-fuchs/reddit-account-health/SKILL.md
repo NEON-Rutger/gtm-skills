@@ -3,7 +3,6 @@ name: "reddit-account-health"
 title: Reddit account health
 description: "Use this skill when a posting account needs monitoring or something went wrong — \"are any of our accounts banned,\" \"our comment disappeared,\" \"the account got suspended, now what.\" Reads moderation signals correctly (ban vs removal vs rule note), gates posting on confirmed signals, and runs the recovery path for temporary bans, permanent bans, and site-wide suspensions."
 category: Reddit
-prefix: default
 ---
 
 Use for ongoing account monitoring and incident response. Produces a per-account health readout and the right next action per signal. The core discipline: classify the signal correctly before reacting — most overreactions come from treating a removal like a ban.

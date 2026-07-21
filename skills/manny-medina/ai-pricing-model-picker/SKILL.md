@@ -6,7 +6,6 @@ description: |
 
   Built on Manny Medina's four-model framework from analyzing pricing across 60+ AI agent companies at Paid.
 category: Pricing
-prefix: default
 ---
 
 Use when the user needs to pick or defend a pricing model for an AI agent product. Produces a recommended model, tier structure, and pricing anchors grounded in the budget the agent actually displaces.

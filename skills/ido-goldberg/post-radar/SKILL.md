@@ -3,7 +3,6 @@ name: "post-radar"
 title: Post radar
 description: "Acts on engagement with monitored LinkedIn profiles. Qualifies commenters or reactors, checks fit, and drafts contextual follow-up tied to the actual post."
 category: Signals
-prefix: "default:auto"
 ---
 
 ## Instructions

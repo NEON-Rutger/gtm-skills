@@ -3,7 +3,6 @@ name: brief
 title: Brief
 description: "Creates a one-page executive account brief. Use before sponsor syncs, deal reviews, QBRs, or board updates where the user needs account context, opportunity state, risks, and asks."
 category: Research
-prefix: "default:auto"
 ---
 
 ## Instructions

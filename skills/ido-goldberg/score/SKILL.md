@@ -3,7 +3,6 @@ name: score
 title: Score
 description: "Qualifies and scores accounts against ICP and buying signals. Use for account fit, lead tiering, inbound signals, pipeline rescoring, re-engagement, and expansion potential."
 category: Deals
-prefix: "default:auto"
 ---
 
 ## Instructions

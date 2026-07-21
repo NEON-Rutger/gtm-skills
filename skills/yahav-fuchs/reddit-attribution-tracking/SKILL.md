@@ -3,7 +3,6 @@ name: "reddit-attribution-tracking"
 title: Reddit attribution tracking
 description: "Use this skill when the user asks what Reddit activity is actually producing — \"is Reddit driving signups,\" \"attribute this pipeline to Reddit,\" \"prove the Reddit motion works.\" Wires UTMs into posted links, isolates Reddit sessions in analytics, connects them to CRM pipeline, and uses mention-spike correlation as the proxy where click-level tracking can't reach."
 category: Reddit
-prefix: default
 ---
 
 Use when Reddit's contribution to traffic and pipeline needs proving. Produces a working attribution setup and an honest readout — including what can't be measured. Reddit gives no native click or conversion tracking on comments, so attribution is assembled from tagged links, analytics, and correlation.

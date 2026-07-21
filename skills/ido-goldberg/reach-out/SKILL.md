@@ -6,7 +6,6 @@ description: |
 
   Also use it for strategic outreach questions ("how should our cold emails sound", "what cadence should we run") — the output is then a point of view grounded in the org's saved voice, not a sequence.
 category: Outreach
-prefix: "default:auto"
 ---
 
 Produces a staged outreach sequence awaiting the user's approval, with the reasoning attached: who, why now, what hook.

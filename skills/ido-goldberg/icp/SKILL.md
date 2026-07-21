@@ -3,7 +3,6 @@ name: icp
 title: ICP
 description: "Defines and refines who the org sells to. Use for ICP discovery, segment refinement, new segment creation, persona definition, and tightening the rubric used by scoring and outreach."
 category: Prospecting
-prefix: "default:auto"
 ---
 
 ## Instructions

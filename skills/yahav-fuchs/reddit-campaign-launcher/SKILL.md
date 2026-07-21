@@ -3,7 +3,6 @@ name: "reddit-campaign-launcher"
 title: Reddit campaign launcher
 description: "Use this skill when the user wants to launch or manage a Reddit growth campaign — \"set up a Reddit campaign for our product,\" \"create an advocate,\" \"review our pending Reddit drafts.\" Creates the campaign, attaches target subreddits, configures advocate personas with a daily-draft cap, and runs the human-approval loop on drafted posts. Runs on the ReddGrow CLI against the user's own account."
 category: Reddit
-prefix: default
 ---
 
 Use when launching or running a Reddit growth campaign. Produces a live campaign with target communities, an advocate persona, and a queue of individually-reviewed post drafts. Exact commands live in `references/commands.md`.

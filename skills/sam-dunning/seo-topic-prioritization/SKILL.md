@@ -3,7 +3,6 @@ name: "seo-topic-prioritization"
 title: Topic prioritization
 description: "Use this skill when a shaped topic list needs scoring and sequencing into a build order — six dimensions (commercial intent, ICP alignment, ranking feasibility, effort, authority leverage, adjacency to wins) into Tier 1/2/3, quick wins first. Fires on \"what should we build first\", \"prioritize the content roadmap\", \"sequence these topics\". Phase 7 of the SEO topic research pipeline; runs standalone if you paste the shaped topics."
 category: SEO
-prefix: default
 ---
 
 Rank the final topic list so the client knows exactly what to build first. The order matters as much as the list. Wrong sequencing means high-effort topics get built before the fastest wins, and the content roadmap stalls before it proves itself.

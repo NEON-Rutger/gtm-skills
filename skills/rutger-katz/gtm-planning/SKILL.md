@@ -3,7 +3,6 @@ name: "gtm-planning"
 title: GTM planning and org design
 description: "Go-to-market planning, org design, territory design, and capacity planning for B2B revenue teams. Use when the user mentions GTM planning, go-to-market, GTM motion, territory design, org design, sales org, team structure, capacity planning, headcount model, hiring plan, ICP definition, PLG, product-led growth, sales-led, partner-led, channel strategy, named accounts, team ratios, SDR-to-AE ratio, or scaling the sales team. Also trigger when someone asks about entering a new market, redesigning territories, or planning next year's revenue org. If someone says \"how should I structure my sales team\" or \"our territories don't make sense,\" activate this skill. BOUNDARY: Covers team STRUCTURE, territories, and capacity. For comp plans and quotas, see gtm-compensation. For ICP BUILDING methodology (GAP method, interviews, thresholds), see neon-icp."
 category: RevOps
-prefix: default
 ---
 
 # GTM Planning & Revenue Org Design

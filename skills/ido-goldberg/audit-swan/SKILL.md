@@ -3,7 +3,6 @@ name: "audit-swan"
 title: Audit Swan
 description: "Checks whether a Swan workspace is structurally healthy. Use for configuration audits that surface missing knowledge, disconnected integrations, exhausted senders, broken triggers, sparse CRM data, and credit or subscription issues."
 category: Ops
-prefix: "default:auto"
 ---
 
 ## Instructions

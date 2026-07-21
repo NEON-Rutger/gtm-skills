@@ -3,7 +3,6 @@ name: "seo-opportunity-extraction"
 title: Opportunity extraction
 description: "Use this skill when account context exists and you need content opportunity angles before touching keywords — competitor plays, objection content, feature/use-case/vertical pages, pain-led topics. Turns account intelligence into a prioritized opportunity inventory where every angle traces to a named signal from calls, comms, or data. Phase 2 of the SEO topic research pipeline; runs standalone if you paste the account context."
 category: SEO
-prefix: default
 ---
 
 Turn account intelligence into structured content opportunity angles. Not keywords yet — business opportunities. Keyword validation comes after.

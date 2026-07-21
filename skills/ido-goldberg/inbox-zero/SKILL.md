@@ -3,7 +3,6 @@ name: "inbox-zero"
 title: Inbox zero
 description: "Triage a user inbox across email, Slack, LinkedIn, and Swan. Use for inbox sweeps where the agent should archive obvious noise, draft replies, and return a single summary of items needing attention."
 category: Ops
-prefix: "default:auto"
 ---
 
 ## The four-bucket model

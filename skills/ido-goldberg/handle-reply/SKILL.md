@@ -3,7 +3,6 @@ name: "handle-reply"
 title: Handle reply
 description: "Processes inbound replies to outbound sequences. Classifies intent, drafts the right response or stop action, and updates CRM and Swan state without auto-sending."
 category: Outreach
-prefix: "default:auto"
 ---
 
 ## Instructions

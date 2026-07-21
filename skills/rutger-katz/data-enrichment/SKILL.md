@@ -3,7 +3,6 @@ name: "data-enrichment"
 title: Data enrichment
 description: "B2B data enrichment strategy, provider evaluation, integration patterns, and quality management for revenue operations teams. Use when the user mentions data enrichment, lead enrichment, account enrichment, contact enrichment, ZoomInfo, Clearbit, Apollo, Clay, Cognism, Lusha, enrichment automation, enrichment workflows, firmographic data, technographic data, intent data, data append, enrichment API, enrichment coverage, data freshness, enrichment quality, or third-party data providers. Also trigger on 'our data is incomplete,' 'leads come in with no company info,' 'we need better data on our accounts,' 'enrichment isn't working,' or 'which enrichment tool should we use.' BOUNDARY: Covers enrichment STRATEGY, PROVIDER SELECTION, and INTEGRATION. For CRM-specific implementation, see revops-hubspot or revops-salesforce. For data governance, see revops-data-governance. For lead scoring that uses enriched data, see marketing-operations."
 category: RevOps
-prefix: default
 ---
 
 # B2B Data Enrichment for Revenue Operations

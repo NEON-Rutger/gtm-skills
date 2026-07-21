@@ -3,7 +3,6 @@ name: "subreddit-research"
 title: Subreddit research
 description: "Use this skill when the user needs to find or vet Reddit communities — \"which subreddits should we be in,\" \"is r/X worth targeting,\" \"research communities for this product.\" Searches live Reddit data, inspects community size, rules, content, and traffic, and produces a vetted shortlist worth adding to a campaign — plus the reasons to skip the rest."
 category: Reddit
-prefix: default
 ---
 
 Use when choosing which Reddit communities a brand belongs in. Produces a vetted shortlist with evidence, not a keyword dump. Exact commands live in `references/commands.md`.

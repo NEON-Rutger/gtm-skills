@@ -3,7 +3,6 @@ name: "aeo-visibility-tracking"
 title: AEO visibility tracking
 description: "Use this skill when the user wants to measure or improve how their brand shows up in AI-generated answers — \"do we appear in ChatGPT answers,\" \"track our AEO score,\" \"which sources do AI engines cite for our category.\" Seeds the prompts buyers actually ask, tracks brand visibility per engine and country over time, and mines the citation sources to show where content effort moves the score."
 category: AEO
-prefix: default
 ---
 
 Use when AI-search visibility needs measuring: which engines mention the brand, for which buyer questions, citing which sources. Produces a visibility baseline, a trend line, and a ranked list of the sources worth influencing. Exact commands live in `references/commands.md`.

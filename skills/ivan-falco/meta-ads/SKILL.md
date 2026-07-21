@@ -6,7 +6,6 @@ description: |
 
   Triggers: Meta Ads, Facebook Ads, Instagram Ads, Meta campaign, Facebook lead gen, Meta lead forms, Facebook retargeting, Meta remarketing, Facebook lookalike, Meta audience, Advantage Plus, Meta B2B.
 category: Ads
-prefix: default
 ---
 
 # Meta Ads Management for B2B

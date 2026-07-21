@@ -3,7 +3,6 @@ name: "revops-crisis"
 title: RevOps crisis triage
 description: "Revenue crisis triage and emergency response when multiple systems break simultaneously. Use this skill when the user describes a CRISIS state: forecast missed for multiple quarters, win rate collapsing, pipeline coverage below 3x and falling, NRR crashed below 90%, multiple simultaneous system failures, loss of trust between functions, data that can't be trusted, or scenarios like \"everything is broken,\" \"forecast is ±30% wrong,\" \"we're losing deals we should win,\" \"I can't trust our data,\" \"sales blames marketing blames product,\" \"three quarters in a row we missed,\" \"board is panicking,\" or \"we need to save this quarter.\" Also trigger on \"we need emergency triage,\" \"nothing is working,\" \"where do we even start,\" or \"we're in firefighting mode.\" BOUNDARY: This is emergency response (what to fix FIRST when everything is broken). For detailed methodology after stabilization, see revops-diagnostic and revops-maturity. For specific domain fixes, see the relevant domain skill."
 category: RevOps
-prefix: default
 ---
 
 # RevOps Crisis Triage & Emergency Response

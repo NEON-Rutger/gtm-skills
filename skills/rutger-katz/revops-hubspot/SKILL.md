@@ -3,7 +3,6 @@ name: "revops-hubspot"
 title: HubSpot implementation for RevOps
 description: "HubSpot implementation patterns for revenue operations teams. Use this skill when the user mentions HubSpot, CRM setup, HubSpot properties, lifecycle stages, lead scoring in HubSpot, HubSpot workflows, HubSpot reporting, HubSpot dashboards, deal pipelines in HubSpot, HubSpot automation, contact/company/deal properties, HubSpot integrations, or asks about CRM architecture for B2B revenue teams using HubSpot. Also trigger when the user asks about mapping a bow tie or funnel model into HubSpot, building RevOps reporting in HubSpot, structuring HubSpot for multi-team revenue operations, cleaning up a messy HubSpot instance, HubSpot data hygiene, or migrating to HubSpot. If someone mentions CRM and they're in a B2B context, this skill is likely relevant even if they don't say \"HubSpot\" explicitly. BOUNDARY: This skill covers HubSpot-specific implementation. For strategic pipeline architecture and framework thinking, see revops-strategy. For ICP BUILDING methodology, see neon-icp."
 category: RevOps
-prefix: default
 ---
 
 # RevOps HubSpot Implementation

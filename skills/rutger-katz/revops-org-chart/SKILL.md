@@ -3,7 +3,6 @@ name: "revops-org-chart"
 title: RevOps org chart and team design
 description: "RevOps team org design, role structure, and hiring sequencing by company size and ARR stage. Use whenever a client asks about structuring their RevOps team, hiring order, business partner vs. center-of-excellence model, when to engage a Systems Architect (FTE, fractional, or advisory), evolving a CRM or automation team toward RevOps, who RevOps should report to, how to give RevOps a mandate or charter, centralized vs. embedded vs. hub-and-spoke model, multi-BU or multi-instance team design, or how to use agencies without creating dependency. Also trigger when a client has Business Partners and is theorizing about adding an Architect role. Includes frameworks from RevOps Co-op, Revenue Wizards, Hyperscayle, Go Nimbly, Maxio, Leanlayer, Stage2 Capital, and Rutger's own hiring guide."
 category: RevOps
-prefix: default
 ---
 
 # RevOps Org Chart & Team Design

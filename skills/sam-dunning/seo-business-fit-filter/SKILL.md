@@ -3,7 +3,6 @@ name: "seo-business-fit-filter"
 title: Business fit filter
 description: "Use this skill when a qualified keyword list needs the commercial filter — five gates checking pipeline potential, ICP match, honest product fit, client alignment, and net-new vs update vs cannibalization. Stops an SEO plan from becoming a traffic play; traffic for the wrong audience is a cost, not a win. Fires on \"which of these keywords are actually worth it\", \"filter for pipeline\". Phase 5 of the SEO topic research pipeline; runs standalone if you paste the keyword list and account context."
 category: SEO
-prefix: default
 ---
 
 Apply the commercial filter. This is the step that stops the keyword list from becoming a traffic play disguised as an SEO strategy.

@@ -6,7 +6,6 @@ description: |
 
   Triggers: onboarding, setup, get started, configure, credentials, API setup, connect Meta, Meta API.
 category: Ads
-prefix: default
 ---
 
 # Meta Ads Onboarding

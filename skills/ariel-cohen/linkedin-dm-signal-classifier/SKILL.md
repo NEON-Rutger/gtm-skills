@@ -3,7 +3,6 @@ name: "linkedin-dm-signal-classifier"
 title: LinkedIn DM signal classifier
 description: "Use this skill to scan a team member's LinkedIn DMs daily and turn conversations into routed signals. It classifies each chat into a bucket (customer support, commercial, pipeline, re-engagement, prospect, partner, VC, community, and more), updates account memory and the CRM, scores qualified signals and routes them to your MQL channel, and closes every scored signal with a suggested next move — a drafted reply for the thread owner or an approval-queued sequence for the rest of the buying committee. It never auto-sends outreach."
 category: Signals
-prefix: default
 ---
 
 ## Template placeholders

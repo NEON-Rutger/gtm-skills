@@ -6,7 +6,6 @@ description: |
 
   Built on Manny Medina's billing-first ROI approach: agents are cognitively invisible to the people paying for them, so their value has to be made explicit — continuously, not just at renewal.
 category: Pricing
-prefix: default
 ---
 
 Use when agent value must be proven to the people paying for it — before a renewal, at a QBR, or monthly as a standing receipt. Produces a value receipt: tasks completed, hours returned, cost avoided, ROI multiple.

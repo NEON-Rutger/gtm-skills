@@ -3,7 +3,6 @@ name: "revops-handoffs"
 title: Revenue handoff operations
 description: "Revenue handoff design across the full bow-tie model — Marketing → Sales → Partner/Implementation → CS → Sales (expansion), plus lifecycle marketing and ABM loops. Use when the user mentions handoff, lead routing, speed-to-lead, MQL routing, closed-won handoff, partner handoff, CS-to-sales handback, expansion pipeline, cross-sell pipeline, upsell pipeline, renewal pipeline, territory routing, SLA between teams, transfer document, or AI handoff docs. Also trigger on \"leads fall through the cracks,\" \"CS never knows what sales promised,\" \"we lose momentum after signature,\" or \"nobody owns expansion,\" or \"cross-sell has a different buying group.\" BOUNDARY: covers handoff design and SLAs between bow-tie stages. For HubSpot implementation, also consult revops-hubspot. For CS operations, see cs-operations. For SPICED, see sales-methodology."
 category: RevOps
-prefix: default
 ---
 
 # Revenue Handoff Operations — Full Bow-Tie Model

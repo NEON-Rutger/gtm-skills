@@ -3,7 +3,6 @@ name: "expansion-revenue-architect"
 title: Expansion revenue architecture
 description: "Design and install expansion revenue systems improving NRR and GRR for B2B SaaS. GRR/NRR diagnostic, expansion motion architecture, whitespace analysis, CS-Sales handback, renewal pricing, and 90-day NRR programmes. Trigger on 'NRR improvement,' 'GRR strategy,' 'expansion revenue,' 'upsell cross-sell,' 'whitespace analysis,' 'CS expansion,' 'net revenue retention,' 'right side of the bowtie,' 'land and expand,' 'expansion is accidental,' 'CS doesn't own revenue,' 'we keep discounting renewals,' 'health score,' 'time to value,' 'customer advocacy,' 'usage-based pricing NRR,' 'account penetration,' 'second-order revenue,' or 'CSM coverage model.' Also use when NRR below 110% or GRR below 90%. Designs full expansion engine connecting health scoring, signals, whitespace, CS-Sales handbacks, and dashboard tiles. BOUNDARY: For CS operations, see cs-operations. For pricing, see pricing-strategy. For handoffs, see revops-handoffs."
 category: RevOps
-prefix: default
 ---
 
 # Expansion Revenue Architect

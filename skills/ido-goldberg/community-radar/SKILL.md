@@ -3,7 +3,6 @@ name: "community-radar"
 title: Community radar
 description: "Monitors public community or social mentions of the brand, competitors, or relevant pain language. Classifies sentiment and drafts short, human replies for the right responder."
 category: Signals
-prefix: "default:auto"
 ---
 
 ## Instructions

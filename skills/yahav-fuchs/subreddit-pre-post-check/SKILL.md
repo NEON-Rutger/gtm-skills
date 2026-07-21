@@ -3,7 +3,6 @@ name: "subreddit-pre-post-check"
 title: "Subreddit pre-post check"
 description: "Use this skill immediately before posting anything to a subreddit — \"check if we can post this to r/X,\" \"will this get removed,\" \"is this link already on Reddit.\" Runs the four checks that prevent removals and bans: rules, community type, duplicate-URL, and wiki posting norms. Cheap insurance against the most expensive Reddit mistake."
 category: Reddit
-prefix: default
 ---
 
 Use before any post or link share on Reddit. Produces a go / no-go verdict with the specific rule at issue. Exact commands live in `references/commands.md`.

@@ -3,7 +3,6 @@ name: "seo-topic-shaping"
 title: Topic shaping
 description: "Use this skill when surviving topics need the right content format assigned — alternatives page vs comparison vs landing page vs guide — plus keyword clustering and site-architecture flags. Format drives structure, CTA, and ranking mechanics; let the SERP lead. Fires on \"what format should this content be\", \"shape these topics\", \"should this be a landing page or a blog post\". Phase 6 of the SEO topic research pipeline; runs standalone if you paste the filtered topic list."
 category: SEO
-prefix: default
 ---
 
 Assign the correct content format to every surviving topic. Not every keyword becomes a blog post. The format decision determines the page's purpose, structure, CTA, and ranking mechanics. Get it wrong and the content fails regardless of how well it was written.

@@ -3,7 +3,6 @@ name: "seo-topic-research-pipeline"
 title: SEO topic research pipeline
 description: "Use this skill when a B2B or SaaS site needs an SEO content roadmap grounded in commercial reality — the user asks for \"topic research\", \"keyword research\", \"an SEO content plan\", \"what should we publish to rank\", or wants organic pipeline from Google and AI search rather than traffic. It runs seven phases — business context ingestion, opportunity extraction, keyword validation, SERP qualification, business fit filtering, topic shaping, and prioritization — and produces a tiered, sequenced topic plan ready for briefing. Each phase is also available as its own standalone skill in the library."
 category: SEO
-prefix: default
 ---
 
 Full SEO topic research pipeline — from account understanding to a prioritized content roadmap ready for briefing. Runs seven phases in sequence: business context ingestion, opportunity extraction, keyword validation, SERP qualification, business fit filtering, topic shaping, and prioritization.

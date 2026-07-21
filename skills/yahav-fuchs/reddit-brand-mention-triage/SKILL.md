@@ -3,7 +3,6 @@ name: "reddit-brand-mention-triage"
 title: "Reddit brand-mention triage"
 description: "Use this skill when the user wants to monitor or work through brand mentions on Reddit — \"anyone talking about us on Reddit,\" \"triage the mention queue,\" \"what's the sentiment on our brand this week.\" Sets up domain monitoring, then runs the triage loop: read each mention in its full thread context, classify reply / ignore / escalate, and keep the queue at zero."
 category: Reddit
-prefix: default
 ---
 
 Use when Reddit brand mentions need monitoring or the mention queue needs working through. Produces a triaged queue with per-mention verdicts and a sentiment picture. Exact commands live in `references/commands.md`.

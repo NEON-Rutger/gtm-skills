@@ -3,7 +3,6 @@ name: "advocate-voice-tuning"
 title: Advocate voice tuning
 description: "Use this skill when AI-drafted Reddit comments don't sound like the person they're supposed to be — \"the drafts feel off-brand,\" \"make the advocate sound like me,\" \"the AI gets our product details wrong.\" Two levers: teach the voice by rewriting sample drafts into your natural phrasing, and feed a tight knowledge base so drafts get the facts right."
 category: Reddit
-prefix: default
 ---
 
 Use when drafted comments miss the voice or the facts. Produces trained voice guidelines plus a focused knowledge base — the two inputs that turn generic AI comments into ones a teammate would sign.

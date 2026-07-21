@@ -3,7 +3,6 @@ name: "gtm-compensation"
 title: GTM compensation design
 description: "GTM compensation plan design, quota setting, OTE structures, and benchmarking for B2B revenue teams. Use when the user mentions comp plans, OTE, on-target earnings, variable pay, commission structure, quota setting, accelerators, decelerators, SPIFs, clawbacks, sales compensation, SDR comp, AE comp, CSM comp, pay mix, commission rates, ramp periods, or comp plan modeling. Also trigger when someone asks about benchmarking GTM salaries, designing incentive structures, or fixing misaligned compensation. If someone says \"how should I pay my reps\" or \"what's a fair OTE\" or \"our comp plan isn't working,\" activate this skill. BOUNDARY: Covers how to PAY people. For org design and capacity, see gtm-planning."
 category: RevOps
-prefix: default
 ---
 
 # GTM Compensation Design

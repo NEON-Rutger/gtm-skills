@@ -3,7 +3,6 @@ name: "linkedin-engagement-handler"
 title: LinkedIn post engagement handler
 description: "Use this skill when monitoring comments and reactions on a team member's LinkedIn posts. It filters engagers to ICP companies and buyer personas, logs the signal to CRM and account memory, runs lead scoring, and routes high-value engagers to connection requests and Slack alerts. Repeat engagers escalate to high intent with a personalized multi-channel draft queued for review."
 category: Signals
-prefix: default
 ---
 
 ## Template placeholders

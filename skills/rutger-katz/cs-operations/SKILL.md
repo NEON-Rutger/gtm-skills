@@ -3,7 +3,6 @@ name: "cs-operations"
 title: Customer success operations
 description: "Customer success operations for B2B SaaS — the post-sale revenue engine that prevents churn, drives expansion, and compounds customer value. Use when the user mentions customer success, CS ops, health scoring, renewal management, churn prevention, expansion playbook, expansion signals, onboarding orchestration, time to first value, QBR, customer segmentation, coverage model, high-touch, low-touch, tech-touch, CSM ratios, NPS, CSAT, save plays, red accounts, CS-Sales handoff, churn autopsy, renewal discount governance, discount sunset, renewal pricing, or save plays with pricing components. Also trigger when someone says \"we keep losing customers\" or \"our CS team is reactive\" or \"we have no idea which accounts will churn\" or \"discounts are expiring and customers are pushing back\" or \"renewal price increase resistance.\""
 category: RevOps
-prefix: default
 ---
 
 # Customer Success Operations

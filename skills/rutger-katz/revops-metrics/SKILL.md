@@ -3,7 +3,6 @@ name: "revops-metrics"
 title: Revenue performance metrics
 description: "Revenue performance measurement, funnel math, and unit economics for B2B teams. Use when the user mentions revenue metrics, conversion rates, pipeline velocity, unit economics, LTV, CAC, payback period, cohort analysis, NRR, GRR, churn rate, expansion revenue, ARR, MRR, funnel conversion, win rate, deal size, sales cycle, Rule of 40, burn multiple, T2D3, growth benchmarks, deal health scoring, deal health dimensions, conversational intelligence metrics, strategic initiative trackers, activity velocity, multi-threading score, or measuring revenue performance. Also trigger on \"our numbers are off,\" \"how do we stack up,\" \"what should our conversion rate be,\" or \"how healthy is this deal.\" BOUNDARY: This skill covers WHAT to measure. For forecasting, see revops-forecasting. For meeting cadence, see revenue-operating-cadence."
 category: RevOps
-prefix: default
 ---
 
 # Revenue Performance Metrics

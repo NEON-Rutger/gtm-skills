@@ -3,7 +3,6 @@ name: "aeo-citation-drill-down"
 title: "AEO citation drill-down"
 description: "Use this skill when the user wants to know which content actually shapes AI answers in their category — \"what sources do AI engines cite about us,\" \"why does the competitor win the AI comparison answers,\" \"where should content effort go for AI visibility.\" Three-level investigation: cited domains → the specific URLs driving citations → the full AI answers, ending in a ranked content hit-list."
 category: AEO
-prefix: default
 ---
 
 Use when citation data needs to become a content strategy. Produces a ranked list of the domains, pages, and content patterns that drive AI answers in the category — and where the brand can plausibly earn a mention. Work top-down; never stop at the domain level.

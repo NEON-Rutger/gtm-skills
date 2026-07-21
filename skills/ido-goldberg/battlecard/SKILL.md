@@ -3,7 +3,6 @@ name: battlecard
 title: Battlecard
 description: "Creates or updates a competitor battlecard. Use when the user needs positioning, strengths, weaknesses, objections, win conditions, and practical talk tracks saved into competitive knowledge."
 category: Research
-prefix: "default:auto"
 ---
 
 ## Instructions

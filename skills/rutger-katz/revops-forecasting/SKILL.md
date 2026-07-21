@@ -3,7 +3,6 @@ name: "revops-forecasting"
 title: Revenue forecasting
 description: "Revenue forecasting methodology, forecast categories, pipeline analysis, and predictability for B2B revenue teams. Use when the user mentions forecasting, revenue forecast, sales forecast, forecast accuracy, forecast categories, commit, best case, upside, pipeline coverage, weighted pipeline, forecast cadence, capacity planning, quota modeling, forecast call, deal inspection, or forecast variance. Also trigger when someone says 'we can't predict our number,' 'our forecast is always wrong,' 'how much will we close this quarter,' 'we can't see our pipeline,' 'deals go stale,' or 'we need better dashboards.' Also trigger on pipeline visibility, pipeline reporting, sales dashboards, pipeline hygiene, stale deals, pipeline health, big deal alerts, or pipeline quality score. BOUNDARY: Covers forecast methodology, accuracy, and pipeline visibility/reporting. For CRM-specific dashboard implementation, see revops-hubspot. For metrics and benchmarks, see revops-metrics."
 category: RevOps
-prefix: default
 ---
 
 # Revenue Forecasting

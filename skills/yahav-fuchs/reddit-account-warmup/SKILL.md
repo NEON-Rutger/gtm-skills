@@ -3,7 +3,6 @@ name: "reddit-account-warmup"
 title: Reddit account warmup
 description: "Use this skill when a Reddit account is new or has thin karma and the user wants to make it credible before any promotional activity — \"warm up this Reddit account,\" \"when can we start posting about the product,\" \"why are our posts getting flagged.\" Runs the karma-warmup ladder: non-promotional contribution first, promotional density unlocked gradually by karma milestones."
 category: Reddit
-prefix: default
 ---
 
 Use when an account needs credibility before it can safely promote. Think of it like email warmup: you don't send 10,000 cold emails from a fresh domain — and you don't post promotional content from a fresh Reddit account. Posting promo from a new account is one of the fastest ways to get flagged, shadowbanned, or removed.

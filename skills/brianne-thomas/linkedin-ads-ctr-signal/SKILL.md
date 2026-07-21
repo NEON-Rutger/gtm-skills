@@ -3,7 +3,6 @@ name: "linkedin-ads-ctr-signal"
 title: LinkedIn Ads CTR signal
 description: "Use this skill to turn LinkedIn Ads engagement into prioritized, pre-drafted outbound. Runs daily to pull LinkedIn Ads analytics, find the companies clicking your ads above a CTR threshold, suppress customers/open-deals/recently-touched accounts, and draft outreach informed by whichever ad themes are landing right now — all saved as drafts for human review, never sent automatically."
 category: Signals
-prefix: default
 ---
 
 Run this daily to turn LinkedIn Ads engagement into prioritized, pre-drafted outbound. The premise: if a company is clicking your ads at an unusually high rate, they're paying attention right now — reach them while the intent is warm. The skill pulls LinkedIn Ads analytics, finds the high-CTR companies, suppresses anyone you shouldn't touch, and drafts outreach informed by whichever ad themes are actually landing — all saved as drafts for human review, never sent automatically.

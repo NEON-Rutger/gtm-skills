@@ -3,7 +3,6 @@ name: "customer-expansion-scoring"
 title: Customer expansion scoring
 description: "Use this skill when scoring a paying customer (closed-won account) for expansion. It evaluates product usage depth, persona quality, and expansion headroom to produce an expansion tier with short actionable reasoning. Designed as a sub-skill of your lead-scoring methodology — the parent runs the ACV assessment first and this returns a tier to it."
 category: Deals
-prefix: default
 ---
 
 ## Template placeholders

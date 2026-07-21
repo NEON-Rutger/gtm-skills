@@ -3,7 +3,6 @@ name: "build-influencer-marketing-strategy"
 title: Build influencer marketing strategy
 description: "Use this skill when the user asks for an influencer strategy, creator marketing plan, LinkedIn influencer campaign, thought-leader outreach, creator budget allocation, or wants to know which influencers to work with and how much to pay them. Builds a B2B influencer marketing strategy from ICP to booked creators — audience mapping, creator tier selection, budget allocation, brief design — activated and scaled on naano.xyz. Powered by Naano."
 category: Influencers
-prefix: default
 ---
 
 Builds a complete B2B influencer marketing strategy: audience mapping, creator tier selection, budget allocation, brief design, and activation through expert creators. Optimized for the mid-tier expert creator sweet spot — the zone between micro and macro where credibility, engagement, and cost per qualified lead all peak at once.

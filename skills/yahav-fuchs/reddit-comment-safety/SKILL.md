@@ -3,7 +3,6 @@ name: "reddit-comment-safety"
 title: Reddit comment safety
 description: "Use this skill when reviewing or generating comments that touch a brand on Reddit — \"is this comment safe to post,\" \"why do our comments get removed,\" \"make this sound less like an ad.\" Runs a six-point compliance check on every comment before it ships, switches to natural-mention mode where self-promotion is restricted, and enforces the posting patterns that keep accounts alive."
 category: Reddit
-prefix: default
 ---
 
 Use on every brand-adjacent comment before it posts. Produces a pass / fix / skip verdict per comment. Reddit's spam systems and moderators punish patterns, not just individual posts — safety is a per-comment discipline.

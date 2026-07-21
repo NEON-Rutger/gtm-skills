@@ -3,7 +3,6 @@ name: "revenue-operating-cadence"
 title: Revenue operating cadence
 description: "Revenue operating cadence — meeting architecture, data pyramid, and board reporting that turns strategy into execution. Use when the user mentions operating cadence, meeting cadence, forecast calls, pipeline review, QBR, board meeting, board deck, monthly business review, sales standup, deal review, meeting architecture, meeting agenda, revenue ceremonies, or structuring revenue meetings. Also trigger when someone asks about board deck structure, running forecast calls, fixing meetings that waste time, or getting accountability. If someone says \"our meetings are status updates\" or \"the board keeps getting surprised\" or \"nothing gets done,\" activate this skill. BOUNDARY: Covers meeting structure and data inputs. For forecast methodology, see revops-forecasting. For metrics, see revops-metrics."
 category: RevOps
-prefix: default
 ---
 
 # Revenue Operating Cadence Framework

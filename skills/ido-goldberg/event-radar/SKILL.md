@@ -3,7 +3,6 @@ name: "event-radar"
 title: Event radar
 description: "Turns event attendance into pipeline. Use when prospects attend a webinar, conference, dinner, booth, or monitored industry event and need qualification plus contextual follow-up."
 category: Signals
-prefix: "default:auto"
 ---
 
 ## Instructions

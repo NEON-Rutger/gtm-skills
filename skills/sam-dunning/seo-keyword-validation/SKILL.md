@@ -3,7 +3,6 @@ name: "seo-keyword-validation"
 title: Keyword validation
 description: "Use this skill when you have content opportunity angles or topic ideas and need to validate them against real search demand with Ahrefs — volumes, keyword difficulty, and competitor keyword gaps, with seed patterns per opportunity type. Ahrefs validates, it doesn't dictate strategy. Fires on \"validate these keywords\", \"is there search demand for this\", \"build the keyword pool\". Phase 3 of the SEO topic research pipeline; runs standalone if you paste the opportunity list."
 category: SEO
-prefix: default
 ---
 
 Take extracted opportunity angles and validate them against real search demand using Ahrefs. This is where Ahrefs comes in — not to dictate strategy, but to confirm that a business opportunity maps to actual search behavior.

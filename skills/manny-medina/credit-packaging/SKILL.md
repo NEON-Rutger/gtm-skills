@@ -6,7 +6,6 @@ description: |
 
   Built on Manny Medina's credit-selling playbook at Paid: credits are the bridge between subscriptions and outcomes — sell the outcome, meter the credit, and design every mechanic so the customer feels like they're winning.
 category: Pricing
-prefix: default
 ---
 
 Use when a credit model needs designing: action-to-credit translation, tier structure, and the enterprise rate-card play. Produces a credit schedule, tier recommendations, and negotiation guidance.

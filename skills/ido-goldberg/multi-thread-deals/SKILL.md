@@ -3,7 +3,6 @@ name: "multi-thread-deals"
 title: "Multi-thread deals"
 description: "Finds deals with single-threaded risk. Identifies missing stakeholders, recommends who to engage next, and hands off contact-specific next steps to outreach."
 category: Deals
-prefix: "default:auto"
 ---
 
 ## Instructions

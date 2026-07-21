@@ -3,7 +3,6 @@ name: "revops-data-governance"
 title: Revenue data governance
 description: "Revenue data governance — the operational discipline every other RevOps skill depends on. Use when the user mentions data governance, data quality, data model, data architecture, field governance, property naming conventions, data hygiene, deduplication, integration data flows, system of record, sync rules, data enrichment, data definitions, one vision of truth, data spine, data quality scoring, validation rules, GDPR, field deprecation, or data audit. Also trigger when someone says \"our reports don't match,\" \"our CRM is a mess,\" \"we have too many fields,\" or describes duplicate accounts, conflicting numbers, stale data. Fix data governance before building metrics or scaling. BOUNDARY: Covers data MODEL, QUALITY, and GOVERNANCE. For HubSpot setup, see revops-hubspot. For metrics, see revops-metrics."
 category: RevOps
-prefix: default
 ---
 
 # Revenue Data Governance

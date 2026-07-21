@@ -3,7 +3,6 @@ name: research
 title: Research
 description: "Researches a company, person, buying committee, signal, domain, stack, financial context, or competitor mention. Produces a focused answer with sources and confidence notes."
 category: Research
-prefix: "default:auto"
 ---
 
 ## Instructions

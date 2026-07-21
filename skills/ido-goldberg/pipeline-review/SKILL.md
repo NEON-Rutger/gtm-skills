@@ -3,7 +3,6 @@ name: "pipeline-review"
 title: Pipeline review
 description: "Reviews pipeline health before forecast calls or recurring check-ins. Flags stuck, skipped, regressing, or at-risk deals and recommends one concrete action per issue."
 category: Deals
-prefix: "default:auto"
 ---
 
 ## Instructions

@@ -3,7 +3,6 @@ name: "map-contacts"
 title: Map contacts
 description: "Maps the buying committee at a named account using CRM history, past interactions, LinkedIn, and prospect search. Produces persona coverage, relationship strength, gaps, and next moves."
 category: Prospecting
-prefix: "default:auto"
 ---
 
 ## Instructions
