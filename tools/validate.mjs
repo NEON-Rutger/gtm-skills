@@ -192,6 +192,9 @@ function validateSkillDir(skillDir, authorSlug) {
       if (dir === 'prev-versions') err(rel(file), '"prev-versions" is a reserved directory name inside a skill');
       if (!DIR_SEGMENT.test(dir)) err(rel(file), `directory segment "${dir}" must be alphanumeric with underscores/hyphens and no dots`);
     }
+    if (segments[0] === 'examples' && path.extname(fileName).toLowerCase() !== '.md') {
+      err(rel(file), 'examples/ may only contain .md files — each renders as a slide on the skill\'s gtmskills.com page');
+    }
   }
 }
 
