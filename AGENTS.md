@@ -73,10 +73,10 @@ contributors: []        # other creators' slugs, if any — omit if none
 - Don't reference other skills by name; describe the next action in verbs.
 - Deep material (frameworks, channel variants, worked walk-throughs) goes in `references/<topic>.md`, and the body says when to read each one.
 
-**`skills/<author>/<skill>/examples/*.md`** — optional but high-leverage. Each file is one **finished outcome** the skill produces at its best: the actual drafted email, the account brief, the scored list, the battlecard. gtmskills.com renders these as a slideshow on the skill's page, so buyers see what they get before installing — skills with examples convert far better.
+**`skills/<author>/<skill>/examples/`** — optional but high-leverage. Each file is one **finished outcome** the skill produces at its best: the actual drafted email, the account brief, the scored list, the battlecard. Usually markdown; a screenshot (`.png`), spreadsheet (`.csv`), or deck (`.pdf`) works too. gtmskills.com renders these as a slideshow on the skill's page, so buyers see what they get before installing — skills with examples convert far better.
 
 - Show the **output**, not the procedure. No commentary, no "here's how" — the artifact itself, as it would land.
-- First line is `# <short title>` — it becomes the slide's caption (e.g. `# Re-engagement email after 90 days dark`).
+- For markdown examples, the first line is `# <short title>` — it becomes the slide's caption (e.g. `# Re-engagement email after 90 days dark`).
 - **Anonymize everything**: no real people, companies, emails, phone numbers, or deal figures. Use plausible stand-ins (Acme Robotics, jane@acme…). Derive from a real output — realistic beats generic — but scrub it completely.
 - 1–3 examples is the sweet spot. Different situations, not variations of the same one.
 - `examples/` vs `references/`: examples are for *humans browsing the library* (and agents wanting the target shape); references are material the skill *routes the agent to during execution*.
