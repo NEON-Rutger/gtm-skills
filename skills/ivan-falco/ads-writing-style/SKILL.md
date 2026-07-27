@@ -1,6 +1,6 @@
 ---
 name: "ads-writing-style"
-title: "Writing Style - No AI Slop"
+title: "Writing style: no AI slop"
 description: "Use this skill for the writing bar on everything ads-related — operator voice, no AI slop, banned words, and sentence-level rules."
 category: Ads
 ---
@@ -50,8 +50,12 @@ Never use these. They are the fingerprints of AI writing:
 - Read it as the prospect. If it sounds like an ad written by a committee, it is.
 
 ## Before / after
-- ❌ "Unlock the power of seamless, AI-driven advertising to take your campaigns to the next level."
-- ✅ "Your audience targeting is leaking 30% of budget. Here's how to fix it this week."
+- Wrong: "Unlock the power of seamless, AI-driven advertising to take your campaigns to the next level."
+- Right: "Your audience targeting is leaking 30% of budget. Here's how to fix it this week."
 
-- ❌ "In today's competitive landscape, it's crucial to leverage a holistic approach to lead generation."
-- ✅ "Most B2B accounts chase volume and drown in junk leads. Optimize for pipeline, not form fills."
+- Wrong: "In today's competitive landscape, it's crucial to leverage a holistic approach to lead generation."
+- Right: "Most B2B accounts chase volume and drown in junk leads. Optimize for pipeline, not form fills."
+
+---
+
+> By Ivan Falco - Frontal

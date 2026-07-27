@@ -1,6 +1,6 @@
 ---
 name: "ad-personas"
-title: Ad Persona Framework
+title: "Ad persona framework"
 description: "Use this skill when defining ad personas — translating ICP segments into the persona lens every ad, angle, and offer gets built against."
 category: Ads
 ---

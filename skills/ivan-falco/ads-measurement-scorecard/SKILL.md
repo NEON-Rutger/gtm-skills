@@ -118,4 +118,8 @@ The dashboard needs to combine ad spend data with CRM data (source of truth).
 
 If lifecycle stage labels differ (e.g., "meetings" instead of "SQLs"), customize the field labels. If advertising on additional channels, insert new rows and import data accordingly.
 
-If not comfortable with sheets, loop in your marketing operations team or hire on Upwork/Fiverr.
+If not comfortable with sheets, loop in your marketing operations team or hire a freelancer.
+
+---
+
+> By Ivan Falco - Frontal

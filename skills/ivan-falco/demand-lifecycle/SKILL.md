@@ -1,6 +1,6 @@
 ---
 name: "demand-lifecycle"
-title: The Demand Lifecycle
+title: "The demand lifecycle"
 description: "Use this skill for the demand lifecycle model — how B2B buyers move from unaware to in-market and what paid media's job is at each stage."
 category: Ads
 ---
@@ -96,9 +96,39 @@ This is the foundation that determines which stage a prospect belongs to. The pr
 - Revive --> Offer Aware (previously evaluated, fell through the cracks)
 - Expand --> Most Aware (existing customers)
 
+## Budget by Stage
+
+Strategy is a series of strategic bets. Work from the bottom of the 5-Stage Demand Engine up for quickest ROI (Expand --> Create).
+
+### Stage Investment Characteristics
+
+| Stage | Budget Required (Audience Size) | Estimated ROI Timeline | Estimated Difficulty |
+|-------|----------------------------------|------------------------|----------------------|
+| Create | High | > 90 days | High - requires strong content strategy and unique POV |
+| Capture | Moderate | < 45 days | High - usually stiff competition & expensive costs |
+| Accelerate/Activate | Low | Varies based on sales cycle | Low - familiar with your product and considering it |
+| Revive | Low | < 45 days | Low - familiar with your brand and expressed interest in the past |
+| Expand | Low | < 60 days | Medium - existing customers, hard to scale due to small audience sizes |
+
+### Illustrative Budget Allocation
+
+**Product-led startup** (early stage, large TAM, ~$30k/month budget)
+- Focus: Create & Capture (scale net-new and brand)
+- Allocation: $15,000 Create (Problem Aware) + $10,000 Capture (Solution Aware) + $5,000 Capture (Product Aware)
+
+**Sales-led startup** (growth stage, small TAM, ~$30k/month budget)
+- Focus: Create, Capture & Accelerate (ABM, penetrate top accounts)
+- Allocation: $20,000 Create (Problem Aware) + $5,000 Capture (Product Aware) + $5,000 Accelerate (Offer Aware)
+
+Product-led companies typically spread budget across Create and Capture. Sales-led companies with a small TAM should invest more heavily in Create (brand/thought leadership) and Accelerate (helping sales close deals). These are starting points - adjust allocations based on performance and business priorities as your data improves.
+
 ## Key Principles
 
 - You don't have to build a full-funnel strategy at once
 - Build bottom-up for quickest ROI: expand --> revive --> accelerate/activate --> capture --> create
 - The target audience's awareness level determines the stage
 - No one knows for certain where someone is in their buyer's journey - use best judgment
+
+---
+
+> By Ivan Falco - Frontal

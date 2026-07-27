@@ -1,6 +1,6 @@
 ---
 name: "ads-offers-strategy"
-title: Offers Strategy Guide
+title: "Offers strategy guide"
 description: Use this skill when designing offers for paid campaigns — the offer types that convert cold B2B traffic and matching offer strength to funnel stage.
 category: Ads
 ---
@@ -79,3 +79,7 @@ Humans are motivated by pain or desire. Get people excited when they read your C
 2. All the pain points you're solving
 3. The big takeaways
 4. Effort required
+
+---
+
+> By Ivan Falco - Frontal

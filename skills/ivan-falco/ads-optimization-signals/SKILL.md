@@ -1,6 +1,6 @@
 ---
 name: "ads-optimization-signals"
-title: "Optimization Signals & Testing Rules"
+title: "Optimization signals"
 description: "Use this skill when reading optimization signals — which metrics justify action, testing rules, and when a result is real versus noise."
 category: Ads
 ---
@@ -116,3 +116,7 @@ For each completed experiment, document:
 Avoid the "activity trap" - testing for the sake of testing, not testing to learn. Stack on your success by building on documented learnings.
 
 Set up automation: When an experiment is marked as completed, automatically notify the team via Slack with the result and key learnings.
+
+---
+
+> By Ivan Falco - Frontal
