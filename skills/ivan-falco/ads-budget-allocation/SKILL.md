@@ -1,6 +1,6 @@
 ---
 name: "ads-budget-allocation"
-title: Budget Allocation by Stage
+title: "Budget allocation by stage"
 description: "Use this skill when allocating paid budget by stage — testing vs scaling vs retargeting, and how the split shifts as spend grows."
 category: Ads
 ---

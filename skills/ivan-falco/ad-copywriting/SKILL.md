@@ -7,13 +7,7 @@ category: Ads
 
 # Ad Copywriting - Headline Formulas, Visual Design & Voice of Customer
 
-## How This File Relates to Other Files
-
-- `creative-strategy.md` = WHAT angle to use at WHICH stage (Problem-Aware, Solution-Aware, Product-Aware)
-- `copy-audit-framework.md` = HOW to quality-check copy before it goes live (5-layer audit)
-- **This file** = HOW to actually write the copy. Headline formulas, visual design principles, and the process for gathering real customer language before writing anything.
-
-Applies to LinkedIn and Meta. Platform-specific nuances live in the platform folders.
+How to actually write the copy: headline formulas, visual design principles, and the process for gathering real customer language before writing anything. Applies to LinkedIn and Meta ads.
 
 ---
 
@@ -283,8 +277,8 @@ The headline field (below the image on LinkedIn) supports the image text. It sho
 - Outcome stat ("From 6-8 hours a week to 15 minutes a day")
 - Direct CTA ("See how 8,000+ teams made the switch")
 
-### Step 7: Audit Against Copy Audit Framework
-Run the finished ad through the 5-layer copy audit framework: factual accuracy, tone of voice, structure, design density, audience fit.
+### Step 7: Audit Before It Goes Live
+Run the finished ad through a final quality check across five layers: factual accuracy, tone of voice, structure, design density, and audience fit.
 
 ---
 
@@ -329,3 +323,7 @@ Run the finished ad through the 5-layer copy audit framework: factual accuracy, 
 | Shame | Status quo = outdated | MOF | "It's 2026. Your report is still in Excel?" |
 | Stat Interrupt | One dramatic number | Any | "6-8hrs --> 15min" |
 | Pain + Outcome | [Pain verb] X, [outcome] | MOF-BOF | "Ditch the spreadsheets, scale faster" |
+
+---
+
+> By Ivan Falco - Frontal

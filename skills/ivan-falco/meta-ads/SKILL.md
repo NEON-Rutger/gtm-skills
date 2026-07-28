@@ -1,8 +1,8 @@
 ---
 name: "meta-ads"
-title: Meta ads management
+title: Meta ads management for B2B
 description: |
-  Use this skill when managing Meta (Facebook/Instagram) ads for B2B — audience strategy, campaign structure, creative-as-targeting, CAPI and conversion tracking, creative testing, fatigue detection, and lead form optimization for B2B SaaS on Meta's platform.
+  Use this skill when managing Meta (Facebook/Instagram) ads for B2B campaigns — audience strategy, campaign structure, creative testing, and lead form optimization specifically for B2B SaaS on Meta's platform.
 
   Triggers: Meta Ads, Facebook Ads, Instagram Ads, Meta campaign, Facebook lead gen, Meta lead forms, Facebook retargeting, Meta remarketing, Facebook lookalike, Meta audience, Advantage Plus, Meta B2B.
 category: Ads
@@ -30,76 +30,23 @@ Meta's native targeting can't match LinkedIn's B2B precision (no job title, comp
 
 | Intent | File | Priority |
 |--------|------|----------|
-| **Scaling qualified B2B pipeline end to end** (the goal is SQLs / qualified pipeline, not lead volume) | [scale-b2b-qualified-pipeline.md](/skill/scale-b2b-qualified-pipeline) | LOAD FIRST when the goal is qualified pipeline. The 6-step spine (map market -> audiences -> funnel events/CAPI -> creative -> segments -> SQL reporting) that ties the audience, CAPI, creative, and reporting files together. |
-| **ANY operational decision** (pause, scale, graduate, budget, creative count) | [meta-ads-operating-system.md](/skill/meta-ads-operating-system) | ALWAYS LOAD FIRST. This is THE decision framework. All formulas, thresholds, and actions live here. |
-| **Auditing an account** (pull data, classify ads, produce recommendations) | Load the OS file above + run `scripts/get_active_ads_copy.py` | Pull active ads, classify by OS rules, produce recommendations. |
-| **Creative production decisions** (what to build, when to iterate, cadence, formats) | [creative-cadence-operating-system.md](/skill/creative-cadence-operating-system) | Iteration hierarchy, concept sourcing, format playbook, testing cadence, fatigue detection, quality scoring. |
+| **Scaling qualified B2B pipeline end to end** (the goal is SQLs / qualified pipeline, not lead volume) | [scale-b2b-qualified-pipeline.md](references/scale-b2b-qualified-pipeline.md) | LOAD FIRST when the goal is qualified pipeline. The 6-step spine (map market -> audiences -> funnel events/CAPI -> creative -> segments -> SQL reporting). |
+| **ANY operational decision** (pause, scale, graduate, budget, creative count) | [meta-operating-system.md](references/meta-operating-system.md) | ALWAYS LOAD FIRST. This is THE decision framework. All formulas, thresholds, and actions live here. |
+| **Creative production decisions** (what to build, when to iterate, cadence, formats) | [meta-creative-system.md](references/meta-creative-system.md) | Iteration hierarchy, concept sourcing, format playbook, testing cadence, fatigue detection, quality scoring. |
 
 ### Deeper Context (Load When Needed)
 
-These files provide detailed methodology on specific topics. The OS drives decisions; these explain the deeper why and how.
+These files provide detailed methodology on specific topics. The operating system drives decisions; these explain the deeper why and how.
 
 | User Intent | Knowledge Base File | When to Use |
 |-------------|-------------------|-------------|
-| Full Meta B2B overview, algorithm, strategy | [meta-b2b-overview.md](/skill/meta-b2b-overview) | Andromeda + Gem, strategy, "what works" - overview and quick reference |
-| Pixel, tracking, first campaign setup | [meta-setup-and-tracking.md](/skill/meta-setup-and-tracking) | Installing the pixel, Events Manager, domain verification, CAPI, pre-launch |
-| CAPI, conversion events, HubSpot vs n8n | [meta-capi-and-events.md](/skill/meta-capi-and-events) | Conversions API, event hierarchy, CRM to CAPI, deduplication, Event Match Quality |
-| Webinar/event, third-party conversion | [meta-third-party-conversion-tracking.md](/skill/meta-third-party-conversion-tracking) | Off-domain conversion (Luma, etc.), pixel in platform vs thank-you page |
-| Audience targeting, data strategy, lookalikes | [audience-strategy.md](/skill/meta-audience-strategy) | Building audiences, data sources, audience validation, third-party tools |
-| Detailed campaign structure, phases, roadmap | [campaign-structure.md](/skill/meta-campaign-structure) | Phase 1/2/3 deep dive, naming conventions, campaign architecture, month-by-month roadmap |
-| Creative concepts, copy, formats | [creative-strategy.md](/skill/meta-creative-strategy) | Creative development, concept testing, placement optimization, creative-as-targeting |
-| Creative fatigue detection, rotation system | [creative-fatigue-detection.md](/skill/creative-fatigue-detection) | Full fatigue workflow, rotation cadence, pipeline management, format-specific notes |
-| Advantage+ setup and details | [advantage-plus.md](/skill/advantage-plus) | When to use Advantage+, setup steps, budget requirements, ABM considerations |
-| Optimization playbook, benchmarks | [optimization-playbook.md](/skill/meta-optimization-playbook) | Decision trees, B2B benchmarks, seasonal patterns, weekly cadence, scaling protocol |
-| Ad quality scoring, message validation | [message-validation.md](/skill/message-validation) | Scoring ads against revenue quality, winner scaling pattern, validation process |
-| Lead forms, conversion optimization | [lead-form-optimization.md](/skill/lead-form-optimization) | Lead form setup, work email validation, custom questions, social amnesia |
-| ABM on Meta | [abm-on-meta.md](/skill/abm-on-meta) | ABM targeting, Advantage+ conflicts, manual vs hybrid approach |
-| Offer strategy by funnel stage | [offer-strategy.md](/skill/meta-offer-strategy) | What offers to run at each funnel stage |
-| **Creating campaigns, ads, audiences** (the full build chain) | [creating-campaigns-ads-audiences.md](/skill/creating-campaigns-ads-audiences) | End-to-end: audience -> campaign -> ad set -> creative -> ad. Endpoints, scripts, PAUSED-by-default rules. |
-| **Reporting / dashboards** | use the `meta-reporting` skill | Performance analysis + a branded HTML dashboard with your logo. |
-
-## Scripts (execution layer)
-
-Python scripts live in `scripts/` and hit the Meta Marketing API (v22.0) through
-the shared `scripts/client.py` (credentials from `.env`). Full index, key args,
-and examples: [scripts/README.md](scripts/README.md). **Every create defaults to
-`PAUSED`.** Budgets are in cents. Any script accepts `--account-id act_XXXXXXXXX`
-to override the default account.
-
-**Analyze / Report**
-
-| Script | Use when you need to... |
-|--------|------------------------|
-| `account_overview.py` | Pull an account-level metrics dashboard (with optional period comparison) |
-| `list_campaigns.py` / `list_ad_sets.py` / `list_ads.py` | List objects with status, budget, targeting, and 30-day metrics |
-| `get_campaign_performance.py` | Get detailed campaign analytics with date presets / daily breakdown |
-| `get_active_ads_copy.py` | Dump full creative and copy of every active ad (audits) |
-| `top_ads.py` | Rank ads by spend or cost per lead to find winners |
-
-**Create (default PAUSED)**
-
-| Script | Use when you need to... |
-|--------|------------------------|
-| `create_campaign.py` | Create a campaign |
-| `create_ad_set.py` | Create an ad set (targeting, optimization goal, pixel/page promoted object) |
-| `create_ad.py` | Create a single-image or video ad (creative + ad) |
-| `create_dco_ad.py` | Create a dynamic/flexible creative (DCO) ad from multiple assets |
-
-**Manage**
-
-| Script | Use when you need to... |
-|--------|------------------------|
-| `update_campaign.py` | Change a campaign's status, budget, or name |
-| `duplicate_ad.py` | Duplicate an ad (optionally into another ad set, N copies) |
-| `ad_scheduler.py` | Schedule automatic ad pauses (e.g. webinar ads), run from cron |
-
-**Audiences**
-
-| Script | Use when you need to... |
-|--------|------------------------|
-| `create_custom_audience.py` | Create a custom audience from a hashed CSV |
-| `update_custom_audience.py` | Add or remove hashed members in an existing audience |
-| `upload_lookalike.py` | Create lookalike audiences from a source audience (one per country) |
+| Full Meta B2B overview, algorithm, strategy | [meta-b2b-overview.md](references/meta-b2b-overview.md) | Andromeda + Gem, strategy, "what works" - overview and quick reference |
+| Pixel, tracking, CAPI, conversion events | [meta-tracking-and-capi.md](references/meta-tracking-and-capi.md) | Installing the pixel, Events Manager, domain verification, Conversions API, event hierarchy, CRM to CAPI, deduplication, Event Match Quality, off-domain conversion tracking |
+| Audience targeting, data strategy, lookalikes | [audience-strategy.md](references/audience-strategy.md) | Building audiences, data sources, audience validation, third-party tools |
+| Detailed campaign structure, phases, roadmap | [campaign-structure.md](references/campaign-structure.md) | Phase 1/2/3 deep dive, naming conventions, campaign architecture, month-by-month roadmap |
+| Advantage+ setup and details | [advantage-plus.md](references/advantage-plus.md) | When to use Advantage+, setup steps, budget requirements, ABM considerations |
+| Lead forms, conversion optimization | [lead-form-optimization.md](references/lead-form-optimization.md) | Lead form setup, work email validation, custom questions, social amnesia |
+| Offer strategy by funnel stage | [offer-strategy.md](references/offer-strategy.md) | What offers to run at each funnel stage |
 
 ## Core Rules
 
@@ -150,3 +97,7 @@ Meta and LinkedIn are not competitors - they're complementary channels:
 - **LinkedIn for ABM** (company-level targeting) + **Meta for ABM extension** (via third-party tools like Primer/Metadata.io)
 - **LinkedIn for enterprise** (where precision justifies the cost) + **Meta for mid-market/SMB** (where volume and cost efficiency matter more)
 - Use cross-channel UTM remarketing to bridge the two platforms
+
+---
+
+> By Ivan Falco - Frontal

@@ -1,6 +1,6 @@
 ---
 name: "ads-channel-selection"
-title: Channel Selection Guide
+title: "Channel selection guide"
 description: "Use this skill when choosing paid channels — where Meta, LinkedIn, and search each win for B2B, and how to sequence them by budget and motion."
 category: Ads
 ---
@@ -62,3 +62,7 @@ These are recommendations to use as inspiration, not as restrictions. Your speci
 - **Create (Problem Aware)**: LinkedIn + Display - targeting top 50 accounts (account-based approach)
 - **Capture (Product Aware)**: LinkedIn remarketing - getting in front of key accounts
 - **Accelerate (Offer Aware)**: LinkedIn - targeting open opportunities at key accounts
+
+---
+
+> By Ivan Falco - Frontal

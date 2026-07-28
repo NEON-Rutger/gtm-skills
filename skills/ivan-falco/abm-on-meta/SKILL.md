@@ -40,7 +40,7 @@ How to run Account-Based Marketing on Meta for B2B SaaS and B2B tech companies. 
 | Tool | Match Rate | What It Does | Best For |
 |------|-----------|-------------|----------|
 | **Metadata.io (MetaMatch)** | ~40% | Firmographic/technographic audience to identity graph to uploads to Meta | LinkedIn-like targeting on Meta |
-| **Primer.io** | 85%+ persona accuracy | CRM sync to champion persona filtering to identity graph to multi-channel activation | Multi-channel ABM (Meta + LinkedIn + YouTube + Reddit) |
+| **Primer.io** | High persona accuracy | CRM sync to champion persona filtering to identity graph to multi-channel activation | Multi-channel ABM (Meta + LinkedIn + YouTube + Reddit) |
 | **ZoomInfo** | Enrichment (not direct upload) | 260M+ profiles, appends personal emails/phones to CRM records | CRM data enrichment, then upload to Meta |
 | **Clearbit (HubSpot Breeze)** | Enrichment | Real-time CRM enrichment, firmographic updates | HubSpot users, CRM-first enrichment |
 | **Demandbase** | Native DSP | Account-centric data, daily LinkedIn/Meta audience sync | Enterprise ABM with advertising built in |
@@ -176,7 +176,7 @@ Use LinkedIn to validate audience quality (precise targeting), then retarget tha
 3. Retarget LinkedIn-validated audience on Meta at 50-70% lower CPM
 4. Result: LinkedIn-quality audience at Meta-level costs
 
-**Performance data:** Multi-channel ABM generates 80% higher engagement than single-channel. LinkedIn + Meta together = 50% higher sales conversions vs. either alone.
+**Why it works:** Multi-channel ABM tends to generate meaningfully higher engagement than single-channel, and running LinkedIn and Meta together typically lifts sales conversions versus either channel alone.
 
 ---
 
@@ -241,10 +241,4 @@ Keeps attribution clean, prevents annoying existing customers, and focuses budge
 
 ---
 
-## Related Files
-
-- **audience-strategy.md** - Data hierarchy, CRM lookalikes, third-party sources
-- **campaign-structure.md** - How ABM campaigns fit in overall account architecture
-- **offer-strategy.md** - What offers to use for ABM at each funnel stage
-- **optimization-playbook.md** - When to kill/optimize/scale ABM campaigns
-- **meta-capi-and-events.md** - Sending closed-won events back to Meta for optimization
+> By Ivan Falco - Frontal

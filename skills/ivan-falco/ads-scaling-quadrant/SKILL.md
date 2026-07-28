@@ -1,6 +1,6 @@
 ---
 name: "ads-scaling-quadrant"
-title: The Scaling Quadrant Framework
+title: "The scaling quadrant"
 description: "Use this skill when deciding how to scale paid spend — the budget-by-creative quadrant and which lever to pull based on current performance."
 category: Ads
 ---
@@ -60,3 +60,7 @@ Budget is the fuel that powers your paid media program. To get more, build a cas
 ### Step 3: Present Your Case
 
 Data alone won't persuade. Stories without data are subject to suspicion. Combine both to address stakeholder concerns and build certainty. Your stakeholders want you to be right - they're analyzing upside and downside like investors. Make the case compelling enough that they feel certain about the return.
+
+---
+
+> By Ivan Falco - Frontal

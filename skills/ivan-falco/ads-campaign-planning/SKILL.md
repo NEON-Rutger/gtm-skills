@@ -1,6 +1,6 @@
 ---
 name: "ads-campaign-planning"
-title: "Campaign Planning & Execution"
+title: "Campaign planning and execution"
 description: "Use this skill when planning a paid campaign end to end — objectives, audiences, offers, creative, and measurement locked before launch."
 category: Ads
 ---
