@@ -2,7 +2,7 @@
 name: "positioning-messaging-designer"
 title: Positioning and messaging designer
 description: "Design positioning and messaging frameworks for clients using the Use Case Messaging Canvas and Opposites method. Use whenever helping a client define their positioning, build a messaging framework, create a Use Case Canvas, or bridge the gap between ICP and copy. Triggers include 'position them,' 'messaging framework,' 'Use Case Canvas,' 'how should they position,' 'their messaging is all over the place,' 'they skip straight to copy,' 'Opposites method,' 'Old Way vs New Way,' 'positioning workshop,' 'value prop,' 'one-liner,' 'elevator pitch,' 'positioning line,' or any client engagement where ICP exists but messaging is missing or inconsistent. BOUNDARY: This skill designs POSITIONING and MESSAGING frameworks. For ICP building (the step BEFORE), see icp-builder. For writing actual LinkedIn copy, see a LinkedIn posting skill. For proposals, see a proposal generator skill."
-category: Research
+category: Positioning
 ---
 
 # Positioning & Messaging Designer
