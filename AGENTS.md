@@ -74,11 +74,11 @@ contributors: []        # other creators' slugs, if any — omit if none
 
 **`skills/<author>/author.md`** (first submission): frontmatter `name`, `avatarUrl`, `title`, `linkedinUrl`, `companyDomain`, `email`; the bio is the body text. The directory name is the slug — there is no slug field.
 
-This is a **people-first marketplace** — every skill is published under a real person's name and face, and maintainers verify identity before merging. Three fields are load-bearing:
+This is a **people-first marketplace** — every skill is published under a real person's name and face, and maintainers verify identity before merging. Four fields are load-bearing:
 
-- **`linkedinUrl` — required, and it must be the person's own LinkedIn profile** (`linkedin.com/in/<their-handle>`), not a company page, product page, or vanity redirect. This is the primary identity check; a submission without a personal LinkedIn profile will be sent back before review.
+- **`linkedinUrl` — required, and it must be the person's own LinkedIn profile** (`linkedin.com/in/<their-handle>`), not a company page, product page, or vanity redirect. This is the primary identity check; a submission without a personal LinkedIn profile or a contact email will be sent back before review.
 - **`avatarUrl` — optional, but when present it must be a real photo of the person.** A clear headshot, roughly square, at least 400px. Not a logo, not a mascot, not a GitHub identicon, not an AI-generated face. **If you leave it out (or the URL is unusable), maintainers will take your profile photo from the LinkedIn profile above and re-host it at gtmskills.com — submitting means you're OK with that.** Prefer a durable URL if you do supply one (LinkedIn image URLs expire), or attach the image to the PR and note it.
-- **`email` — how maintainers reach you** about your skills: review questions, a missing file, a heads-up when something ships or needs a refresh. Use a work address you are comfortable having public — this repo is open, so the file (email included) is visible to anyone.
+- **`email` — required.** How maintainers reach you about your skills: review questions, a missing file, a heads-up when something ships or needs a refresh. Use a work address you are comfortable having public — this repo is open, so the file (email included) is visible to anyone.
 - **The bio (body text)** — 2–4 sentences about the person, written person-first ("Jane built…", not "Acme is…"). Every claim should be verifiable on the person's own site, LinkedIn, or press — maintainers check, and unverifiable claims get trimmed.
 
 Submitting several skills at once? Include `author.md` in your **first** PR only — every PR duplicating it will conflict after the first one merges.
