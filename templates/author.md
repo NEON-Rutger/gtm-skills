@@ -1,6 +1,6 @@
 ---
 name: Full Name
-avatarUrl: https://…            # a real PHOTO OF YOU — headshot, ~square, ≥400px. Not a logo, not an identicon. Re-hosted at gtmskills.com on merge.
+avatarUrl: https://…            # optional: a real PHOTO OF YOU — headshot, ~square, ≥400px; no logos/identicons. Omit it and we'll use your LinkedIn profile photo (re-hosted at gtmskills.com).
 title: Role, Company            # e.g. "Head of Growth, Acme"
 linkedinUrl: https://www.linkedin.com/in/…   # YOUR OWN profile — required. Not a company or product page. This is how maintainers verify you.
 companyDomain: example.com
