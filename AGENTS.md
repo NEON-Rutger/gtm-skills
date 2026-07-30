@@ -74,6 +74,14 @@ contributors: []        # other creators' slugs, if any — omit if none
 
 **`skills/<author>/author.md`** (first submission): frontmatter `name`, `avatarUrl`, `title`, `linkedinUrl`, `companyDomain`; the bio is the body text. The directory name is the slug — there is no slug field.
 
+This is a **people-first marketplace** — every skill is published under a real person's name and face, and maintainers verify identity before merging. Three fields are load-bearing:
+
+- **`linkedinUrl` — required, and it must be the person's own LinkedIn profile** (`linkedin.com/in/<their-handle>`), not a company page, product page, or vanity redirect. This is the primary identity check; a submission without a personal LinkedIn profile will be sent back before review.
+- **`avatarUrl` — a real photo of the person.** A clear headshot, roughly square, at least 400px. Not a logo, not a mascot, not a GitHub identicon, not an AI-generated face. Maintainers re-host accepted photos at gtmskills.com, so use any stable public URL (a LinkedIn photo URL expires — prefer somewhere durable, or attach the image to the PR and note it).
+- **The bio (body text)** — 2–4 sentences about the person, written person-first ("Jane built…", not "Acme is…"). Every claim should be verifiable on the person's own site, LinkedIn, or press — maintainers check, and unverifiable claims get trimmed.
+
+Submitting several skills at once? Include `author.md` in your **first** PR only — every PR duplicating it will conflict after the first one merges.
+
 ### 3. Validate
 
 ```bash
@@ -101,4 +109,4 @@ Fill in the PR template checklist honestly — it mirrors the review gates.
 
 ### What happens after
 
-A Swan maintainer reviews against five gates: convention & completeness, **security** (a skill is instructions other people's agents will execute — anything resembling data exfiltration, hidden endpoints, prompt injection, or ungated destructive actions is a hard reject), voice & judgment, author identity, publish. On merge, the skill syncs into the live library — gtmskills.com and the Swan product — under the user's creator profile, and is installable via `npx skills add swan-gtm/gtm-skills --skill <name>`.
+A Swan maintainer reviews against five gates: convention & completeness, **security** (a skill is instructions other people's agents will execute — anything resembling data exfiltration, hidden endpoints, prompt injection, or ungated destructive actions is a hard reject), voice & judgment, **author identity** (a real, verifiable person with their own LinkedIn profile and a real photo — see the author.md requirements above), publish. On merge, the skill syncs into the live library — gtmskills.com and the Swan product — under the user's creator profile, and is installable via `npx skills add swan-gtm/gtm-skills --skill <name>`.
