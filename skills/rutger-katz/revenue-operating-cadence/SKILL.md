@@ -1,13 +1,13 @@
 ---
 name: "revenue-operating-cadence"
 title: Revenue operating cadence
-description: "Revenue operating cadence: meeting architecture, data pyramid, and board reporting that turns strategy into execution. Use when the user mentions operating cadence, meeting cadence, forecast calls, pipeline review, QBR, board meeting, board deck, monthly business review, sales standup, deal review, meeting architecture, meeting agenda, revenue ceremonies, or structuring revenue meetings. Also trigger when someone asks about board deck structure, running forecast calls, fixing meetings that waste time, or getting accountability. If someone says \"our meetings are status updates\" or \"the board keeps getting surprised\" or \"nothing gets done,\" activate this skill. BOUNDARY: Covers meeting structure and data inputs. For forecast methodology, see revops-forecasting. For metrics, see revops-metrics."
+description: "Revenue operating cadence: meeting architecture, data pyramid, and board reporting that turns strategy into execution. Use when the user mentions operating cadence, meeting cadence, forecast calls, pipeline review, QBR, board meeting, board deck, monthly business review, sales standup, deal review, meeting architecture, meeting agenda, revenue ceremonies, or structuring revenue meetings. Also trigger when someone asks about board deck structure, running forecast calls, fixing meetings that waste time, or getting accountability. If someone says 'our meetings are status updates' or 'the board keeps getting surprised' or 'nothing gets done,' activate this skill. BOUNDARY: Covers meeting structure and data inputs. For forecast methodology, see revops-forecasting. For metrics, see revops-metrics."
 category: RevOps
 ---
 
 # Revenue Operating Cadence Framework
 
-The difference between scaling to €150M and stalling at €20M isn't forecasting accuracy; it's **operating rhythm**. Your cadence is the machine that turns strategy into deals into board updates. Get it wrong and you're firefighting every week. Get it right and revenue becomes predictable.
+The difference between scaling to $150M and stalling at $20M isn't forecasting accuracy; it's **operating rhythm**. Your cadence is the machine that turns strategy into deals into board updates. Get it wrong and you're firefighting every week. Get it right and revenue becomes predictable.
 
 ## The Core Principle: Data Pyramid
 
@@ -64,7 +64,7 @@ Before you schedule it, answer these:
 
 ```
 Rep 1: "AWS deal stuck on legal review. Need legal in Wed meeting."
-Rep 2: "Acme expanded scope, moving to €650k. Closes Friday."
+Rep 2: "Acme expanded scope, moving to $650k. Closes Friday."
 Rep 3: "Nordic Bank went dark for 3 days. Need help re-engaging."
 ```
 
@@ -169,7 +169,7 @@ Rep 3: "Nordic Bank went dark for 3 days. Need help re-engaging."
 - Finance (if available)
 
 **Pre-meeting deck (8-10 slides max):**
-1. Revenue vs. plan (€M, waterfall, growth %)
+1. Revenue vs. plan ($M, waterfall, growth %)
 2. Pipeline health (coverage, velocity, quality)
 3. Efficiency metrics (CAC, payback, LTV:CAC)
 4. Retention & expansion (NRR, GRR, churn)
@@ -252,10 +252,10 @@ SLIDE 4-5: Pipeline & Forecast
 └─ Confidence in this quarter's forecast
 
 SLIDE 6: Efficiency Metrics
-├─ CAC (€)
+├─ CAC ($)
 ├─ CAC Payback (months)
 ├─ LTV:CAC ratio
-├─ Burn multiple (spend per € ARR)
+├─ Burn multiple (spend per $ ARR)
 ├─ Rule of 40 (growth % + operating margin %)
 └─ Trends quarter-over-quarter
 
@@ -370,7 +370,7 @@ Top-performing revenue teams are moving beyond batch-based weekly reporting. The
 
 - **Salesforce Agentforce** (current 2026 standard) replaces Flow-based automation with agentic workflows. Workflow Rules and Process Builder reach end of support 31 December 2025. Data 360 (formerly Data Cloud) serves as the intelligence foundation; Intelligent Context reads unstructured content for deal coaching. Agentforce Revenue Management replaces CPQ as the forward path.
 
-- **Real-time signalling:** Reverse ETL platforms (Segment, Hightouch, Census at 250+ integrations each) sync Salesforce pipeline changes into Slack, email alerts, and BDR routing rules within minutes. No more "I didn't know we lost that deal until Tuesday."
+- **Real-time signaling:** Reverse ETL platforms (Segment, Hightouch, Census at 250+ integrations each) sync Salesforce pipeline changes into Slack, email alerts, and BDR routing rules within minutes. No more "I didn't know we lost that deal until Tuesday."
 
 **Cadence implication:** The weekly forecast meeting becomes the decision layer, not the data layer. The data is current. The meeting is about what we're going to DO about it.
 
@@ -398,7 +398,7 @@ This is where operating discipline meets AI. One section on discipline isn't eno
 
 - **Churn prediction at the customer level:** Combine AI-scored churn risk (NLP on support tickets + usage signals + champion email frequency) with revenue data. The monthly business review now flags "top 5 expansion opportunities" and "top 10 churn risks" in the same dashboard, not separately.
 
-**Operational prerequisite:** Data quality gates. Gartner reports 60% of AI projects abandoned over non-agent-ready data (2026). If your CRM stage-change timestamps are garbage or your call recordings aren't tagged, AI adds no value. The discipline comes first.
+**Operational prerequisite:** Data quality gates. Gartner predicts 60% of AI projects will be abandoned through 2026 for lack of AI-ready data (Gartner, February 2025). If your CRM stage-change timestamps are garbage or your call recordings aren't tagged, AI adds no value. The discipline comes first.
 
 ---
 
@@ -423,25 +423,23 @@ Every meeting in the cadence should have a clear decision owner:
 **Coaching Integration.**
 Coaching doesn't happen separately; it happens during reviews. Pipeline review equals coaching moment. Forecast review equals strategic coaching moment. The cadence is the coaching system.
 
-### Discipline as AI Prerequisite (Jeremy Donovan, E61)
+### Discipline as AI Prerequisite
 
 The #1 differentiator between top performers and average performers using AI is NOT which tools they use. It's operating discipline.
 
 **Key finding:** Top vs. average performers adopt the same AI use cases in roughly the same order. Same tools, same use cases; the difference is operating discipline.
 
-**Donovan's one-play doctrine:** "If I could only run one play: incredibly disciplined weekly deal reviews." (The Revenue Leadership Podcast E61, January 2026)
+**The one-play doctrine:** if you could only run one play, run incredibly disciplined weekly deal reviews.
 
-**CRO screening insight:** Donovan, EVP Sales + CS at Insight Partners, screens CRO candidates for 500 B2B SaaS portfolio companies. #1 factor he looks for: operating rhythm. He back-channels former teams to find out what it was actually like to work for that person.
+**CRO screening insight:** investors who screen CRO candidates across hundreds of portfolio companies put operating rhythm first, and back-channel former teams to find out what it was actually like to work for that person.
 
 **Research backing:** K. Anders Ericsson's work on deliberate practice shows feedback-rich environments with tight iteration loops produce mastery faster than anything else. AI amplifies the feedback loop. But you need the loop first.
 
 **Assessment question:** Before any AI investment conversation, ask: "How tight is your operating rhythm?" This should precede "Which AI tool should we buy?"
 
-**Diagnostic implication:** If a client's weekly deal reviews aren't disciplined, no AI tool will fix their forecast accuracy. Fix the cadence before investing in AI.
+**Diagnostic implication:** If your weekly deal reviews aren't disciplined, no AI tool will fix your forecast accuracy. Fix the cadence before investing in AI.
 
-**Source:** https://www.therevenueleadershippodcast.com/p/gtm-strategy-5-insights-from-500
-
-### The Predictability Playbook (Aviv Canaani, E64)
+### The Predictability Playbook
 
 A starting template for leaders who want to build predictable revenue operations.
 
@@ -451,8 +449,8 @@ A starting template for leaders who want to build predictable revenue operations
 3. RevOps owns instrumentation
 4. Sales knows exactly how many meetings they're getting this quarter and what they need to convert
 
-**Canaani's evidence from Datarails (Owner.com podcast E64, March 2026):**
-- Sales cycle modelled and disciplined: 30-45 days
+**Evidence (The Revenue Leadership Podcast E64, March 2026):**
+- Sales cycle modeled and disciplined: 30-45 days
 - Every stage conversion rate tracked and used for planning
 - CRO approach: build the model bottom-up from actual productivity, not top-down from board targets
 
@@ -462,9 +460,9 @@ A starting template for leaders who want to build predictable revenue operations
 
 **Source:** https://www.therevenueleadershippodcast.com/p/my-team-drives-4x-revenue-per-ae
 
-### Operating Rhythm Assessment (new diagnostic tool)
+### Operating Rhythm Assessment
 
-Add this to the start of any cadence design engagement:
+Run this assessment at the start of your cadence design process:
 
 | Dimension | Score 1 (Weak) | Score 3 (Adequate) | Score 5 (Strong) |
 |-----------|---------------|-------------------|-----------------|
@@ -496,7 +494,7 @@ Add this to the start of any cadence design engagement:
 
 ---
 
-### The 10-Minute Board Defence
+### The 10-Minute Board Defense
 
 A structured alternative to the 40-slide board deck. Five questions, one page, ten minutes.
 
@@ -514,6 +512,6 @@ A structured alternative to the 40-slide board deck. Five questions, one page, t
 
 **Anti-pattern:** 40-slide deck → 2 hours to prepare → board skips to bad news → CRO defensive → ends with "send us the data" → trust erodes.
 
-**The framework:** 10-minute defence → 30 minutes to prepare → board gets answers immediately → CRO leads the conversation → ends with clear decisions → trust compounds.
+**The framework:** 10-minute defense → 30 minutes to prepare → board gets answers immediately → CRO leads the conversation → ends with clear decisions → trust compounds.
 
 > Built by [Neon Triforce](https://neontriforce.com)

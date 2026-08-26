@@ -1,7 +1,7 @@
 ---
 name: "marketing-operations"
 title: Marketing operations
-description: "Marketing operations for B2B revenue teams: lead scoring, attribution, campaign tracking, and handoff protocols. Use when the user mentions marketing operations, marops, lead scoring, MQL definition, MQL to SQL handoff, lead routing, attribution modeling, multi-touch attribution, W-shaped attribution, marketing sourced pipeline, campaign operations, UTM taxonomy, demand gen ops, channel mix, marketing SLA, speed to lead, ICP fit scoring, SPICED lead scoring, ICP fit matrix, selection fit, urgency fit, qualification tier scoring, T1 T2 T3 leads, or ICP fit scoring. Also trigger when someone says \"sales says our leads are garbage\" or \"we can't attribute revenue to campaigns.\" BOUNDARY: Covers marketing OPERATIONS (lead management, attribution, campaign ops). For HubSpot, see revops-hubspot. For funnel math, see revops-metrics. For ICP BUILDING methodology (GAP method, customer interviews), see icp-builder."
+description: "Marketing operations for B2B revenue teams: lead scoring, attribution, campaign tracking, and handoff protocols. Use when the user mentions marketing operations, marops, lead scoring, MQL definition, MQL to SQL handoff, lead routing, attribution modeling, multi-touch attribution, W-shaped attribution, marketing sourced pipeline, campaign operations, UTM taxonomy, demand gen ops, channel mix, marketing SLA, speed to lead, ICP fit scoring, SPICED lead scoring, ICP fit matrix, selection fit, urgency fit, qualification tier scoring, T1 T2 T3 leads, or ICP fit scoring. Also trigger when someone says 'sales says our leads are garbage' or 'we can't attribute revenue to campaigns.' BOUNDARY: Covers marketing OPERATIONS (lead management, attribution, campaign ops). For HubSpot, see revops-hubspot. For funnel math, see revops-metrics. For ICP BUILDING methodology (GAP method, customer interviews), see icp-builder."
 category: RevOps
 ---
 
@@ -25,7 +25,7 @@ SAL:         Sales reviewed and accepted. Now tracked as pipeline.
 SQL:         In an open opportunity. Discovery scheduled or completed.
 ```
 
-Without this clarity, you can't measure handoff quality. A €30M ARR firm had "MQL" defined five different ways across regions. Dead pipeline reporting.
+Without this clarity, you can't measure handoff quality. A high-growth firm had "MQL" defined five different ways across regions. Dead pipeline reporting.
 
 ### Lead Scoring: Dual-Axis Model
 
@@ -42,7 +42,7 @@ FIT SCORE (Account-Level, 0-100)            ENGAGEMENT SCORE (Behavior-Level, 0-
 MQL = Fit ≥40 AND Engagement ≥30
 
 This prevents routing "right customer, wrong time" and "active bad-fit" leads.
-In practice, clients implementing this split report MQL acceptance improvements of 5-15 percentage points; one €40M ARR platform reported 62% to 81% (practice-based).
+In practice, teams implementing this split report MQL acceptance improvements of 5-15 percentage points; one high-growth platform reported 62% to 81% (practice-based).
 ```
 
 ### Lead Scoring Calibration Process (Quarterly)
@@ -59,7 +59,7 @@ In practice, clients implementing this split report MQL acceptance improvements 
 
 ### SPICED-Based ICP Fit Scoring (Advanced)
 
-When a client uses the SPICED qualification framework, replace the generic Fit Score with a SPICED ICP Fit Matrix: scoring two independent dimensions (Selection Fit: is this our ICP? / Urgency Fit: are they ready now?) to assign a qualification tier (T1/T2/T3). This produces more accurate MQL scoring because it uses the same language sales uses to qualify deals.
+When your organization uses the SPICED qualification framework, replace the generic Fit Score with a SPICED ICP Fit Matrix: scoring two independent dimensions (Selection Fit: is this our ICP? / Urgency Fit: are they ready now?) to assign a qualification tier (T1/T2/T3). This produces more accurate MQL scoring because it uses the same language sales uses to qualify deals.
 
 For the full Selection Fit and Urgency Fit scoring tables, tier matrix, and quarterly calibration method, see `references/spiced-icp-fit-matrix.md`.
 
@@ -103,7 +103,7 @@ MARKETING DELIVERS:
 
 SALES COMMITS:
   Review + accept/reject within 24 hours
-  Every rejection categorised: bad fit | low intent | wrong timing | duplicate | wrong role
+  Every rejection categorized: bad fit | low intent | wrong timing | duplicate | wrong role
 
 HEALTHY ACCEPTANCE RATE: 60-80%
   Below 50% = scoring broken, audit fit/engagement thresholds or sales definition mismatch
@@ -123,7 +123,7 @@ TERRITORY-BASED: Geographic or segment assignment. Clear accountability.
 ACCOUNT-BASED:   Route to AE owning parent account. Requires clean hierarchy.
 CAPACITY-BASED:  Route to whoever has bandwidth. Prevents overload.
 
-RECOMMENDATION (€15-150M): Start territory-based. Add capacity weighting.
+RECOMMENDATION (high-growth): Start territory-based. Add capacity weighting.
 Migrate to account-based only with mature account hierarchy + TALs.
 ```
 
@@ -158,8 +158,8 @@ Track four key conversion moments:
 3. OPPORTUNITY CREATION (eval):    What triggered deal opening?      → 30% credit
 4. CLOSE (decision):               Last marketing touch before buy   → 20% credit
 
-Example: LinkedIn ad (first) → blog reads → webinar (MQL) → retarget (opp) → close €95K
-  LinkedIn: 30% = €28.5K | Organic: 20% = €19K | Email: 30% = €28.5K | Retarget: 20% = €19K
+Example: LinkedIn ad (first) → blog reads → webinar (MQL) → retarget (opp) → close $95K
+  LinkedIn: 30% = $28.5K | Organic: 20% = $19K | Email: 30% = $28.5K | Retarget: 20% = $19K
 ```
 
 ### Marketing-Sourced vs. Marketing-Influenced
@@ -178,14 +178,14 @@ Different stakeholders care about different ones.
 ### Attribution Data Architecture
 
 ```
-UTM TAXONOMY (standardise or attribution is theater):
+UTM TAXONOMY (standardize or attribution is theater):
   utm_source:   channel type (google, linkedin, email, event, partner)
   utm_medium:   media type (cpc, display, social, organic, referral)
   utm_campaign: structured ID (camp-2026-q1-demand-gen-eu)
   utm_content:  variant (ebook-v1, hero-image-v2)
 
 GOVERNANCE: Enforce 20-30 campaign values per quarter max.
-A €50M ARR firm had 847 different utm_campaign values. Useless.
+A high-growth firm had 847 different utm_campaign values. Useless.
 
 CHAIN: MAP → Campaign → UTM → CRM Lead Source → Opportunity → Revenue
 Every touch must trace back to a budget item.
@@ -211,7 +211,7 @@ For the full naming convention with examples and the campaign-to-revenue dashboa
 
 ### Channel Mix & Budget Allocation
 
-Build a balanced channel portfolio (recommended mix at €30-80M ARR: Outbound 30% | Inbound 30% | Paid 15% | Events/Partners 15% | PLG 10%) to reduce concentration risk, and allocate budget by blending three methods: historical ROI, pipeline contribution, and strategic goals.
+Build a balanced channel portfolio (recommended mix for high-growth companies: Outbound 30% | Inbound 30% | Paid 15% | Events/Partners 15% | PLG 10%) to reduce concentration risk, and allocate budget by blending three methods: historical ROI, pipeline contribution, and strategic goals.
 
 For the full channel-mix table (typical pipeline %, time to mature, CAC efficiency per channel) and the three budget-allocation methods, see `references/channel-mix-budget-allocation.md`.
 
@@ -221,11 +221,11 @@ Track: "Of inbound leads, % that match ICP." If 68% of inbound are outside your 
 
 ### AI-Assisted Inbound Qualification
 
-When AI is deployed for inbound lead qualification (via Qualified, Agentforce, or custom agents), the scoring model adapts: AI adds behavioural-intent signals (multi-touch patterns humans miss) and real-time SPICED-style qualification via chat before a human gets involved. SaaStr case study: 71% of Q4 2025 closed-won deals came from AI-qualified inbound, up from a 29-34% baseline (SaaStr, October 2025).
+When AI is deployed for inbound lead qualification (via Qualified, Agentforce, or custom agents), the scoring model adapts: AI adds behavioral-intent signals (multi-touch patterns humans miss) and real-time SPICED-style qualification via chat before a human gets involved. SaaStr case study: 71% of Q4 2025 closed-won deals came from AI-qualified inbound, up from a 29-34% baseline (SaaStr, October 2025).
 
 **Critical 2026 practices for AI scoring:** Model drift (when production scoring diverges from true win rates by >10%) triggers automated retraining; set monthly drift monitors comparing AI predictions vs actual outcomes. Multi-version testing requires holdout groups (10-15% of inbound) routed to challenger scoring models; measure MQL acceptance, SAL rate, and win rate by model version before rolling winner to production. Batch vs real-time tradeoff: batch scoring (nightly recalibration on prior day's data) is stable but blind to intra-day market signals; real-time scoring (streaming, recalibrate every 4 hours) adds latency risk but captures signal decay in engagement (a lead hot yesterday may cool today).
 
-For the implementation pattern, behaviour-based lead segmentation, and full SaaStr case detail, see `references/ai-inbound-qualification.md`.
+For the implementation pattern, behavior-based lead segmentation, and full SaaStr case detail, see `references/ai-inbound-qualification.md`.
 
 ### Customer Interviews as a Marketing Data Source
 
@@ -240,7 +240,7 @@ For the interview→marketing pipeline table (interview output → marketing use
 ```
 MARKETING COMMITS TO:                      SALES COMMITS TO:
 ├─ X MQLs/month meeting scoring criteria   ├─ Review each MQL within 24 hours
-├─ Lead data quality (name, email, company)├─ Accept/reject with categorised reason
+├─ Lead data quality (name, email, company)├─ Accept/reject with categorized reason
 ├─ MQL delivered within 1 hour             ├─ Follow up on SAL within 4 hours
 ├─ Weekly report on rejection trends       ├─ Pipeline visibility (weekly updates)
 └─ Attribution clarity within 5 days EOMonth└─ Win/loss feedback quarterly
@@ -255,7 +255,7 @@ IF EITHER SIDE BREAKS SLA:
 
 ```
 WHAT IS AN MQL?     "Fit ≥40 AND Engagement ≥30 in last 30 days"
-WHAT IS PIPELINE?   "Opp in Discovery+ stage, close date within 12 months, value ≥€30K"
+WHAT IS PIPELINE?   "Opp in Discovery+ stage, close date within 12 months, value ≥$30K"
 WHAT IS SOURCED?    "SAL created from MQL handoff, accepted by sales"
 WHAT IS INFLUENCED? "Closed revenue where contact touched marketing at any point"
 
@@ -282,7 +282,7 @@ LEVEL 3 (OPERATIONAL):   Dual-axis scoring (calibrated quarterly). Smart routing
                          Symptom: "We know what works and what doesn't."
 
 LEVEL 4 (STRATEGIC):     Predictive scoring. Marketing-as-revenue-center.
-                         Full attribution. Real-time budget optimisation.
+                         Full attribution. Real-time budget optimization.
                          Marketing forecasts pipeline 3-6 months out.
                          Symptom: "Marketing is a growth engine, not a cost center."
 
@@ -295,7 +295,7 @@ MAP (HubSpot, Marketo, Klaviyo) is the engine: lead creation, scoring, email, ro
 
 **Enrichment strategy post-cookie-deprecation:** Third-party enrichment (ZoomInfo, Apollo) now costs ~20% more to deliver equivalent match rates and data freshness (McKinsey, 2026). Build zero-party data capture (ask on forms: company size, team size, budget, use case) as primary. Enrichment as fallback when form data missing. Enrich only MQLs (not all leads) to manage cost. For data failures (no match on 10-15% of leads): expect this, route to SDR for phone validation instead of abandoning leads.
 
-Add intent data when: you have mature ABM and need to prioritise accounts showing buying signals (only 5% of TAM in-market at any time; first vendor contacted wins ~80% of deals, Gartner 2026). Most scale-ups don't need paid intent data yet.
+Add intent data when: you have mature ABM and need to prioritize accounts showing buying signals (only ~5% of TAM is in-market in a given quarter, per the 95:5 rule, Ehrenberg-Bass Institute, 2021; buyers' pre-contact favorite vendor wins roughly 80% of the time, 6sense Buyer Experience Report, 2024). Most scale-ups don't need paid intent data yet.
 
 For full stack evaluation, see **revops-tech-stack**.
 
@@ -304,7 +304,7 @@ For full stack evaluation, see **revops-tech-stack**.
 
 The lead scoring and attribution sections above cover the mechanics. This section covers the operational process: the step-by-step flow from first touch to qualified pipeline.
 
-**Source:** Adapted from Union Square Consulting's Inbound Pyramid. This skill applies it as the process layer beneath the scoring mechanics.
+The Inbound Pyramid is the process layer beneath the scoring mechanics.
 
 ### Customer Journey Map (Prerequisite)
 
@@ -368,7 +368,7 @@ REVIEW: Monthly with Marketing + Sales leadership.
 Track trends, not absolutes. Degradation = signal to investigate.
 ```
 
-**Account-level propensity and signal decay in ABM:** For mature ABM programmes, supplement lead-level reporting with account-level propensity scoring: predict likelihood of account entering pipeline within 90 days based on engagement velocity, content depth, contact density (how many decision-makers engaged), and signal recency (a signal from 60 days ago is weaker than one from 7 days). Measure account penetration depth (how many contacts per account, by role): target >3 roles engaged for T1 accounts. Signal decay model: engagement signal half-life ~30 days (an activity-based account score peaks at activity date, degrades 50% after 30 days, 75% after 60 days) so account engagement trending down is early warning of deal risk.
+**Account-level propensity and signal decay in ABM:** For mature ABM programs, supplement lead-level reporting with account-level propensity scoring: predict likelihood of account entering pipeline within 90 days based on engagement velocity, content depth, contact density (how many decision-makers engaged), and signal recency (a signal from 60 days ago is weaker than one from 7 days). Measure account penetration depth (how many contacts per account, by role): target >3 roles engaged for T1 accounts. Signal decay model: engagement signal half-life ~30 days (an activity-based account score peaks at activity date, degrades 50% after 30 days, 75% after 60 days) so account engagement trending down is early warning of deal risk.
 
 ABM account-level reporting (account coverage, account generation, pipeline generation, ABM/inbound revenue) lives in `references/inbound-operations-detail.md` alongside the rest of the inbound operational layer.
 
@@ -383,7 +383,7 @@ ABM account-level reporting (account coverage, account generation, pipeline gene
 
 **GPAI Transparency (Article 26):** If AI assists lead scoring or qualification, disclose to the contact that an AI system was involved in reaching them. Regulation in force since 2 August 2025. Simple disclosure: "An AI qualification system helped identify your company as a potential fit" in the first outreach email or call intro.
 
-**Data Minimisation:** Collect only data needed for scoring. Resist the urge to enrich every lead; enrich only MQLs to manage consent and GDPR risk.
+**Data Minimization:** Collect only data needed for scoring. Resist the urge to enrich every lead; enrich only MQLs to manage consent and GDPR risk.
 
 ## 90-Day Sprint
 
@@ -399,11 +399,11 @@ By month 4 you're at Level 2. Keep pushing to Level 3.
 
 ---
 
-## Norton Framework Additions (Source: Aviv Canaani, Revenue Leadership Podcast, Mar 2026)
+## Framework Additions
 
-The Norton "Inbound Flip" strategy engineers an inbound-dominant GTM motion that produces 4x revenue per AE: start with paid across LinkedIn/Google/counterintuitive channels, build an organic engine in parallel, lean into inbound when outbound drops, and use brand as air cover. Supporting data (HubSpot: inbound costs 61% less; 6sense: buyer initiates first contact 83% of the time), the win-rate-first channel quality ranking, the brand-protection-as-architecture principle, and the Donovan (E61) outbound channel destruction data all argue for shifting budget away from cold outbound email.
+The "Inbound Flip" strategy engineers an inbound-dominant GTM motion that produces 4x revenue per AE: start with paid across LinkedIn/Google/counterintuitive channels, build an organic engine in parallel, lean into inbound when outbound drops, and use brand as air cover. Supporting data (HubSpot: inbound costs 61% less; 6sense: buyer initiates first contact 83% of the time), the win-rate-first channel quality ranking, the brand-protection-as-architecture principle, and the outbound channel destruction data (The Revenue Leadership Podcast E61, 2026) all argue for shifting budget away from cold outbound email.
 
-For the full flip mechanics, the supporting data citations, the channel quality ranking, and the outbound channel destruction table, see `references/norton-inbound-flip-strategy.md`.
+For the full flip mechanics, the supporting data citations, the channel quality ranking, and the outbound channel destruction table, see `references/inbound-flip-strategy.md`.
 
 ## How to Use This Skill
 
@@ -421,13 +421,13 @@ For the full flip mechanics, the supporting data citations, the channel quality 
 
 | File | When to read | What's inside |
 |------|-------------|---------------|
-| `references/spiced-icp-fit-matrix.md` | When a client uses SPICED for lead scoring | Selection Fit + Urgency Fit scoring tables, T1/T2/T3 tier matrix, quarterly calibration |
+| `references/spiced-icp-fit-matrix.md` | When your organization uses SPICED for lead scoring | Selection Fit + Urgency Fit scoring tables, T1/T2/T3 tier matrix, quarterly calibration |
 | `references/campaign-taxonomy-reporting.md` | Setting up campaign naming or reporting | Campaign naming convention with examples, campaign-to-revenue dashboard layout |
 | `references/channel-mix-budget-allocation.md` | Planning demand-gen spend | Channel-mix table (pipeline %, time to mature, CAC), three budget-allocation methods |
-| `references/ai-inbound-qualification.md` | When AI handles inbound qualification | Implementation pattern, behaviour-based segmentation, full SaaStr case |
+| `references/ai-inbound-qualification.md` | When AI handles inbound qualification | Implementation pattern, behavior-based segmentation, full SaaStr case |
 | `references/customer-interview-marketing-pipeline.md` | Feeding interview data into MarOps | Interview→marketing pipeline table, quarterly review process |
 | `references/inbound-operations-detail.md` | Designing the inbound operational layer | Speed-to-lead SLAs, routing rules + hierarchy, follow-up cadences, ABM reporting |
-| `references/norton-inbound-flip-strategy.md` | Channel-mix and inbound-flip conversations | Flip mechanics, supporting data citations, channel quality ranking, outbound destruction data |
+| `references/inbound-flip-strategy.md` | Channel-mix and inbound-flip conversations | Flip mechanics, supporting data citations, channel quality ranking, outbound destruction data |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: "gtm-data-architecture"
 title: GTM data architecture
-description: "GTM data architecture for revenue operators who are not data engineers; warehouse-native and zero-copy patterns that have won in the market. Use when designing GTM data stacks, planning data transformation layers, evaluating CDP vendors, building identity resolution and unified customer intelligence, implementing reverse ETL (Hightouch or Census), or assessing data readiness for AI agents. Also trigger on \"data architecture\", \"ELT vs ETL\", \"warehouse-native CDP\", \"composable CDP\", \"reverse ETL implementation\", \"dbt for RevOps\", \"unified health scores\", \"customer data platform strategy\", or \"data mesh for GTM\". BOUNDARY: Covers architecture and transformation layers only. Handoff to revops-data-governance for CRM data quality and governance; to revops-tech-stack for vendor selection frameworks; to gtm-planning for strategy implications. This skill addresses the data layer for a RevOps team scaling AI adoption."
+description: "GTM data architecture for revenue operators who are not data engineers; warehouse-native and zero-copy patterns that have won in the market. Use when designing GTM data stacks, planning data transformation layers, evaluating CDP vendors, building identity resolution and unified customer intelligence, implementing reverse ETL (Hightouch or Census), or assessing data readiness for AI agents. Also trigger on 'data architecture', 'ELT vs ETL', 'warehouse-native CDP', 'composable CDP', 'reverse ETL implementation', 'dbt for RevOps', 'unified health scores', 'customer data platform strategy', or 'data mesh for GTM'. BOUNDARY: Covers architecture and transformation layers only. Handoff to revops-data-governance for CRM data quality and governance; to revops-tech-stack for vendor selection frameworks; to gtm-planning for strategy implications. This skill addresses the data layer for a RevOps team scaling AI adoption."
 category: RevOps
 ---
 
@@ -63,7 +63,7 @@ All modern GTM data stacks follow this shape:
 └──────┘  └─────────┘
 ```
 
-This is 3rd Age data architecture (Brinker, 2026). The warehouse is the hub. Tools do NOT maintain copies. Tools query live (BI tools) or sync on-demand (reverse ETL for activation).
+This is third-age data architecture. The warehouse is the hub. Tools do NOT maintain copies. Tools query live (BI tools) or sync on-demand (reverse ETL for activation).
 
 ## Core Concepts (Defined for Operators)
 
@@ -160,7 +160,7 @@ dbt (data build tool) is how revenue teams define customer metrics in a testable
 
 **Implementation:** Every reverse ETL pipeline has: a warehouse query (the source), a transformation (optional), a destination system (CRM, Slack, email), a sync schedule (usually hourly or event-triggered), and a reconciliation process (monthly audit: do the numbers in the warehouse match what landed in the destination?).
 
-**Scale:** By mid-2026, Hightouch had synced 7.3 trillion plus records and organisations are achieving 15-30% CAC reduction and 25-45% higher conversion rates from warehouse-computed lead scores and routing decisions (Hightouch, 2026).
+**Scale:** By mid-2026, Hightouch had synced 7.3 trillion plus records and organizations are achieving 15-30% CAC reduction and 25-45% higher conversion rates from warehouse-computed lead scores and routing decisions (Hightouch, 2026).
 
 ### Identity Resolution: The Foundation
 
@@ -170,7 +170,7 @@ Identity resolution is the process that matches customer signals across systems 
 
 **Probabilistic matching:** Machine learning. "This profile looks 93% like the same customer based on name, company, location, job title changes." Catches fuzzy matches but requires tuning.
 
-**By 2026, identity resolution is table stakes.** Every serious CDP includes it (CDP.com, 2026). The shift: from tracking individuals (third-party cookies are disappearing) to earning the right to recognise them (first-party data, consent, value exchange). Regulatory: GDPR Article 14 requires notification within one month if data is enriched from external sources; keep a per-contact source trail.
+**By 2026, identity resolution is table stakes.** Every serious CDP includes it (CDP.com, 2026). The shift: from tracking individuals (third-party cookies are disappearing) to earning the right to recognize them (first-party data, consent, value exchange). Regulatory: GDPR Article 14 requires notification within one month if data is enriched from external sources; keep a per-contact source trail.
 
 ### Unified Customer Intelligence: Single Health Score
 
@@ -236,7 +236,7 @@ Each component is a dbt model. Together they update the health score in real-tim
 - Sources: Everything; Salesforce, HubSpot, product analytics, billing, support, external intent data (ZoomInfo, LinkedIn), call recordings + transcripts
 - ELT: Fivetran + Airbyte + custom API connectors (streaming where possible, scheduled batch otherwise)
 - Warehouse: Snowflake or BigQuery (large warehouse for concurrent agent queries)
-- Semantic layer: dbt + dbt Semantic Layer (or Cube.js) for standardised metric definitions
+- Semantic layer: dbt + dbt Semantic Layer (or Cube.js) for standardized metric definitions
 - Transformation: dbt Core (self-managed) or dbt Cloud; models validated, tested, documented for explainability (EU AI Act Article 26(7) requires explainability for high-risk workplace AI)
 - Identity resolution: Composable approach (first-party + probabilistic enrichment via Hightouch or custom ML model)
 - Reverse ETL: Hightouch or Fivetran Activations (real-time sync for agent decisions, monthly reconciliation)
@@ -246,7 +246,7 @@ Each component is a dbt model. Together they update the health score in real-tim
 
 **Effort:** 16 to 24 weeks to design and deploy; ongoing: 1 to 2 data engineers, 1 to 2 analytics engineers, 1 data governance lead, 1 RevOps architect.
 
-**Pitfall:** Jumping to agentic without fixing Patterns 1 and 2 first. Agents amplify bad data (Gartner, 2026). Build governance, identity, and unification layers before adding AI.
+**Pitfall:** Jumping to agentic without fixing Patterns 1 and 2 first. Agents amplify bad data: Gartner predicts 60% of AI projects will be abandoned through 2026 for lack of AI-ready data (Gartner, February 2025). Build governance, identity, and unification layers before adding AI.
 
 ## When NOT to Go Warehouse-Native
 
@@ -258,7 +258,7 @@ Warehouse-native architecture is powerful but not always the right answer. Stay 
 
 **High compliance burden, no data engineering:** Regulated industries (finance, healthcare) sometimes avoid cloud warehouses because of data residency rules. Data must stay on-prem. Cost of managing this usually exceeds warehouse-native benefits.
 
-**Real boundary:** Around 20 seats or sub-€1M ARR, warehouse-native ROI is often negative; around 100 seats or €5M ARR, staying CRM-native is intentionally slower.
+**Real boundary:** Around 20 seats or under $1M ARR, warehouse-native ROI is often negative; around 100 seats or $5M+ ARR, staying CRM-native is intentionally slower.
 
 ## Implementation Roadmap (6 to 12 Months)
 

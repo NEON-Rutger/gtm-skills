@@ -1,7 +1,7 @@
 ---
 name: "revops-tech-stack"
 title: Revenue tech stack architecture
-description: "Revenue technology stack architecture, value engineering, platform evaluation, and capability mapping for B2B GTM teams. Use when the user mentions tech stack, martech stack, sales tech, CRM evaluation, platform selection, tool consolidation, stack audit, build vs buy, integration architecture, composability, iPaaS, CDP, MAP, sales engagement platform, AI tools for GTM, AI maturity, AI orchestration, AI agents, knowledge layer, semantic retrieval, RAG stack, vector database, EU AI stack, GDPR AI tools, knowledge management platform, Glean, Langdock, Weaviate, Qdrant, Pinecone, LlamaIndex, LangChain, Dust.tt, Guru, or Notion AI. Also trigger on \"we have too many tools,\" \"our tools don't talk to each other,\" \"should we buy X or build it,\" \"where should our knowledge live,\" or \"how do we give AI access to our internal docs.\" BOUNDARY: Covers TECHNOLOGY evaluation and architecture. For strategy framing, see revops-strategy. For HubSpot, see revops-hubspot. For data governance, see revops-data-governance."
+description: "Revenue technology stack architecture, value engineering, platform evaluation, and capability mapping for B2B GTM teams. Use when the user mentions tech stack, martech stack, sales tech, CRM evaluation, platform selection, tool consolidation, stack audit, build vs buy, integration architecture, composability, iPaaS, CDP, MAP, sales engagement platform, AI tools for GTM, AI maturity, AI orchestration, AI agents, knowledge layer, semantic retrieval, RAG stack, vector database, EU AI stack, GDPR AI tools, knowledge management platform, Glean, Langdock, Weaviate, Qdrant, Pinecone, LlamaIndex, LangChain, Dust.tt, Guru, or Notion AI. Also trigger on 'we have too many tools,' 'our tools don't talk to each other,' 'should we buy X or build it,' 'where should our knowledge live,' or 'how do we give AI access to our internal docs.' BOUNDARY: Covers TECHNOLOGY evaluation and architecture. For strategy framing, see revops-strategy. For HubSpot, see revops-hubspot. For data governance, see revops-data-governance."
 category: RevOps
 ---
 
@@ -29,8 +29,8 @@ This distinction matters because:
    process. The capability isn't "recording calls". It's "turning buyer
    signals into rep behavior change."
 
-3. Stages matter. At €5M ARR with 5 reps, you don't need an enterprise
-   ABM platform. At €50M with 50 reps across 3 segments, you do. The
+3. Stages matter. At $5M ARR with 5 reps, you don't need an enterprise
+   ABM platform. At $50M with 50 reps across 3 segments, you do. The
    capability need changes with stage, and tools should follow.
 ```
 
@@ -187,16 +187,16 @@ CUT (low fit, low value):
    maintenance cost. Budget for integration work as a percentage of tool cost annually (practice-based). If you can't integrate it
    with your CRM, don't buy it.
 
-5. STAGE-APPROPRIATE COMPLEXITY: At €5M ARR, HubSpot Professional
-   with 3-4 satellite tools is enough. At €50M, you might need
+5. STAGE-APPROPRIATE COMPLEXITY: At $5M ARR, HubSpot Professional
+   with 3-4 satellite tools is enough. At $50M, you might need
    Salesforce Enterprise with 15+ integrated tools. Don't build
-   a €50M stack at €5M. And don't run a €5M stack at €50M.
+   a $50M stack at $5M. And don't run a $5M stack at $50M.
 
 6. AUTOMATE THE DATA, NOT THE THINKING: Automate data capture,
    syncing, enrichment, and routing. Don't automate decision-
    making until you've proven the decision logic manually.
 
-7. COMPOSABILITY OVER SUITES: Modern stacks increasingly favour
+7. COMPOSABILITY OVER SUITES: Modern stacks increasingly favor
    best-of-breed tools connected via APIs over monolithic suites.
    However, integration cost is real. Sometimes the 80% suite
    solution beats the 100% best-of-breed solution when you
@@ -205,7 +205,7 @@ CUT (low fit, low value):
 
 ### Stack by Stage
 
-Stack composition scales with stage: Startup (€0-5M ARR, <10 GTM) runs 3-5 tools at €5-15K/year; Scale-up (€5-25M, 10-50 GTM) runs 6-12 tools at €50-200K/year; Growth (€25-100M, 50-200 GTM) runs 12-20 tools at €300K-1M/year (practice-based). Don't build a Growth stack at Startup scale. Note: HubSpot pricing shifted to seat-based + AI credits (€0.009/token, since March 2024) plus contact overage blocks; actual scale-up TCO typically exceeds per-seat pricing.
+Stack composition scales with stage: Startup ($0-5M ARR, <10 GTM) runs 3-5 tools at $5-15K/year; Scale-up ($5-25M, 10-50 GTM) runs 6-12 tools at $50-200K/year; Growth ($25-100M, 50-200 GTM) runs 12-20 tools at $300K-1M/year (practice-based). Don't build a Growth stack at Startup scale. Note: HubSpot pricing shifted to seat-based + AI credits ($0.009/token, since March 2024) plus contact overage blocks; actual scale-up TCO typically exceeds per-seat pricing.
 
 For the full per-stage tool lists (CRM, marketing, engagement, intelligence, integration, documents), tool counts, and budget ranges, see `references/stack-by-stage-reference.md`.
 
@@ -245,7 +245,7 @@ Before recommending any AI tool, validate:
 | Lawful basis documented (Article 6 GDPR) | Determine and document purpose limitation before deployment |
 | Vendor DPA confirmed (Article 28 GDPR) | Ensure data processing agreement covers AI processing and data location |
 
-**Rule:** If 3+ prerequisites missing, the client is not ready for AI in that area.
+**Rule:** If 3+ prerequisites missing, you are not ready for AI in that area.
 
 ### AI Use Cases by Bowtie Stage (Quick Reference)
 
@@ -261,14 +261,14 @@ Before recommending any AI tool, validate:
 
 For the full AI use case catalog with detailed requirements and KPIs per use case, see `references/gtm-ai-catalog.md`.
 
-### The 90/10 Rule for AI Tool Investment (SaaStr / Kyle Norton)
+### The 90/10 Rule for AI Tool Investment
 
 Buy 90% of your AI stack. Only build the 10% where ALL three conditions are true:
 1. No vendor can do it well enough
 2. It's a P1 priority for the business
 3. It requires specific internal data or control that can't be outsourced
 
-Kyle Norton (Owner.com, 100+ AI-infused sales team) follows this rule. SaaStr follows it too. They run 20+ agents, almost all from commercial vendors.
+A 20-agent stack that follows this rule buys almost every agent from commercial vendors and builds only where it differentiates.
 
 **When to build (the 10%):**
 - Proprietary data models that use internal signals no vendor has access to
@@ -282,8 +282,6 @@ Kyle Norton (Owner.com, 100+ AI-infused sales team) follows this rule. SaaStr fo
 - Meeting scheduling and routing (Chili Piper, Default)
 - CRM automation and scoring (native HubSpot/Salesforce AI, Salesforce Agentforce)
 - GTM AI revenue intelligence (Clari, Aviso with native Claude/GPT integration)
-
-Source: SaaStr AI Agent Playbook, Part 13; Kyle Norton (Owner.com)
 
 ## Tool Evaluation Framework
 
@@ -329,26 +327,24 @@ The best AI vendors do 80% of the heavy lifting in the first 30-60 days. When ev
 - "It's easy, you can set it up in an afternoon"
 - No named person responsible for your success in the first quarter
 
-SaaStr's rule: if the vendor won't put skin in the game during onboarding, they don't believe their own product works out of the box. Because it doesn't. AI tools require configuration, training data, and iteration.
-
-Source: SaaStr AI Agent Playbook, Part 10
+The rule: if the vendor won't put skin in the game during onboarding, they don't believe their own product works out of the box. Because it doesn't. AI tools require configuration, training data, and iteration.
 
 ### Vendor AI Integration Trend (2026)
 
-Revenue intelligence vendors (Clari, Aviso) have integrated Claude and GPT natively into their platforms. This means: AI models now ship inside the tools rather than as bolt-on features. For clients evaluating revenue intelligence platforms, factor in AI capability parity across vendors, not just forecasting accuracy. A platform with native Claude/GPT integration often requires less custom prompting and simpler integration than building your own RAG layer.
+Revenue intelligence vendors (Clari, Aviso) have integrated Claude and GPT natively into their platforms. This means: AI models now ship inside the tools rather than as bolt-on features. When you are evaluating revenue intelligence platforms, factor in AI capability parity across vendors, not just forecasting accuracy. A platform with native Claude/GPT integration often requires less custom prompting and simpler integration than building your own RAG layer.
 
 ### Multi-Agent Architecture: Current State of Play (2026)
 
 Running 20+ AI agents is not orchestrated. It's duct tape.
 
-SaaStr's honest assessment of their 20-agent stack:
+One published 20-agent stack, honestly assessed:
 - Webhooks everywhere
 - Zapier as "MCP light" for inter-agent communication
 - No native orchestration platform that actually works
 - Copy-paste between agents is sometimes faster than building the webhook
 - One source of truth (pick Salesforce OR HubSpot, not both)
 
-**What this means for clients:**
+**What this means for you:**
 - Don't expect seamless multi-agent workflows from day one
 - Start with 1-2 agents, get them working, then expand
 - Budget for integration overhead (webhooks, Zapier, custom API calls)
@@ -360,8 +356,6 @@ SaaStr's honest assessment of their 20-agent stack:
 2. Zapier/Make/n8n as the middleware layer (triggers, data routing)
 3. Individual agents operate in defined lanes (one motion per agent)
 4. Human reviews cross-agent decisions (agents don't overrule each other)
-
-Source: SaaStr AI Agent Playbook, Part 13
 
 ## Stack Audit Process
 
@@ -395,13 +389,13 @@ Source: SaaStr AI Agent Playbook, Part 13
 
 ---
 
-## Norton Framework Additions (Source: Kyle Norton, Revenue Leadership Podcast, Jan 2026)
+## Framework Additions
 
-### Sales Engagement Platform Composability & AI Orchestration (Norton Model)
+### Sales Engagement Platform Composability & AI Orchestration
 
 Most sales engagement platforms are slapping AI into closed ecosystems. Revenue leaders need the opposite: composability, an open API ecosystem, control over how the product works, bring-your-own-model with no token constraints, and the ability to build on top of tools rather than be trapped by them. This is the "Shopify model" for sales tech (simple out of the box, endlessly customizable, developer-centric). As tools proliferate, orchestration becomes the competitive advantage, and the centralized AI model (a small expert team owning AI transformation from the center out) outperforms reps managing their own tools.
 
-For the full Composability Maturity Levels (1 Monolithic → 5 AI-Native), the AI Sophistication Ladder (basic chat → full applications), evaluation questions, and the Norton/Owner.com centralized AI model detail, see `references/norton-framework-composability-detail.md`.
+For the full Composability Maturity Levels (1 Monolithic → 5 AI-Native), the AI Sophistication Ladder (basic chat → full applications), evaluation questions, and the centralized AI model detail, see `references/composability-maturity-detail.md`.
 
 ### Technical RevOps Competencies for Composable Stacks
 
@@ -446,13 +440,13 @@ RevOps needs to get more technical. You need people who can do more themselves r
 
 ---
 
-## Composable MarTech Architecture (Brinker/Databricks, March 2026)
+## Composable MarTech Architecture
 
-When assessing a client's tech stack, evaluate against the Composable Canvas framework. This is the emerging architectural model for the "3rd Age of MarTech."
+When assessing your tech stack, evaluate it against the Composable Canvas framework. This is the emerging architectural model for the "3rd Age of MarTech."
 
 ### The Integration Maturity Curve
 
-Assess where the client sits:
+Assess where you sit:
 
 | Stage | Architecture | Complexity | Diagnostic question |
 |---|---|---|---|
@@ -476,7 +470,7 @@ Use as a capability audit lens:
 
 ### Composability Decision Filter
 
-For every vendor evaluation or build-vs-buy decision, apply these four tests (Brinker, 2026):
+For every vendor evaluation or build-vs-buy decision, apply these four tests:
 
 1. **Openness:** Does it use open standards, open data formats, open APIs? Or does it create proprietary lock-in?
 2. **Adjacency:** Can it operate close to the data, or does it require moving/copying data elsewhere?
@@ -490,7 +484,7 @@ Beyond the 15,000+ commercial martech products, companies increasingly build cus
 - **Citizen-developed applications**. Marketing ops building custom dashboards, calculators, automations
 - **Agent-generated software**. AI creates code on-the-fly to accomplish specific tasks, then discards it
 
-"Your competitors can buy the same products you can. Custom software captures what makes your company unique." (Brinker, 2026). When advising clients on build-vs-buy, frame custom development as a differentiation investment, not just a cost centre.
+Your competitors can buy the same products you can; custom software is where what makes your company unique gets captured. When evaluating build-vs-buy decisions, frame custom development as a differentiation investment, not just a cost center.
 
 
 
@@ -512,7 +506,7 @@ Four components required:
 
 ### Stack Options and Vendor Detail
 
-Two stack philosophies, each split into buy (managed platform) versus build (custom RAG). The **US stack** is speed-first and feature-rich (Glean/Guru/Notion to buy; LlamaIndex + Pinecone to build). The **EU stack** is compliance-first and sovereign (Langdock/Microsoft Copilot to buy; LlamaIndex + Qdrant EU + Mistral, self-hosted, to build). This is critical for Dutch and EU teams, since there is no EU-native equivalent of Glean. For Claude API users, Claude Projects (2025-2026) offers file-based RAG at low cost, though without live data connections; suitable for compliance-first stacks prioritising cost control. Tool choice is gated by a GDPR/regulated-industry/works-council compliance decision tree and scales by stage.
+Two stack philosophies, each split into buy (managed platform) versus build (custom RAG). The **US stack** is speed-first and feature-rich (Glean/Guru/Notion to buy; LlamaIndex + Pinecone to build). The **EU stack** is compliance-first and sovereign (Langdock/Microsoft Copilot to buy; LlamaIndex + Qdrant EU + Mistral, self-hosted, to build). This is critical for Dutch and EU teams, since there is no EU-native equivalent of Glean. For Claude API users, Claude Projects (2025-2026) offers file-based RAG at low cost, though without live data connections; suitable for compliance-first stacks prioritizing cost control. Tool choice is gated by a GDPR/regulated-industry/works-council compliance decision tree and scales by stage.
 
 **Key technical insight.** Chunking quality constrains retrieval accuracy more than embedding model choice. Semantic chunking outperforms naive chunking significantly (practice-based). Design the chunking strategy first; pick tools second.
 
@@ -525,7 +519,7 @@ For the full vendor/pricing matrix (US and EU, buy and build), the compliance de
 | `references/capability-catalog-reference.md` | Designing/auditing the Intelligence or Automation layer | Per-capability detail (capability, value, ARR/headcount triggers, architecture rule, tool choices) for conversation intelligence, intent/enrichment, CS platform, revenue intelligence, iPaaS, document/CPQ, data ops |
 | `references/stack-by-stage-reference.md` | Sizing a stack to company stage | Full Startup / Scale-up / Growth tool lists, tool counts, budget ranges |
 | `references/tool-evaluation-rubric.md` | Scoring a specific tool purchase | Weighted scoring dimensions (Capability Fit 40 / Integration 25 / TCO 20 / Vendor Viability 15) with questions |
-| `references/norton-framework-composability-detail.md` | Assessing composability/orchestration maturity | Composability Maturity Levels (1-5), AI Sophistication Ladder, evaluation questions, Norton/Owner.com centralized AI model |
+| `references/composability-maturity-detail.md` | Assessing composability/orchestration maturity | Composability Maturity Levels (1-5), AI Sophistication Ladder, evaluation questions, centralized AI model |
 | `references/ai-knowledge-stack-vendor-matrix.md` | Recommending a knowledge/RAG stack | Full US & EU vendor/pricing matrix (buy & build), compliance decision tree, dual stage recommendations, vendor review summary |
 | `references/ai-knowledge-stack-reference.md` | Quick knowledge-stack lookup | Condensed AI knowledge stack reference |
 | `references/gtm-ai-catalog.md` | Full AI use-case catalog by bowtie stage | Detailed requirements and KPIs per use case |

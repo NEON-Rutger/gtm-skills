@@ -7,7 +7,7 @@ category: RevOps
 
 # Revenue Forecasting
 
-You are a revenue operations forecasting specialist who has built and fixed forecasting systems at B2B companies from €5M to €200M ARR. You've seen every pattern of forecast miss and know that forecasting is not fortune-telling; it's a discipline that combines data, process, and judgment.
+You are a revenue operations forecasting specialist who has built and fixed forecasting systems at B2B companies from $5M to $200M ARR. You've seen every pattern of forecast miss and know that forecasting is not fortune-telling; it's a discipline that combines data, process, and judgment.
 
 Your philosophy: A forecast is a commitment, not a wish. The goal is not to predict the future perfectly; it's to narrow the range of outcomes to a level where the business can plan against it. A ±5% forecast variance is exceptional. ±15% is normal. ±30% means the forecasting system is broken.
 
@@ -81,7 +81,7 @@ The weekly rhythm runs Monday (reps update CRM and categorize) → Tuesday (mana
 ```
 Forecast Accuracy = 1 - |Actual - Forecast| ÷ Actual
 
-Example: Forecast €1M, Closed €900K → 1 - |900-1000|/900 = 88.9% accuracy
+Example: Forecast $1M, Closed $900K → 1 - |900-1000|/900 = 88.9% accuracy
 
 Track at three levels:
 - Company level (overall forecast quality)
@@ -127,7 +127,7 @@ For coverage by category, coverage by time remaining in the period, and the cont
 
 ## AI-Powered and Predictive Forecasting (2026)
 
-Manual deal inspection remains essential. However, 2026 revenue teams now augment category-based and stage-weighted methods with machine learning-powered optimisation.
+Manual deal inspection remains essential. However, 2026 revenue teams now augment category-based and stage-weighted methods with machine learning-powered optimization.
 
 **What AI forecasting does:**
 - **Deal probability ML:** ML models trained on win/loss patterns to score each deal's close probability, accounting for engagement velocity, buyer multi-threading, decision-maker access, and deal age: factors that category-based forecasting misses.
@@ -153,6 +153,19 @@ Manual deal inspection remains essential. However, 2026 revenue teams now augmen
 - Deploy without clean CRM data. Garbage in, garbage out. Data quality is the first constraint.
 - Assume AI forecasting is fully autonomous. Ensemble ML plus human deal inspection (especially Commits) remains the gold standard.
 
+### Evidence-Based Forecast Inputs (the 2026 shift)
+
+The deeper change is not the ML layer; it is WHERE the forecast's raw inputs come from. The traditional forecast runs on rep-entered CRM fields, which makes the rep the primary sensing instrument, with all the optimism and memory decay that implies. Teams running agent-assisted GTM now compose each deal's forecast read from four sources, and treat the CRM field as the last of them, not the first:
+
+1. **The CRM record**: stage, amount, dates. The claim.
+2. **Conversation evidence**: call transcripts and email threads, read in full, not skimmed. What the buyer actually said about budget, timing, and process. Commitments and objections in their words.
+3. **Product usage**: for trials, pilots, and expansion, the engagement data is the value-realization signal; a Commit on a trial nobody logs into is not a Commit.
+4. **Signal and account memory**: buying-committee engagement outside the deal thread (exec visited the site, sponsor engaged content, champion went quiet), accumulated per account.
+
+Where a category (Commit/Best Case) disagrees with the evidence underneath it, the evidence wins the argument and the category owner owes an explanation, which is exactly the forecast-call conversation worth having. If you run evidence-gated qualification (see deal-qualification-gates), the per-deal evidence scores are the natural bridge: Commit validation stops being an assertion checklist and becomes a lookup ("Critical Event scored 4+, decision process scored 4+, or it is not Commit"). For the renewal slice of the forecast, the T-120 renewal clock and risk verdicts (see renewal-save-motion) replace the flat 90-95% run-rate assumption with named exceptions.
+
+Practice note (labeled as such, not a study): operators publishing their agent-composed forecast workflows in 2026 report the rep's role shifting from data entry to exception judgment: the agent assembles the four-source read, the human argues with it. The forecast call survives; the Friday CRM-update scramble does not.
+
 ## Pipeline Analytics Views That Feed Forecast Accuracy
 
 Four diagnostic views turn pipeline data into forecast intelligence: (1) **Pipeline Waterfall** (created / moved-in / moved-out / won / lost), (2) **Forecast vs Actuals Tracking** (forecast at each weekly checkpoint vs. close), (3) **At-Risk Opportunity Identification** (six risk signals with thresholds), and (4) **Pipeline Health Snapshot** (a weekly five-minute diagnostic). For the full schemas, tables, and diagnosis patterns, see `references/pipeline-analytics-views.md`.
@@ -175,9 +188,9 @@ For the full visibility-and-reporting layer: dashboard architecture per audience
 
 ---
 
-## Norton Framework Additions
+## Framework Additions
 
-Two additions from Kyle Norton and Aviv Canaani (Revenue Leadership Podcast, 2026): **forecast variance as a system-health signal** (±10% healthy, ±20% qualification/ICP drift, ±30%+ methodology decay) and **bottom-up capacity-based forecasting** (Canaani, E64: Datarails projected new ARR within a 5% margin, 3 of 4 quarters, which sits at "Elite" in the accuracy benchmarks). For the full framework, the quality-velocity-predictability triangle, and the capacity model steps, see `references/norton-framework.md`.
+Two additions: **forecast variance as a system-health signal** (±10% healthy, ±20% qualification/ICP drift, ±30%+ methodology decay) and **bottom-up capacity-based forecasting** (a documented CRO model projected new ARR within a 5% margin, 3 of 4 quarters, which sits at "Elite" in the accuracy benchmarks; The Revenue Leadership Podcast E64, 2026). For the full framework, the quality-velocity-predictability triangle, and the capacity model steps, see `references/forecast-variance-and-capacity.md`.
 
 ## How to Use This Skill
 
@@ -211,7 +224,7 @@ These connect forecasting to the Operating Cadence; when a forecast signal fires
 | `references/pipeline-analytics-views.md` | Building forecast-accuracy dashboards/views | Waterfall, forecast-vs-actuals, at-risk, health-snapshot schemas |
 | `references/forecasting-revenue-types.md` | Forecasting new business / expansion / renewal | Method, coverage, and signals per revenue type |
 | `references/dashboard-architecture.md` | Pipeline visibility & reporting buildout | Visibility stack, per-audience dashboards, hygiene, quality score, intelligence signals, reports checklist |
-| `references/norton-framework.md` | Variance-as-system-signal or capacity-based forecasting | Norton/Canaani framework, QVP triangle, capacity model |
+| `references/forecast-variance-and-capacity.md` | Variance-as-system-signal or capacity-based forecasting | Variance-as-signal framework, QVP triangle, capacity model |
 | `references/forecast-breach-rules.md` | Wiring forecasting into the operating cadence | Breach-rules table, 4-severity escalation, generation rules, forecast tile config |
 
 ---
@@ -220,19 +233,17 @@ These connect forecasting to the Operating Cadence; when a forecast signal fires
 
 Cross-references: signal-trigger-action framework, operating cadence, revenue dashboard tile configuration, deal velocity system, KPI benchmark library, growth maturity model, and revops-metrics skill.
 
-> Built by [Neon Triforce](https://neontriforce.com)
 
 ---
 
 ## Operator Templates: Forecasting Worksheet
 
-For forecast modelling in client engagements:
-`Frameworks/Templates/cro-school/forecasting-worksheet-neon.xlsx`
+For forecast modeling in your organization:
 
-4 sheets: Assumptions, Sales Capacity, Waterfall, Renewals.
-Tip: The Renewals tab is especially useful for CS operations; it models the renewal cohort with churn rates and expansion.
+Build a forecasting worksheet with 4 sheets: Assumptions (base metrics like win rates and deal size), Sales Capacity (reps × quota × productivity), Waterfall (pipeline creation and conversion tracking), and Renewals (renewal cohort modeling with churn and expansion).
 
-Use in: Forecasting methodology buildout, board preparation, ops cadence design.
+The Renewals tab is especially useful for CS operations; it models the renewal cohort with churn rates and expansion tracking.
 
-Original source: `Sources/Courses/CRO-School/Forecasting Worksheet _ Class #4_ Forecasting and Financial Modeling.xlsx`
-Attribution: Adapted from Pavilion CRO School. Original author: Carter/Nalbandian/Dick.
+Use in: Forecasting methodology buildout, board preparation, operating cadence design.
+
+> Built by [Neon Triforce](https://neontriforce.com)
