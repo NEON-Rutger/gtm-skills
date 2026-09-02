@@ -1,6 +1,6 @@
 ---
 name: Lucas Godtfredsen
-avatarUrl: ""
+avatarUrl: https://www.gtmskills.com/authors/lucas-godtfredsen.jpg
 title: Founder, GTM Now
 linkedinUrl: "https://www.linkedin.com/in/lucas-godtfredsen-b9a19614/"
 companyDomain: gtmnow.app

@@ -16,12 +16,24 @@ const ALLOWED_EXTENSIONS = new Set([
 const KEBAB = /^[a-z0-9][a-z0-9-]*$/;
 const FILE_SEGMENT = /^[A-Za-z0-9][A-Za-z0-9._-]*\.[A-Za-z0-9]+$/;
 const DIR_SEGMENT = /^[A-Za-z0-9][A-Za-z0-9_-]*$/;
+// Categories the site renders (app/lib/skills.ts in gtm-skills-web) — anything else
+// merges fine but shows uncategorized, so we catch it here.
+const CATEGORIES = new Set([
+  'Prospecting', 'Research', 'Positioning', 'Signals', 'ABM', 'Outreach', 'Deals',
+  'Events', 'Pricing', 'Reddit', 'AEO', 'RevOps', 'Sales', 'SEO', 'Influencers',
+  'Ads', 'Affiliates', 'Newsletters',
+]);
+
+
 const FORBIDDEN_SKILL_KEYS = [
   'prefix', 'slug', 'author', 'apps', 'authorAvatar', 'authorUrl', 'isDefault', 'isOrgEditable', 'license',
 ];
 
 const errors = [];
 const err = (file, message) => errors.push(`${file}: ${message}`);
+
+const warnings = [];
+const warn = (file, message) => warnings.push(`${file}: ${message}`);
 
 const rel = (p) => path.relative(ROOT, p);
 
@@ -33,6 +45,8 @@ const parseFrontmatter = (raw) => {
   if (end === -1) return null;
   const block = raw.slice(4, end);
   const data = {};
+  const seen = new Set();
+  const dupes = [];
   let currentListKey = null;
   for (const line of block.split('\n')) {
     if (!line.trim() || line.trim().startsWith('#')) continue;
@@ -53,6 +67,8 @@ const parseFrontmatter = (raw) => {
     const match = line.match(/^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)$/);
     if (!match) continue;
     const [, key, value] = match;
+    if (seen.has(key)) dupes.push(key);
+    seen.add(key);
     currentListKey = null;
     if (value === '' ) {
       data[key] = [];
@@ -69,6 +85,7 @@ const parseFrontmatter = (raw) => {
     data.__lastKey = key;
   }
   delete data.__lastKey;
+  if (dupes.length) data.__dupes = [...new Set(dupes)];
   return data;
 };
 
@@ -76,6 +93,12 @@ const readFrontmatter = (file) => {
   const raw = fs.readFileSync(file, 'utf8');
   const data = parseFrontmatter(raw);
   if (!data) err(rel(file), 'missing YAML frontmatter — start the file with a --- fenced block');
+  if (data?.__dupes) {
+    // The last occurrence wins, so a duplicate key silently discards the first value —
+    // an empty `avatarUrl: ""` under a real one wipes the photo without any visible error.
+    err(rel(file), `duplicate frontmatter key(s): ${data.__dupes.join(', ')} — the last one wins and silently discards the earlier value; keep exactly one`);
+    delete data.__dupes;
+  }
   return data ?? {};
 };
 
@@ -125,6 +148,25 @@ for (const entry of fs.readdirSync(SKILLS_DIR, { withFileTypes: true })) {
     const fm = readFrontmatter(authorMd);
     if (!fm.name) err(rel(authorMd), 'frontmatter is missing `name:` (the author\'s full name)');
     if (fm.slug) err(rel(authorMd), 'remove `slug:` — the directory name is the slug');
+    if (!fm.linkedinUrl) {
+      err(rel(authorMd), 'frontmatter is missing `linkedinUrl:` — the person\'s own LinkedIn profile is the primary identity check');
+    } else if (!/linkedin\.com\/in\//.test(fm.linkedinUrl)) {
+      err(rel(authorMd), '`linkedinUrl:` must be a personal profile (linkedin.com/in/<handle>), not a company or product page');
+    }
+    if (!fm.companyDomain) {
+      err(rel(authorMd), 'frontmatter is missing `companyDomain:` — it powers your company page and logo on gtmskills.com (a personal site\'s domain works too)');
+    } else if (!/^[a-z0-9][a-z0-9.-]*\.[a-z]{2,}$/.test(fm.companyDomain)) {
+      err(rel(authorMd), `\`companyDomain: ${fm.companyDomain}\` should be a bare domain like acme.com — no protocol, no path`);
+    }
+    // Asked for, never enforced (Ariel, 2026-08-24): a contributor who would
+    // rather not publish an address should not be blocked from contributing.
+    // A malformed value is still an error, since a typo is worse than nothing.
+    if (!fm.email) {
+      warn(rel(authorMd), 'no `email:` — without it we cannot send your acceptance card and share kit');
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(fm.email).trim())) {
+      err(rel(authorMd), `\`email: ${fm.email}\` is not a valid address`);
+    }
+    if (!fm.avatarUrl) warn(rel(authorMd), 'no `avatarUrl:` — maintainers will take your LinkedIn photo and re-host it (submitting means you\'re OK with that)');
   }
   if (fs.existsSync(path.join(authorDir, 'SKILL.md'))) {
     err(rel(path.join(authorDir, 'SKILL.md')), 'SKILL.md directly in an author directory — each skill needs its own folder: skills/<author>/<skill>/SKILL.md');
@@ -169,6 +211,11 @@ function validateSkillDir(skillDir, authorSlug) {
   }
   if (!fm.title) err(rel(skillMd), 'frontmatter is missing `title:` (the human display name)');
   if (!fm.description) err(rel(skillMd), 'frontmatter is missing `description:` — required by npx skills and by the library router');
+  if (!fm.category) {
+    err(rel(skillMd), 'frontmatter is missing `category:` — pick one the site already renders (see the list in tools/validate.mjs)');
+  } else if (!CATEGORIES.has(fm.category)) {
+    err(rel(skillMd), `\`category: ${fm.category}\` isn't one the site renders — it would publish uncategorized. Known: ${[...CATEGORIES].join(', ')}`);
+  }
   for (const key of FORBIDDEN_SKILL_KEYS) {
     if (key in fm) err(rel(skillMd), `remove \`${key}:\` — ${key === 'prefix' || key === 'isDefault' || key === 'isOrgEditable' ? 'Swan lifecycle flags are decided in the database, never in this repo' : 'this field is no longer part of the spec'}`);
   }
@@ -211,6 +258,7 @@ if (fs.existsSync(systemDir)) {
 }
 
 function report() {
+  for (const w of warnings) console.warn(`warn — ${w}`);
   if (errors.length) {
     console.error(`${errors.length} problem${errors.length === 1 ? '' : 's'} found:\n`);
     for (const line of errors) console.error(`  ${line}`);
