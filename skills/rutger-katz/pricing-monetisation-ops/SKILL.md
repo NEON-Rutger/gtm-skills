@@ -1,23 +1,23 @@
 ---
 name: "pricing-monetisation-ops"
 title: Pricing and monetisation ops
-description: "Pricing and monetisation operations for B2B SaaS: designing, implementing, and operating consumption-based and outcome-based pricing models; metering architecture with deduplication and customer mapping; billing system integration for usage, overages, and variable revenue; hybrid contract structures (minimums, ramps, credits); monthly reconciliation and drift detection; revenue recognition for variable contracts; pricing-tier migrations from per-seat to usage without breaking revenue reporting; packaging changes and price increases across renewal cohorts; CPQ and billing platform selection; billing data quality audits. Use when discussing metering infrastructure, consumption billing, hybrid pricing models, variable revenue, price migrations, quote-to-cash consolidation, billing-grade data quality, or revenue reconciliation. Trigger phrases: metering, deduplication, usage billing, consumption pricing, hybrid pricing, price migration, overages, minimums, CPQ platform, billing reconciliation, variable revenue, outcome-based pricing. Also triggers on \"we need to move from per-seat to usage,\" \"our billing system can't handle variable revenue,\" \"revenue recognition is a nightmare,\" or \"we're losing customers on bill shock."
+description: "Pricing and monetization operations for B2B SaaS: designing, implementing, and operating consumption-based and outcome-based pricing models; metering architecture with deduplication and customer mapping; billing system integration for usage, overages, and variable revenue; hybrid contract structures (minimums, ramps, credits); monthly reconciliation and drift detection; revenue recognition for variable contracts; pricing-tier migrations from per-seat to usage without breaking revenue reporting; packaging changes and price increases across renewal cohorts; CPQ and billing platform selection; billing data quality audits. Use when discussing metering infrastructure, consumption billing, hybrid pricing models, variable revenue, price migrations, quote-to-cash consolidation, billing-grade data quality, or revenue reconciliation. Trigger phrases: metering, deduplication, usage billing, consumption pricing, hybrid pricing, price migration, overages, minimums, CPQ platform, billing reconciliation, variable revenue, outcome-based pricing. Also triggers on 'we need to move from per-seat to usage,' 'our billing system can't handle variable revenue,' 'revenue recognition is a nightmare,' or 'we're losing customers on bill shock.'"
 category: Pricing
 ---
 
-# Pricing and Monetisation Operations
+# Pricing and Monetization Operations
 
-You are a monetisation operations specialist. Pricing is strategy. Monetisation is execution. This skill covers the systems, infrastructure, and processes that turn a consumption or hybrid pricing model into reliable, auditable, customer-friendly revenue.
+You are a monetization operations specialist. Pricing is strategy. Monetization is execution. This skill covers the systems, infrastructure, and processes that turn a consumption or hybrid pricing model into reliable, auditable, customer-friendly revenue.
 
 The core challenge: **Consumption pricing is only as good as your metering, billing, and reconciliation infrastructure.** Get the plumbing wrong and you overshare with some customers, underbill others, break revenue recognition, and spend your quarter in spreadsheets trying to reconcile.
 
-## The Monetisation Stack
+## The Monetization Stack
 
 Every B2B company running consumption or hybrid pricing has five interconnected layers:
 
 ```
 LAYER 1: METERING
-  Usage ingestion, normalisation, deduplication, customer mapping
+  Usage ingestion, normalization, deduplication, customer mapping
   ("What events happened, and who did they belong to?")
 
 LAYER 2: RATING & PRICING ENGINE
@@ -34,7 +34,7 @@ LAYER 4: COLLECTIONS & PAYMENT
 
 LAYER 5: REVENUE RECONCILIATION
   Contract-to-invoice matching, variable revenue tracking, ASC 606 compliance
-  ("What revenue should we recognise this month, and why?")
+  ("What revenue should we recognize this month, and why?")
 ```
 
 Break any layer and the whole system collapses:
@@ -62,9 +62,9 @@ Event Ingestion:
   Stream to a real-time queue (Kafka, Pub/Sub) or API endpoint
   → Pipeline buffers, timestamps, and adds source tracking
 
-Normalisation & Mediation:
+Normalization & Mediation:
   Customer ID mapping (raw API key → billing customer account)
-  Dimension standardisation ("api_calls" vs "API Requests" vs "request_count" → single canonical name)
+  Dimension standardization ("api_calls" vs "API Requests" vs "request_count" → single canonical name)
   Time window anchoring (event UTC timestamp vs ingestion lag vs billing cycle anchor)
 
 Deduplication:
@@ -271,9 +271,9 @@ FOOTER (mandatory for audit trail):
 | **Invoice sent** | Day 5 to 7 | Deliver to customer and accounting system. |
 | **Collections** | Day 8 to 30 | Payment expected within terms. Issue dunning notices if overdue. |
 | **Revenue recognition** | Day 15 to 25 | Post revenue to the accounting system per ASC 606 / IFRS 15 rules. |
-| **Month-end close** | Last day of month | Reconcile invoiced revenue to recognised revenue. Investigate variance. |
+| **Month-end close** | Last day of month | Reconcile invoiced revenue to recognized revenue. Investigate variance. |
 
-**Critical:** Never send invoices until metering is final. Never recognize revenue until invoices are sent. Never close the books until revenue recognised = invoices sent (with exceptions logged and approved).
+**Critical:** Never send invoices until metering is final. Never recognize revenue until invoices are sent. Never close the books until revenue recognized = invoices sent (with exceptions logged and approved).
 
 ## Layer 4: Collections and Payment
 
@@ -307,15 +307,15 @@ Contract: "Enterprise Plus"
 
 April 2026:
   Actual calls: 15M (overage: $50,000)
-  April revenue recognised: $30,000 (based on estimate)
+  April revenue recognized: $30,000 (based on estimate)
 
 May 2026:
   You now know April actuals: 15M calls → $50,000 actual overage
   Revised estimate for May to December: 15M calls per month (overage: $50,000/month)
-  May revenue recognised should be:
+  May revenue recognized should be:
     Base: $10,000
     Overage: $50,000 (revised estimate, not the April estimate of $20,000)
-    Catch-up adjustment for April: $30,000 (actual) - $30,000 (recognised) = $0
+    Catch-up adjustment for April: $30,000 (actual) - $30,000 (recognized) = $0
     Total May revenue: $60,000
 ```
 
@@ -330,7 +330,7 @@ The simplest, most defensible approach:
 3. **Track adjustments separately.** If a prior-period invoice is adjusted (e.g., a credit is issued or a correction is made), post it as a separate line item and investigate why.
 4. **Automate the reconciliation.** At month-end, sum all invoices sent in the period → that's your revenue base. Compare to your G/L revenue posting. Variance should be zero (or < $1K for rounding).
 
-**Red flag:** If your revenue recognised is significantly higher than invoices sent, you're recognizing ahead of actual billing. If it's lower, you may have unrecognised performance obligations or credits that are eating into revenue.
+**Red flag:** If your revenue recognized is significantly higher than invoices sent, you're recognizing ahead of actual billing. If it's lower, you may have unrecognized performance obligations or credits that are eating into revenue.
 
 ### Variable Revenue Forecast Model
 
@@ -489,7 +489,7 @@ Consumption billing involves processing personal data. EU regulations apply.
 **Lawful basis:** Contractual necessity covers most subscription billing (collection of email, billing address, payment info, usage data for the purpose of billing and service delivery).
 
 **User rights:**
-- **Right to be forgotten:** A customer can request deletion. You must delete all personal data except what's needed for tax or accounting compliance (contracts, invoices). Consumption data is typically deleted; keep only anonymised aggregates for revenue reporting.
+- **Right to be forgotten:** A customer can request deletion. You must delete all personal data except what's needed for tax or accounting compliance (contracts, invoices). Consumption data is typically deleted; keep only anonymized aggregates for revenue reporting.
 - **Right to object:** A customer can object to direct marketing. Stop marketing immediately and update your system.
 - **Right to data portability:** On request, provide their data in a machine-readable format.
 
@@ -526,13 +526,13 @@ Invoices contain customer names and potentially usage patterns that could reveal
 Start with Layer 3 (Invoicing). What's the contract structure? Can your billing system handle it? If not, fix the engine first (Layer 2). Build the audit trail.
 
 **"We're moving from per-seat to usage pricing":**
-Start with the Migration Checklist. Parallel billing minimises risk. Plan for 12 to 24 months. Coach sales.
+Start with the Migration Checklist. Parallel billing minimizes risk. Plan for 12 to 24 months. Coach sales.
 
 **"We have 2M events/month and no metering infrastructure":**
 Start with Layer 1. Decide: build in-house (warehouse-native) or buy. If building, use the metering flow diagram. If buying, compare Lago vs Stigg vs Alguna.
 
 **"Revenue recognition is killing our month-end close":**
-Start with Layer 5. Simplify: bill conservatively, recognise on invoice date, automate reconciliation. Reduce manual variable estimation.
+Start with Layer 5. Simplify: bill conservatively, recognize on invoice date, automate reconciliation. Reduce manual variable estimation.
 
 **"We're losing customers to bill shock":**
 This is a metering (Layer 1) + invoicing (Layer 3) problem. Is the usage calculation transparent? Can the customer see detailed invoices? Add usage monitoring dashboards so they see spikes coming.
@@ -556,7 +556,5 @@ Run the Billing Data Quality Audit. Which check fails worst? Start there. Usuall
 - Normative estimates on revenue recognition complexity: Based on practice patterns across 5,000+ consumption contracts per customer. Re-estimation required monthly for ASC 606 compliance.
 
 See also: `references/benchmarks-sourced.md` for detailed sourcing on all quantitative claims.
-
----
 
 > Built by [Neon Triforce](https://neontriforce.com)

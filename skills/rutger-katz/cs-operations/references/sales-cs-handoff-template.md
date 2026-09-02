@@ -1,8 +1,3 @@
----
-title: Sales → CS Handoff Template
-description: (reference)
----
-
 # Sales → CS Handoff Template
 
 On-demand reference for the cs-operations skill.
@@ -45,8 +40,8 @@ HANDOFF QUALITY CHECK:
 ## Pre-handoff (Sales responsibility)
 
 - Complete the SPICED summary in CRM (especially: Situation, Pain, Impact, Critical Event)
-- Document committed outcomes — what did the customer buy the product to achieve?
-- Identify the champion and economic buyer — who owns success internally?
+- Document committed outcomes. What did the customer buy the product to achieve?
+- Identify the champion and economic buyer. Who owns success internally?
 - Flag any non-standard terms, pricing exceptions, or promised professional services
 
 ## Handoff Meeting (Sales + CS)
@@ -54,5 +49,3 @@ HANDOFF QUALITY CHECK:
 - Three-way call: Sales rep, CS lead, and customer champion
 - Agenda: review committed outcomes, introduce CS team, confirm implementation timeline
 - Transfer of relationship, not just account
-
-**Source:** Adapted from Union Square Consulting's Renewals + Expansion Pyramids. Neon applies this as the process layer beneath the health scoring framework.

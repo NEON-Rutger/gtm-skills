@@ -1,27 +1,27 @@
 ---
 name: "positioning-messaging-designer"
 title: Positioning and messaging designer
-description: "Design positioning and messaging frameworks for clients using the Use Case Messaging Canvas and Opposites method. Use whenever helping a client define their positioning, build a messaging framework, create a Use Case Canvas, or bridge the gap between ICP and copy. Triggers include 'position them,' 'messaging framework,' 'Use Case Canvas,' 'how should they position,' 'their messaging is all over the place,' 'they skip straight to copy,' 'Opposites method,' 'Old Way vs New Way,' 'positioning workshop,' 'value prop,' 'one-liner,' 'elevator pitch,' 'positioning line,' or any client engagement where ICP exists but messaging is missing or inconsistent. BOUNDARY: This skill designs POSITIONING and MESSAGING frameworks. For ICP building (the step BEFORE), see icp-builder. For writing actual LinkedIn copy, see a LinkedIn posting skill. For proposals, see a proposal generator skill."
+description: "Design positioning and messaging frameworks for your company using the Use Case Messaging Canvas and Opposites method. Use whenever you need to define your positioning, build a messaging framework, create a Use Case Canvas, or bridge the gap between ICP and copy. Triggers include 'position yourself,' 'messaging framework,' 'Use Case Canvas,' 'how should we position,' 'our messaging is all over the place,' 'we skip straight to copy,' 'Opposites method,' 'Old Way vs New Way,' 'positioning workshop,' 'value prop,' 'one-liner,' 'elevator pitch,' 'positioning line,' or any situation where you have an ICP but your messaging is missing or inconsistent. BOUNDARY: This skill designs POSITIONING and MESSAGING frameworks. For ICP building (the step BEFORE), see icp-builder. For writing actual LinkedIn copy, see a LinkedIn posting skill. For proposals, see a proposal generator skill."
 category: Positioning
 ---
 
 # Positioning & Messaging Designer
 
-You are helping design positioning and messaging for a client. This is the bridge between knowing WHO to sell to (ICP) and knowing WHAT to say (copy). Most companies skip this step. They go from ICP straight to copy and wonder why everything needs rewriting.
+You are designing positioning and messaging for your company. This is the bridge between knowing WHO to sell to (ICP) and knowing WHAT to say (copy). Most companies skip this step. They go from ICP straight to copy and wonder why everything needs rewriting.
 
-The core insight: **you don't invent messaging. You extract it from the contrast between the customer's current reality and what becomes possible.** The Use Case Messaging Canvas and the Opposites method make this systematic.
+The core insight: **you don't invent messaging. You extract it from the contrast between your customer's current reality and what becomes possible.** The Use Case Messaging Canvas and the Opposites method make this systematic.
 
 ---
 
 ## When This Skill Activates
 
-**Situation 1: Copy Skip.** Client has an ICP but went straight to writing copy. Messaging is inconsistent across channels: LinkedIn says one thing, the website says another, sales pitches a third. The symptom is constant rewriting.
+**Situation 1: Copy Skip.** You have an ICP but went straight to writing copy. Your messaging is inconsistent across channels: LinkedIn says one thing, the website says another, sales pitches a third. The symptom is constant rewriting.
 
-**Situation 2: Positioning is vague.** Client can't articulate what makes them different in one sentence. "We're an AI-powered platform that helps companies..." is generic, category-stuffed, and says nothing. No clear alternative, no contrast.
+**Situation 2: Positioning is vague.** You can't articulate what makes your company different in one sentence. "We're an AI-powered platform that helps companies..." is generic, category-stuffed, and says nothing. No clear alternative, no contrast.
 
-**Situation 3: Post-ICP work.** ICP building was just completed with `icp-builder` and the next step is translating those insights into a positioning framework and messaging architecture.
+**Situation 3: Post-ICP work.** You just completed ICP building with `icp-builder` and the next step is translating those insights into a positioning framework and messaging architecture.
 
-**Before starting:** Confirm the client has SPICED data. If they don't have customer interviews or at least deal analysis with pain language, the positioning will be fiction. Send them back to ICP work first.
+**Before starting:** Confirm you have SPICED data. If you don't have customer interviews or at least deal analysis with pain language, the positioning will be fiction. Go back to ICP work first.
 
 ---
 
@@ -43,7 +43,7 @@ Positioning answers: "Why should I choose you over the alternative?" It's not a 
 
 ### Primary Elements (answer "Why choose you?")
 
-Work through these six with the client. Every one should be grounded in SPICED data, not aspiration:
+Work through these six elements for your company. Every one should be grounded in SPICED data, not aspiration:
 
 1. **Category**: What market do you play in?
 2. **Alternative**: What do they compare you to? (Competitors, doing nothing, building in-house)
@@ -121,7 +121,7 @@ For the full canvas template and detailed instructions, read `references/positio
 
 ## Part 3: From Framework to Copy
 
-The messaging framework is not a document you write once and file. It's the operating system for everything the client says. Three tools working together:
+The messaging framework is not a document you write once and file. It's the operating system for everything your company says. Three tools working together:
 
 | Tool | Purpose | Feeds into |
 |------|---------|-----------|
@@ -141,7 +141,7 @@ Positioning is not validated by opinion. Test it against real market signals:
 
 **Immediate signals (Week 1-2):**
 - BDR call-opening rate: Do prospects engage when the new positioning is used? Track by message version.
-- Sales call discovery time: How quickly do prospects "get it"? Target: under 3 minutes to clear understanding (Donnelly diagnostic). Longer discovery time signals positioning needs tightening.
+- Sales call discovery time: How quickly do prospects "get it"? Target: under 3 minutes to clear understanding. Longer discovery time signals positioning needs tightening.
 - Win/loss analysis: Are you winning against the right competitors? Positioning should make your competitive set clear.
 
 **Medium-term signals (Month 1-3):**
@@ -159,7 +159,7 @@ Positioning is not validated by opinion. Test it against real market signals:
 
 The three metrics that matter for RevOps accountability:
 
-1. **Sales efficiency:** Deals closing faster with clearer positioning (shorter sales cycle = lower CAC amortisation)
+1. **Sales efficiency:** Deals closing faster with clearer positioning (shorter sales cycle = lower CAC amortization)
 2. **Pipeline quality:** Deals won against the intended competitor at higher rates (indicating positioning clarity is filtering for right-fit prospects)
 3. **AE productivity:** Reps need fewer pitch iterations to win (measurable through deal record audit: how many versions of the deck per deal)
 
@@ -198,7 +198,7 @@ Generate message variants at scale for A/B testing:
 ### Customer Research Synthesis
 
 LLMs can synthesis qualitative research into positioning angles:
-- Load call transcripts or interview notes (anonymised SPICED data)
+- Load call transcripts or interview notes (anonymized SPICED data)
 - Ask the model to identify recurring phrases, pain patterns, and ideal outcomes
 - Extract direct customer language for the left side of the canvas
 - Reduces manual synthesis time significantly (practice-based)
@@ -229,15 +229,15 @@ AI platforms can identify if positioning is working in real deals:
 Use deal data to validate positioning was the reason for the win:
 - In win calls with new customers, play back their initial objection from the discovery call
 - Ask them why it shifted; if the answer aligns with your positioning, the framework is working
-- Likewise for losses: position misses will show up as "we didn't realise you did X" or "we thought you were more like Y"
+- Likewise for losses: position misses will show up as "we didn't realize you did X" or "we thought you were more like Y"
 
 ---
 
 ## Delivery Formats
 
-**Within a 90-Day Programme (full build):** Run the weekly GTM sequence: Tuesday ICP, Wednesday Positioning, Thursday Messaging. Iterate over 2-3 weeks. Canvas becomes the living source of truth.
+**Within a 90-day program (full build):** Run the weekly GTM sequence: Tuesday ICP, Wednesday Positioning, Thursday Messaging. Iterate over 2-3 weeks. Canvas becomes the living source of truth.
 
-**Standalone Positioning Workshop (half-day):** Pre-gather SPICED data. Work through 12 elements and one positioning line in the morning. Build the canvas in the afternoon. Client leaves with a complete messaging framework.
+**As a standalone positioning workshop:** Pre-gather SPICED data. Work through 12 elements and one positioning line in the morning. Build the canvas in the afternoon. You'll have a complete messaging framework to deploy.
 
 **As follow-on to ICP work:** Natural handoff from `icp-builder`. SPICED data from the ICP process feeds directly into the left side of the canvas.
 
@@ -245,13 +245,11 @@ For the weekly GTM sequence (Tuesday/Wednesday/Thursday workflow), read `referen
 
 ---
 
-## Norton Framework Additions (Source: The Revenue Leadership Podcast with Kyle Norton, E62, Feb 4 2026)
+## Framework Additions
 
-**Full citation:** Michelle Donnelly (CRO, Crescendo). "CRO Life: from a $20B Exit, to a Hyper-Growth AI Org." The Revenue Leadership Podcast with Kyle Norton, Episode 62, February 4 2026. https://www.therevenueleadershippodcast.com/p/cro-life-from-a-20b-exit-to-a-hyper
+### Radical Clarity in Noisy Markets
 
-### Radical Clarity in Noisy Markets (Donnelly, E62)
-
-**The 30-Second Clarity Test:** "If you can't understand who we are in 30 seconds, we have hashtag failed." Use this as a validation gate before finalising any positioning work.
+**The 30-Second Clarity Test:** if a stranger can't say who you are after 30 seconds, the positioning has failed. Use this as a validation gate before finalizing any positioning work.
 
 **How to apply:**
 1. Read the positioning line to someone unfamiliar with the company
@@ -260,17 +258,17 @@ For the weekly GTM sequence (Tuesday/Wednesday/Thursday workflow), read `referen
 4. If they can → test with 5 more people to confirm
 
 **Time-to-aha as diagnostic metric:**
-- Crescendo's previous state: 20 minutes for customers to get the aha moment
+- Before-state to diagnose: 20 minutes for customers to get the aha moment
 - Target: much faster (ideally within 30 seconds of reading/hearing the positioning)
 - Track this during sales calls: how long before the prospect "gets it"?
 
-### Iterative Refinement Process (Donnelly, E62)
+### Iterative Refinement Process
 
-Positioning is not a one-shot exercise. Crescendo went through five pitch decks in six months.
+Positioning is not a one-shot exercise. Five pitch decks in six months is a normal iteration count for a team doing it properly.
 
 **Validation velocity:**
 - Test messaging with BDRs doing 400 calls/day = real-world message validation at speed
-- Run past existing customers (Crescendo learned their pricing was too complex from customer feedback)
+- Run past existing customers (pricing complexity is the classic thing they surface first)
 - Outside consultants (mixed results: internal iteration often more effective)
 - Real-time positioning workshops with the sales team
 
@@ -280,13 +278,13 @@ Positioning is not a one-shot exercise. Crescendo went through five pitch decks 
 3. Week 3: Customer validation (existing customers react to new positioning)
 4. Week 4: Iterate and lock: or start another cycle
 
-### Three-Priority Clarity (Donnelly, E62)
+### Three-Priority Clarity
 
-An organisational messaging clarity test: can everyone in the org repeat the three things they're doing this quarter?
+An organizational messaging clarity test: can everyone in the org repeat the three things they're doing this quarter?
 
 **If they can't:** The messaging is too complex, there are too many priorities, or communication is broken.
 
-**Use in positioning work:** After finalising positioning, test whether the sales team can articulate the top 3 value propositions without notes. If not, simplify further.
+**Use in positioning work:** After finalizing positioning, test whether the sales team can articulate the top 3 value propositions without notes. If not, simplify further.
 
 **Buyer journey context:** B2B buyers spend two-thirds of any buying journey gathering, processing, and de-conflicting information (Gartner, August 2018, "Gartner Says B2B Buyers Want More Simplicity in Accessing the Right Information"). Your positioning either reduces that work or adds to it.
 
@@ -355,9 +353,9 @@ Three simple metrics:
 
 ## Common Mistakes to Flag
 
-When working with clients, watch for these patterns:
+When building positioning, watch for these patterns:
 
-1. **Writing positioning before SPICED**: Guessing instead of listening. Send them back to customer interviews.
+1. **Writing positioning before SPICED**: Guessing instead of listening. Go back to customer interviews first.
 2. **Filling the right side before the left**: Their narrative overwrites customer reality. Always start with the Old Way.
 3. **Using "nice" words instead of customer words**: Messaging won't resonate. Use the exact language from interviews.
 4. **Forgetting the Opposites**: New Way doesn't clearly contrast with Old Way. Every right-side element should be a direct flip.

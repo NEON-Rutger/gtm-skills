@@ -1,8 +1,3 @@
----
-title: Impact Analysis Templates
-description: (reference)
----
-
 # Impact Analysis Templates
 
 The full mapping exercise referenced from the Plan the Change section. Run this before a single word of communication goes out. Most RevOps teams skip it and pay for it in the productivity dip.
@@ -40,12 +35,12 @@ Work through every dimension for the change you are planning. Write a concrete a
 - What is the revenue risk during the productivity dip?
 - What transition guarantees are needed to protect earnings (see below)?
 
-## Behavioural System Audit
+## Behavioral System Audit
 
-Before changing anything, evaluate the current system for the behaviours it actually produces. Behaviour follows a formula:
+Before changing anything, evaluate the current system for the behaviors it actually produces. Behavior follows a formula:
 
 ```
-BEHAVIOUR = f(Metrics, Visibility, Frequency, Compensation)
+BEHAVIOR = f(Metrics, Visibility, Frequency, Compensation)
 ```
 
 For each metric or process you are changing, write down:
@@ -53,7 +48,7 @@ For each metric or process you are changing, write down:
 - What does it discourage?
 - What shortcuts or gaming does it quietly reward?
 
-If the audit shows the comp, visibility, or cadence system pulls against the change you want, fix that first or change them together. A new process bolted onto an incentive that rewards the old behaviour will lose every time.
+If the audit shows the comp, visibility, or cadence system pulls against the change you want, fix that first or change them together. A new process bolted onto an incentive that rewards the old behavior will lose every time.
 
 ## The ripple map
 
@@ -75,4 +70,4 @@ Draw the cascade explicitly. The effects you do not map are the ones that surfac
 
 ## Output of this exercise
 
-A one-page impact summary per change, the behavioural audit verdict (proceed, fix-first, or sequence), and a ripple map. Take all three into the Change Readiness Assessment before you commit to a launch date.
+A one-page impact summary per change, the behavioral audit verdict (proceed, fix-first, or sequence), and a ripple map. Take all three into the Change Readiness Assessment before you commit to a launch date.

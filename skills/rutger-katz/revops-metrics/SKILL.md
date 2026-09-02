@@ -1,7 +1,7 @@
 ---
 name: "revops-metrics"
 title: Revenue performance metrics
-description: "Revenue performance measurement, funnel math, and unit economics for B2B teams. Use when the user mentions revenue metrics, conversion rates, pipeline velocity, unit economics, LTV, CAC, payback period, cohort analysis, NRR, GRR, churn rate, expansion revenue, ARR, MRR, funnel conversion, win rate, deal size, sales cycle, Rule of 40, burn multiple, T2D3, growth benchmarks, deal health scoring, deal health dimensions, conversational intelligence metrics, strategic initiative trackers, activity velocity, multi-threading score, or measuring revenue performance. Also trigger on \"our numbers are off,\" \"how do we stack up,\" \"what should our conversion rate be,\" or \"how healthy is this deal.\" BOUNDARY: This skill covers WHAT to measure. For forecasting, see revops-forecasting. For meeting cadence, see revenue-operating-cadence."
+description: "Revenue performance measurement, funnel math, and unit economics for B2B teams. Use when the user mentions revenue metrics, conversion rates, pipeline velocity, unit economics, LTV, CAC, payback period, cohort analysis, NRR, GRR, churn rate, expansion revenue, ARR, MRR, funnel conversion, win rate, deal size, sales cycle, Rule of 40, burn multiple, T2D3, growth benchmarks, deal health scoring, deal health dimensions, conversational intelligence metrics, strategic initiative trackers, activity velocity, multi-threading score, or measuring revenue performance. Also trigger on 'our numbers are off,' 'how do we stack up,' 'what should our conversion rate be,' or 'how healthy is this deal.' BOUNDARY: This skill covers WHAT to measure. For forecasting, see revops-forecasting. For meeting cadence, see revenue-operating-cadence."
 category: RevOps
 ---
 
@@ -65,7 +65,7 @@ For companies where AI is the product (not just a tool in the GTM stack), the st
 | Layer | What it measures | Examples | When to use |
 |-------|-----------------|----------|-------------|
 | 1. Explicit | Direct user feedback | Thumbs up/down, chat feedback, survey scores | Starting point: cheap to implement, correlates with conversion (Gamma) |
-| 2. Implicit | Post-output behaviour | Edit intensity, copy rate, send rate of AI drafts, time modifying output | Stronger signal: shows whether outputs are actually useful |
+| 2. Implicit | Post-output behavior | Edit intensity, copy rate, send rate of AI drafts, time modifying output | Stronger signal: shows whether outputs are actually useful |
 | 3. Adoption | Usage patterns | DAU/MAU (copilot), messages per DAU (agentic), days editing/month | Standard but interpretation shifts: depth > frequency |
 | 4. Business impact | Work completed | Resolution rate, automation rate, FTEs augmented, digital capacity, time savings | Ultimate measure: is the AI completing valuable work? |
 
@@ -73,13 +73,13 @@ For companies where AI is the product (not just a tool in the GTM stack), the st
 
 | Traditional SaaS | AI-Native Evolution |
 |-----------------|---------------------|
-| Seats / licences sold | Digital capacity / FTEs augmented / work completed |
+| Seats / licenses sold | Digital capacity / FTEs augmented / work completed |
 | DAU/MAU | Messages per DAU + work completed per user |
 | NPS / CSAT | AI output quality score + resolution rate per interaction |
 | Time-to-value (days/weeks) | Time-to-value (minutes / first session) |
 | ARR per customer (stable) | Consumption per customer (expanding dynamically) |
 
-Use these metrics when designing revenue dashboard tiles for AI-native clients. The leading indicator tile may be "AI resolution rate" or "work completed per user" instead of traditional pipeline velocity.
+Use these metrics when designing revenue dashboard tiles for AI-native companies. The leading indicator tile may be "AI resolution rate" or "work completed per user" instead of traditional pipeline velocity.
 
 See also: AI-native GTM patterns reference, Section 4.
 
@@ -103,9 +103,9 @@ Pipeline velocity (sometimes called sales velocity) is the formula that connects
 Pipeline Velocity = (# Opportunities × Win Rate × Avg Deal Size) ÷ Sales Cycle Length
 
 Example:
-  100 opportunities × 25% win rate × €40K avg deal = €1M
-  If sales cycle is 90 days: €1M per quarter
-  If you reduce cycle to 75 days: €1.2M per quarter (20% improvement)
+  100 opportunities × 25% win rate × $40K avg deal = $1M
+  If sales cycle is 90 days: $1M per quarter
+  If you reduce cycle to 75 days: $1.2M per quarter (20% improvement)
 ```
 
 **Each lever is an optimization opportunity:**
@@ -166,12 +166,12 @@ Where:
   Average Customer Lifetime = 1 ÷ Annual Churn Rate
 
 Example:
-  ARPA = €30K | Gross Margin = 80% | Annual Churn = 10%
-  LTV = €30K × 0.80 × (1 ÷ 0.10) = €240K
+  ARPA = $30K | Gross Margin = 80% | Annual Churn = 10%
+  LTV = $30K × 0.80 × (1 ÷ 0.10) = $240K
 
 With expansion (more realistic for SaaS):
   LTV = ARPA × Gross Margin × (1 ÷ (1 - NRR%))
-  If NRR = 115%: LTV = €30K × 0.80 × (1 ÷ (1 - 1.15)) → use NRR-adjusted model
+  If NRR = 115%: LTV = $30K × 0.80 × (1 ÷ (1 - 1.15)) → use NRR-adjusted model
 
 Note: When NRR > 100%, the simple LTV formula breaks (customer lifetime is theoretically
 infinite because revenue grows). Use a 5-year discounted cash flow model instead, or cap
@@ -196,8 +196,8 @@ By segment:
 ```
 CAC Payback = CAC ÷ (ARPA × Gross Margin)
 
-Example: CAC = €45K, ARPA = €30K, GM = 80%
-Payback = €45K ÷ (€30K × 0.80) = 1.875 years = ~22.5 months
+Example: CAC = $45K, ARPA = $30K, GM = 80%
+Payback = $45K ÷ ($30K × 0.80) = 1.875 years = ~22.5 months
 
 Benchmarks:
   <12 months: excellent (most efficient companies)
@@ -214,11 +214,11 @@ Benchmarks:
 NRR = (Beginning ARR + Expansion - Contraction - Churn) ÷ Beginning ARR
 
 Example:
-  Starting ARR: €10M
-  Expansion: +€1.5M
-  Contraction: -€300K
-  Churn: -€700K
-  NRR = (€10M + €1.5M - €300K - €700K) ÷ €10M = 105%
+  Starting ARR: $10M
+  Expansion: +$1.5M
+  Contraction: -$300K
+  Churn: -$700K
+  NRR = ($10M + $1.5M - $300K - $700K) ÷ $10M = 105%
 
 Benchmarks:
   <90%:  Critical: the business is shrinking from within
@@ -257,7 +257,7 @@ Renewal ARR:          Revenue from customers renewing at the same level
 Contraction ARR:      Revenue lost from downgrades (negative)
 Churned ARR:          Revenue lost from departures (negative)
 
-Healthy composition at maturity (€25M+ ARR):
+Healthy composition at maturity ($25M+ ARR):
   New Business:  30-50% of gross new ARR
   Expansion:     30-50% of gross new ARR
   GRR:           >90%
@@ -282,7 +282,7 @@ Example: 10% growth + 10% margin = 20 (below 40 = underperforming)
 A company should aim for its growth rate plus profit margin to exceed 40%.
 This balances growth investment against profitability.
 
-For early-stage companies (<€25M ARR): growth rate matters more than Rule of 40.
+For early-stage companies (<$25M ARR): growth rate matters more than Rule of 40.
 A company growing 100% at -30% margin (Rule of 40 = 70) is doing well.
 ```
 
@@ -310,11 +310,11 @@ T2D3 Framework (target growth trajectory):
   Year 5+:            Double (2x year-over-year)
 
 More realistic benchmarks by ARR stage:
-  €1-5M ARR:     100-200% YoY (fast growth expected, small base)
-  €5-15M ARR:    70-120% YoY (growth at scale becomes harder)
-  €15-50M ARR:   40-80% YoY (efficiency matters more)
-  €50-100M ARR:  30-50% YoY (strong performance)
-  €100M+ ARR:    20-40% YoY (compounding at scale is impressive)
+  $1-5M ARR:     100-200% YoY (fast growth expected, small base)
+  $5-15M ARR:    70-120% YoY (growth at scale becomes harder)
+  $15-50M ARR:   40-80% YoY (efficiency matters more)
+  $50-100M ARR:  30-50% YoY (strong performance)
+  $100M+ ARR:    20-40% YoY (compounding at scale is impressive)
 ```
 
 ## Diagnostic Frameworks
@@ -389,10 +389,10 @@ Group customers by acquisition period and track their revenue over time:
 
 ```
           Month 0   Month 6   Month 12  Month 18  Month 24
-Q1 2024:  €500K     €480K     €520K     €540K     €560K
-Q2 2024:  €600K     €570K     €590K     €610K
-Q3 2024:  €550K     €530K     €560K
-Q4 2024:  €700K     €680K
+Q1 2024:  $500K     $480K     $520K     $540K     $560K
+Q2 2024:  $600K     $570K     $590K     $610K
+Q3 2024:  $550K     $530K     $560K
+Q4 2024:  $700K     $680K
 
 What to look for:
 - Do cohorts grow over time? (NRR > 100%)
@@ -406,9 +406,9 @@ What to look for:
 Track when each customer cohort pays back its acquisition cost:
 
 ```
-Cohort CAC:     €45K average per customer
-Monthly ARPA:   €2.5K × 80% gross margin = €2K contribution
-Payback:        €45K ÷ €2K = 22.5 months
+Cohort CAC:     $45K average per customer
+Monthly ARPA:   $2.5K × 80% gross margin = $2K contribution
+Payback:        $45K ÷ $2K = 22.5 months
 
 If newer cohorts have lower CAC (more efficient acquisition) or higher
 ARPA (better pricing/packaging), payback improves over time. Track this.
@@ -510,14 +510,14 @@ HubSpot Breeze and Salesforce Agentforce shift how metrics are collected and pop
 
 ### Canon References for Deal & Intelligence Metrics
 
-Cross-references: full pipeline analytics views with deal health dimensions, KPI benchmark targets for calibrating metric thresholds, and signal-trigger-action patterns for strategic trackers. For current-year benchmarks, see `references/benchmarks.md` (Ebsta/Pavilion) alongside Fullcast/Pavilion 2026 GTM Benchmark data covering seller performance, win rates by stakeholder count, deal cycle timing, pipeline composition, and AI impact metrics.
+Cross-references: full pipeline analytics views with deal health dimensions, KPI benchmark targets for calibrating metric thresholds, and signal-trigger-action patterns for strategic trackers. For current-year benchmarks, see `references/benchmarks.md` (Ebsta/Pavilion and Fullcast 2026 data) covering seller performance, win rates by stakeholder count, deal cycle timing, pipeline composition, and AI impact metrics.
 
 
 ---
 
-## Norton Framework Additions (Source: Kyle Norton / Aviv Canaani, Revenue Leadership Podcast, 2026)
+## Framework Additions
 
-### Revenue Per AE Constraint Analysis (Norton/Canaani Model)
+### Revenue Per AE Constraint Analysis
 
 Revenue per AE is the constraining metric that reveals system health.
 
@@ -530,7 +530,7 @@ If revenue per AE is low, diagnose which input is the constraint:
 - **Slow deal velocity** → process friction, missing stakeholders, weak champion
 - **Low capacity utilization** → AEs spending time on non-selling activities (prospecting theater)
 
-**The Anti-Prospecting Thesis (Canaani):**
+**The Anti-Prospecting Thesis:**
 - Most AEs admit 80-90% of closed revenue comes from inbound
 - Salesforce State of Sales 2026: reps spend 40% of week actually selling (up from 28% in 2024)
 - $250-300K OTE spent on prospecting = failure of resource allocation dressed as culture
@@ -560,7 +560,7 @@ Predictability is built, not hoped for.
 - If Enterprise wins at 35% and Mid-Market wins at 12%, your Mid-Market ICP is wrong or methodology isn't adapted
 - Win rate segmented by lead source: inbound vs outbound reveals true channel quality
 
-**The Productivity-First Quota Test (Canaani Model):**
+**The Productivity-First Quota Test:**
 Know these numbers before setting any quota:
 1. Cost per meeting
 2. Conversion rate at every stage
@@ -568,9 +568,9 @@ Know these numbers before setting any quota:
 4. AE meeting capacity before quality drops
 5. Only hire new AEs when you have pipeline to fill their calendars
 
-> "I don't really care that much about the quota. I care about how much I think they actually can produce. Knowing the real productivity is what matters.": Aviv Canaani
+> Quota matters less than real productivity: knowing what a rep can actually produce is the number that matters.
 
-### New Benchmark Data (Kyle Norton Podcast, E60-E64, Jan-Mar 2026)
+### New Benchmark Data (The Revenue Leadership Podcast E60-E64, Jan-Mar 2026)
 
 **Quota & Productivity:**
 
@@ -647,18 +647,5 @@ Know these numbers before setting any quota:
 **Cross-references:**
 - For V/CR/Δt metric scaffold, expansion type matrix (Renew/Resell/Upsell/Cross-sell), churn classification, and benchmarking methods, see `references/revenue-data-model-scaffold.md`.
 
+
 > Built by [Neon Triforce](https://neontriforce.com)
-
----
-
-## Operator Templates: Pavilion Unit Economics Worksheet
-
-For LTV/CAC/GM Payback/LTV:CAC calculations in client engagements, use the pre-built adapted template:
-`Frameworks/Templates/cro-school/pavilion-unit-economics-neon.xlsx`
-
-Structure: 1 sheet, 30 rows × 7 cols. Includes validation cells (`=if(E4=G4,"CORRECT","INCORRECT")`). Preserves all original formulas.
-
-Use in: diagnostic baselines, programme ROI justification, benchmark comparisons.
-
-Original source: `Sources/Courses/CRO-School/Pavilion Unit Economics Worksheet.xlsx`
-Attribution: Adapted from Pavilion CRO School. Original author: Carter/Nalbandian/Dick.
