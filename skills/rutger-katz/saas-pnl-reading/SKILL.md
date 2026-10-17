@@ -10,38 +10,28 @@ tags: [RevOps, Leadership]
 
 Use this when a revenue leader has a P&L, management accounts or a board pack in front of them and has to read it, challenge it, or argue a commercial case in finance's units.
 
-Produces a plain-language read, what is missing, what was flattered and by which mechanism, at most five questions ranked by what the answer would change, and a commercial ask restated as the P&L line it moves.
+Produces a plain-language read, what is missing, what was flattered and how, at most five questions ranked by what the answer would change, and a commercial ask restated as the P&L line it moves.
 
-**The statements are a set of choices, not a set of facts.** Where a cost sits, when revenue is recognized, what gets capitalized and what gets added back are decisions someone made; reading well means seeing the decisions.
-
-## The three statements
-
-| Statement | The question it answers | What it hides |
-|---|---|---|
-| P&L (income statement) | Did the business make a profit over this period? | Whether any cash actually moved |
-| Balance sheet | What does the business own and owe at this instant? | Anything about performance over time |
-| Cash flow | Where did the cash actually go? | Little, if all three sections are read: capitalized development sits in investing, not operating |
-
-A SaaS business can be profitable and running out of cash, or loss-making and cash generative. **If the three tell different stories, believe the cash flow statement.**
+**The statements are choices, not facts; read the decisions.** What each one answers and hides opens `references/pnl-anatomy.md`.
 
 ## Fast triage
 
-Six moves before forming any view.
+Six moves before forming any view, each explained in `references/board-pack-review.md`:
 
-1. **Split gross margin by revenue stream.** Blended margin is close to useless.
-2. **Ask for the ARR bridge.** New logo growth, expansion growth and growth masked by low churn are three different businesses.
-3. **Ask for the bridge from unadjusted to adjusted EBITDA, item by item.**
-4. **Find the cash line.** Many packs bury or omit it.
-5. **Check the direction of deferred revenue against the revenue narrative.**
-6. **Note what is missing.** Absent cohort retention, an absent ARR bridge or blended-only margin are usually omissions of convenience.
+1. Gross margin by stream, never blended.
+2. The ARR bridge.
+3. The unadjusted to adjusted EBITDA bridge, item by item.
+4. The cash line.
+5. Deferred revenue direction against the revenue narrative.
+6. What is missing.
 
 ## Three jobs
 
-**Explaining a statement.** Read `references/pnl-anatomy.md` for the P&L itself; `references/arr-revenue-cash.md` when ARR does not match revenue or billings, deferred revenue, RPO or burn come up; `references/ebitda-addbacks.md` for EBITDA, add-backs, covenants or a PE reporting pack. Walk the structure, then name the two or three judgment calls that shape it: customer success in COGS or S&M, how much R&D and commission cost was capitalized and whether the rate changed, where hosting and implementation salaries sit. Run the period comparison checks in `pnl-anatomy.md` before comparing two periods.
+**Explaining a statement.** Read `references/pnl-anatomy.md` for line structure, classification choices and period comparison checks; `references/arr-revenue-cash.md` when ARR, billings, deferred revenue, RPO or burn do not reconcile; `references/ebitda-addbacks.md` for EBITDA, add-backs or covenants. Walk the structure, then name the two or three judgment calls that shape it.
 
-**Interrogating a pack.** Read `references/board-pack-review.md`. Fast triage, then the reading order and the red flag catalog. Split every revenue variance into retained base, volume, price, mix and timing before accepting a narrative. Output in the five-part shape in that file, ending with the one thing to check first.
+**Interrogating a pack.** Read `references/board-pack-review.md`: reading order, variance decomposition, red flag catalog, question bank and the five-part output shape.
 
-**Translating a commercial argument.** Read `references/revops-finance-bridge.md`. Name the financial line, quantify the movement, state the ask. "We need better forecast discipline" lands weakly; "forecast error of this size forces a working capital buffer and makes covenant headroom unpredictable" lands. Finance reports on revenue, margin, EBITDA, cash and net debt; a commercial metric reaches that room only once it maps to one of the five.
+**Translating a commercial argument.** Read `references/revops-finance-bridge.md`: lever-to-line mapping, weak versus strong framings, two-way translation of what finance says. Name the line, quantify the movement, state the ask.
 
 ## What good looks like
 

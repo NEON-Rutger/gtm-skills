@@ -1,5 +1,18 @@
 # Reviewing a board pack or management accounts
 
+## Fast triage
+
+Six moves before forming any view. Most problems surface here.
+
+1. **Split gross margin by revenue stream.** Blended margin is close to useless.
+2. **Ask for the ARR bridge.** New logo growth, expansion growth and growth masked by low churn are three different businesses.
+3. **Ask for the bridge from unadjusted to adjusted EBITDA, item by item.**
+4. **Find the cash line.** Many packs bury or omit it.
+5. **Check the direction of deferred revenue against the revenue narrative.**
+6. **Note what is missing.** Absent cohort retention, an absent ARR bridge or blended-only margin are usually omissions of convenience.
+
+Then work through the reading order below.
+
 ## Reading order
 
 Work in this sequence. It is deliberately not the order the pack is assembled in, because packs are assembled to lead the reader.

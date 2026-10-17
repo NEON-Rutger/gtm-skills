@@ -1,5 +1,17 @@
 # The SaaS P&L, line by line
 
+## The three statements
+
+| Statement | The question it answers | What it hides |
+|---|---|---|
+| P&L (income statement) | Did the business make a profit over this period? | Whether any cash actually moved |
+| Balance sheet | What does the business own and owe at this instant? | Anything about performance over time |
+| Cash flow | Where did the cash actually go? | Little, if all three sections are read: capitalized development sits in investing, not operating |
+
+A SaaS business can be profitable and running out of cash, or loss-making and cash generative. **If the three tell different stories, believe the cash flow statement.**
+
+The statements are a set of choices, not a set of facts. Where a cost sits, when revenue is recognized, what gets capitalized and what gets added back are decisions someone made; reading well means seeing the decisions.
+
 ## The structure
 
 ```
