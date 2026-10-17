@@ -4,6 +4,32 @@ The named warning sign of a failing compensation function is **frequent creditin
 
 Supporting evidence: over 70% of companies that met or exceeded revenue synergy goals after a merger established a formal commercial integration management office (McKinsey). One executive quoted in that research described a prior integration that "lost momentum two months after close" for lack of scorekeeping.
 
+## The sequencing chain
+
+Compensation is the last thing to settle, not the first. Every step below is unanswerable until the one above it is decided, so first find out how far down the chain the organization actually is.
+
+1. **Coverage model.** Standalone teams, separate but connected, integrated with overlay specialists, or fully integrated. This single choice determines the entire crediting design.
+2. **Job architecture and leveling.** Titles reconciled, levels defined, bands per level per country. A bonus problem is usually a leveling problem in disguise.
+3. **Territory and account assignment.** No quota until it is clear who owns what.
+4. **Quota methodology.** Top-down from the plan with a 10 to 20 percent buffer (practice rule), validated bottom-up against pipeline coverage and historical conversion.
+5. **Plan mechanics.** Pay mix, measures, curves, accelerators, crediting.
+6. **Pay levels.** Last, because levels are the expensive part and the part that can be grandfathered.
+
+If the room is arguing about accelerator curves while step 1 is unresolved, say so before doing anything else.
+
+### Diagnostic questions that relocate the problem
+
+1. Where is the organization in the chain, and is it arguing about a step it has not earned yet?
+2. Which crediting rules are actually in force, as opposed to written down?
+3. How many disputes were raised last period, who resolved them, and on what basis?
+4. What is CCOS, and does anyone calculate it?
+5. What has actual attainment been by segment over the last four to eight quarters?
+6. Which jurisdictions are in scope, and is there a works council in any of them?
+7. Is there a valid unilateral change clause in the employment contracts?
+8. Which accounting framework applies, and what is the current capitalization policy?
+9. Who administers commission today, in what tool, and how many hours a month does it take?
+10. Who owns the account when multiple sellers are in the same customer?
+
 ## The three governance mechanisms
 
 **1. A comp committee.** Comp owner, finance, HR, and the commercial leader. Monthly during a period of change, quarterly in steady state.

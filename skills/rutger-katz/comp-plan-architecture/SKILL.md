@@ -8,39 +8,39 @@ tags: [RevOps, Sales]
 
 # Compensation Plan Architecture: Crediting, Governance and Lawful Change
 
-Applies when the comp problem is not the numbers but the machinery around them: who gets credited, who approves changes, how disputes resolve, whether a change is lawful in each country, and whether the plan survives an audit.
+Applies when the problem is the machinery around comp: who gets credited, who approves changes, how disputes resolve, whether a change is lawful per country, whether the plan survives an audit.
 
-Produces a crediting rulebook, a governance charter, a CCOS-based harmonization sequence, a per-jurisdiction constraint map, a plan design whose capitalizable slice is separable, and selection criteria for commission tooling.
+Produces a crediting rulebook, governance charter, CCOS-based harmonization sequence, per-jurisdiction constraint map, separable plan design for contract-cost accounting and tooling selection criteria.
 
-A comp plan is a contract, an accounting input and a behavior design system at once. Most failures come from designing it as only the third.
+A comp plan is a contract, an accounting input and a behavior design system at once; most failures design it as only the third.
 
 ## Find where they are in the sequencing chain
 
-Compensation is settled last. Each step is unanswerable until the one above it is decided: coverage model (standalone, connected, overlay specialists or fully integrated; this one choice fixes the crediting design), job architecture and leveling, territory and account assignment, quota methodology (top-down with a 10 to 20 percent buffer as a practice rule, validated bottom-up against pipeline coverage and historical conversion), plan mechanics, and pay levels last, because levels are the expensive part and the part that can be grandfathered. A bonus problem is usually a leveling problem in disguise. If the room is arguing about accelerator curves while the coverage model is unresolved, say so first.
+Compensation is settled last: coverage model, job architecture and leveling, territories, quota methodology, plan mechanics, then pay levels; each step waits on the one above it. Read `references/governance.md` for the six steps, quota-buffer practice rule and ten diagnostic questions.
 
 ## Write the crediting rulebook before the mechanics
 
-First establish which crediting rules are actually in force, as opposed to written down, and who resolved last period's disputes on what basis. Two principles: pay for persuasion (credit belongs to whoever moved the customer), and credit stops when the seller is no longer accountable. Start from the coverage model, choose split, double or layered credit, then enumerate every uncomfortable scenario: two legacy sellers on one account, a rep leaving before collection, a deal churning inside the clawback window. 16% of companies pay on 130% or more of actual revenue (Alexander Group and WorldatWork survey assets, undated, directional); write a total-credit ceiling into the rulebook. Read `references/crediting-rules.md` for the mechanics table, the fourteen scenarios, clawback design and the dispute loop.
+Start from the rules in force, not the written ones. Pay for persuasion, stop credit when the seller stops being accountable, pick split, double or layered credit, enumerate every uncomfortable scenario and write a total-credit ceiling into the rulebook. Read `references/crediting-rules.md` for survey data, mechanics, the fourteen scenarios, clawback and the dispute loop.
 
 ## Harmonize on CCOS, never on day one
 
-With two or more legacy plans, compute compensation cost of sales per entity at actual attainment first (base plus variable over revenue or bookings; cross-industry B2B benchmark 7.9%, Alexander Group). Three entities give three numbers, which turns a fight about fairness into arithmetic about cost. Crediting, account ownership, the dispute path and the plan document cannot wait; pay levels, accelerators and SPIFs can be grandfathered. Propose common architecture with entity-calibrated economics in year one, one plan family in year two. Read `references/harmonization.md` for the failure-mode evidence, the three level-up scenarios and the retention data.
+Compute compensation cost of sales per legacy entity at actual attainment first (cross-industry B2B benchmark 7.9%, Alexander Group). Crediting, account ownership, the dispute path and the plan document cannot wait; pay levels can. Read `references/harmonization.md` for the year-one shape, level-up scenarios and retention data.
 
 ## Establish jurisdiction before any plan change
 
-In Europe a plan change is a negotiation or an individual consent exercise, not an announcement. Germany requires works council agreement, or a binding conciliation board ruling, on the structure of a commission scheme, though not on the value per point; the Netherlands a consent right on a change of the remuneration system, not its outputs; France consent to any change of the contractual pay structure; the UK a consent campaign with a consultation calendar, under rules that are still moving. Consultation runs longer than design, so start it in parallel. Read `references/eu-legal-constraints.md` for every jurisdiction, the citations and the Pay Transparency Directive.
+In Europe a plan change is never an announcement: works council agreement or a binding conciliation ruling (Germany), consent on a system change (Netherlands), consent to any contractual pay-structure change (France), a consultation calendar (UK). Start consultation alongside design; it runs longer. Read `references/eu-legal-constraints.md` for each jurisdiction, citations and the Pay Transparency Directive.
 
 ## Design for the auditor
 
-Keep the capitalizable slice (a flat-rate, contract-level commission on new and expansion ACV) structurally separable from quota bonuses, team kickers and SPIFs. Two traps: a substantive continued-service condition can move the payment out of contract-cost accounting, and a manager override or SPIF is incremental only where the payout depends on nothing but obtaining contracts; the auditor rules on both. Read `references/ifrs15-commissions.md` whenever a CFO, controller or auditor is in the room.
+Keep the capitalizable slice (a flat-rate, contract-level commission on new and expansion ACV) separable from quota bonuses, team kickers and SPIFs, and settle continued-service and override treatment with the auditor at design time. Read `references/ifrs15-commissions.md` whenever a CFO or auditor is in the room.
 
 ## Govern it
 
-A comp committee (comp owner, finance, HR, commercial lead; monthly during change, quarterly in steady state) approves every change and every exception, and exceptions go in a register, never into memory. Disputes enter through one channel, resolve inside a fixed SLA (ten working days is the practice rule), and a novel case amends the published rulebook. No verbal plan changes. The designer owes five documents (rationale, plan per role, rulebook, calculation specification, charter), not a spreadsheet. Read `references/governance.md` for the documents, the annual calendar and the health check.
+A comp committee approves every change and exception, each logged. Disputes run through one channel to a fixed SLA, and a novel case amends the published rulebook. No verbal plan changes; five documents, not a spreadsheet. Read `references/governance.md` for the committee, SLA practice rule, documents, calendar and health check.
 
 ## Choose tooling by criteria, not by brand
 
-Over 80% of non-trivial spreadsheets contain at least one error (Panko and the EuSpRIG research). Before any purchase, ask what the existing ERP already does for capitalizing contract acquisition costs, a different capability from revenue recognition. Then rank candidates on a real contract-cost sub-ledger, overlay splits above 100%, multi-entity and multi-currency, works council posture and EU data residency. Read `references/spm-tooling.md` for the criteria, tool categories and pricing anchors.
+First ask what the existing ERP already does for capitalizing contract acquisition costs (not the same as revenue recognition); then rank candidates on the five criteria in `references/spm-tooling.md`, starting with a real contract-cost sub-ledger and overlay splits above 100%.
 
 ## What good looks like
 
