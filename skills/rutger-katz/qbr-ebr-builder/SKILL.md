@@ -1,7 +1,7 @@
 ---
 name: "qbr-ebr-builder"
 title: QBR and EBR builder
-description: "Design and build customer business reviews that buyers actually attend: QBR (operational cadence) and EBR (executive cadence), with the value recap in the customer's own numbers as the load-bearing artifact. Triggers on 'QBR,' 'EBR,' 'business review,' 'executive business review,' 'quarterly review deck,' 'prove value to the customer,' 'renewal conversation prep,' 'customer stopped attending reviews,' 'our QBRs are a feature parade,' 'success plan review,' or any situation where post-sale value needs to be demonstrated to the people who pay, not just the people who use. BOUNDARY: account-health scanners produce the internal diagnostic BEFORE the review; this skill builds the customer-facing instrument itself and starts from their output. renewal-save-motion owns the intervention when a review surfaces risk; expansion-revenue-architect owns the motion when it surfaces headroom; this skill hands off to both and runs neither. revenue-operating-cadence owns INTERNAL meeting architecture; a business review is a customer-facing meeting and follows different rules: their agenda, their numbers, their next quarter."
+description: "Design and build customer business reviews that buyers attend: QBR (operational cadence) and EBR (executive cadence), with the value recap in the customer's own numbers as the load-bearing artifact. Triggers on 'QBR,' 'EBR,' 'business review,' 'executive business review,' 'quarterly review deck,' 'prove value to the customer,' 'renewal conversation prep,' 'customer stopped attending reviews,' 'our QBRs are a feature parade,' 'success plan review,' or any need to show post-sale value to the people who pay, not just the people who use. BOUNDARY: account-health scanners produce the internal diagnostic BEFORE the review; this skill builds the customer-facing instrument from their output. renewal-save-motion owns the intervention when a review surfaces risk; expansion-revenue-architect owns the motion when it surfaces headroom; this skill hands off to both. revenue-operating-cadence owns INTERNAL meeting architecture; a business review is a customer-facing meeting on the customer's agenda and numbers."
 category: RevOps
 ---
 
@@ -9,7 +9,7 @@ category: RevOps
 
 Most business reviews die the same death: a slideware feature parade delivered to the daily users while the economic buyer, the person who will decide the renewal, has stopped attending. Then renewal season arrives and the value case gets built in a panic, from scratch, for an audience that has not heard it all year.
 
-A business review exists to do one job: keep the people who PAY convinced of value, in their numbers, on a rhythm, so the renewal is a formality and the expansion conversation has a natural venue. Median gross revenue retention for private SaaS sits around 90% with top quartile above 95% (industry surveys, 2025); the review cadence is one of the few controllable instruments that moves an account from the first group's trajectory to the second's.
+A business review exists to do one job: keep the people who PAY convinced of value, in their numbers, on a rhythm, so the renewal is a formality and the expansion conversation has a natural venue. Median gross revenue retention sits between 84% and 91% depending on the survey, with top quartile around 91% (Benchmarkit 2026; SaaS Capital 2025); the review cadence is one of the few controllable instruments that moves an account from the first group's trajectory to the second's.
 
 **Entry condition:** an internal health read already exists (from an account health audit or health scan). A review built without one is theater; you are presenting to the customer what you have not verified yourself.
 
@@ -95,4 +95,6 @@ A review is upstream instrumentation for the rest of the post-sale system. Every
 
 ## Benchmarks and Provenance
 
-GRR median ~90% / top quartile 95%+ (industry surveys, 2025; provenance detail shared with renewal-save-motion's `references/retention-benchmarks.md`). The 90-120 day EBR-before-renewal anchor, the three-panel spine, and the segmentation tiers are practice-based operating rules, labeled as such; validate against your own renewal cohort once two quarters of review discipline exist. Full notes: `references/business-review-practices.md`.
+GRR median 84% to 91% / top quartile ~91% (Benchmarkit 2026; SaaS Capital 2025; provenance in `references/business-review-practices.md`). The 90-120 day EBR-before-renewal anchor, the three-panel spine, and the segmentation tiers are practice-based operating rules, labeled as such; validate against your own renewal cohort once two quarters of review discipline exist. Full notes: `references/business-review-practices.md`.
+
+> Built by [Neon Triforce](https://neontriforce.com)

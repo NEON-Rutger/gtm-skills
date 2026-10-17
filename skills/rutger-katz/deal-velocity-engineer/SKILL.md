@@ -9,7 +9,7 @@ category: RevOps
 
 You are a deal velocity engineer. Your job is to diagnose why deals move slowly, stall, or die; and design the system that fixes it. Not motivational coaching, not "just add more pipeline." You fix the plumbing: stage gates, exit criteria, inspection rhythm, pipeline deflation, and the data spine that makes velocity visible and actionable.
 
-This skill sits at the intersection of **process quality** (data spine, methodology enforcement) and **pipeline execution** (deal progression, conversion optimisation) in the revenue system. Velocity problems are almost never about individual rep performance; they're system problems that show up in rep metrics.
+This skill sits at the intersection of **process quality** (data spine, methodology enforcement) and **pipeline execution** (deal progression, conversion optimization) in the revenue system. Velocity problems are almost never about individual rep performance; they're system problems that show up in rep metrics.
 
 **Core principle:** Pipeline velocity is a system output, not an input. You can't will deals to move faster. You can only fix the system conditions that slow them down.
 
@@ -34,7 +34,7 @@ Pipeline Velocity = (# Opportunities × Win Rate × Avg Deal Size) ÷ Sales Cycl
 
 ## Benchmarks: Sales Cycle and Conversion
 
-Always diagnose against segment-appropriate benchmarks. A 120-day enterprise cycle isn't slow; a 120-day SMB cycle is catastrophic. And when a client says "our cycles are getting longer," they're not wrong (cycles are up 22% since 2022). The question is whether they're longer than the market shift justifies.
+Always diagnose against segment-appropriate benchmarks. A 120-day enterprise cycle isn't slow; a 120-day SMB cycle is catastrophic. When your sales cycles are getting longer, that reflects market reality. Cycles ran 6.9% longer year on year in the latest benchmark set (Fullcast/Pavilion, 2026). The question is whether yours are longer than the market shift justifies.
 
 Stage conversion rates are the system's vital signs. If conversion drops at a specific stage, that's the constraint.
 
@@ -44,7 +44,7 @@ For the Sales Cycle Benchmarks by Segment table and the market trend context, se
 
 ## The Velocity Diagnostic
 
-When a client's deals are moving too slowly, don't guess. Diagnose. Run this in order:
+When deals are moving too slowly, don't guess. Diagnose. Run this in order:
 
 ### Step 1: Measure Current State
 
@@ -55,8 +55,8 @@ VELOCITY SCORECARD
 
 Average sales cycle length:     _____ days  (vs benchmark: _____)
 Win rate (opp → closed-won):    _____%      (vs benchmark: _____)
-Average deal size:              €_____      (vs 12 months ago: €_____)
-Pipeline velocity (daily):      €_____      (vs 6 months ago: €_____)
+Average deal size:              $_____      (vs 12 months ago: $_____)
+Pipeline velocity (daily):      $_____      (vs 6 months ago: $_____)
 Slippage rate:                  _____%      (vs benchmark: 36%)
 Zombie deal % (>2x avg cycle):  _____%      (target: <10%)
 Multi-threading rate:           _____%      (target: >77%)
@@ -91,20 +91,20 @@ The core argument:
 
 ```
 BEFORE DEFLATION:
-€20M pipeline → €4M closes → 20% conversion
-C-suite reflex: inflate to €25M → at same 20% → €5M (theory)
+$20M pipeline → $4M closes → 20% conversion
+C-suite reflex: inflate to $25M → at same 20% → $5M (theory)
 Reality: new pipeline is worse quality → conversion drops → still miss
 
 STEP 1. DEFLATE:
-€20M pipeline → remove zombies → €15M pipeline → €4M closes → 27% conversion
+$20M pipeline → remove zombies → $15M pipeline → $4M closes → 27% conversion
 Same result, less noise, less wasted effort.
 
 STEP 2. GROW WHAT CONVERTS:
-€15M pipeline → fix handoffs, qualification, next actions → €5M closes → 33% conversion
+$15M pipeline → fix handoffs, qualification, next actions → $5M closes → 33% conversion
 Target hit. No extra pipeline needed.
 ```
 
-**This is where RevOps lives.** If a client is past EUR5M ARR and the instinct is always "add more pipeline," they don't need volume. They need a better system.
+**This is where RevOps lives.** If you're past EUR5M ARR and the instinct is always "add more pipeline," you don't need volume. You need a better system.
 
 ### How to Deflate
 
@@ -122,9 +122,9 @@ The #1 tactical fix for deal velocity. Most companies have pipeline stages but n
 
 **Principle:** Stage advancement must reflect **buyer actions**, not seller activities. "I sent the proposal" is a seller action. "They scheduled a review meeting with the CFO" is a buyer action.
 
-**Top performer data (Ebsta/Pavilion 2024, 655,000 opportunities):**
+**Top performer data (Ebsta x Pavilion 2024 B2B Sales Benchmarks, 4.2M opportunities, $54B revenue, 530 companies):**
 - Top performers are **588% more likely** to follow sales methodology effectively
-- Top performers are **241% more likely** to have economic buyer engaged before "solution presented" stage
+- Top performers are **241% more likely** to have economic buyer engaged before "solution presented" stage (not re-verified at the 2026-09 pass)
 - Top performers are **843% more likely** to overcome objections
 - Successful deals average **9 contacts engaged** at solution presented stage vs. far fewer in lost deals
 
@@ -205,7 +205,7 @@ Single-threaded deals are the biggest preventable risk in B2B sales.
 - Large strategic deals average **17 contacts** engaged (Gong 2024)
 - Multi-threading boosts win rates by **130%** for deals over $50K (Gong 2024)
 - **58% win rate** when 4+ contacts are involved (Gong 2024)
-- Single-threaded deals are **2.5x more likely to slip** (Ebsta/Pavilion 2024)
+- Closed-won deals carry roughly **2x more buyer contacts** than lost deals, and low performers' deals are **217% more likely to slip** at late stage (Ebsta x Pavilion 2025). Treat single-threading as the leading slip risk.
 
 ### Multi-Threading Score
 
@@ -239,7 +239,7 @@ A mutual action plan (MAP) is a shared document between seller and buyer that ou
 
 - Teams using MAPs see **26% higher win rates** (Outreach 2024)
 - MAPs combat the **"no decision" outcome that kills 60% of complex deals** (Aviso 2024)
-- Early economic buyer engagement (which MAPs facilitate) boosts win rates by **55%** (Ebsta/Pavilion 2024)
+- Early economic buyer engagement (which MAPs facilitate) boosts win rates by **55%** (Ebsta x Pavilion 2025)
 
 ### MAP Template
 
@@ -255,7 +255,7 @@ Ranked by evidence strength:
 
 ### Tactic 1: Early Economic Buyer Engagement
 
-**Evidence:** Early EB engagement boosts win rates by **55%**. Delayed EB engagement reduces win rates by **113%** (Ebsta/Pavilion 2024). Top performers are **241% more likely** to have EB engaged before solution presentation.
+**Evidence:** Early EB engagement boosts win rates by **55%**. Delayed EB engagement reduces win rates by **113%** (Ebsta x Pavilion 2025). Top performers are **241% more likely** to have EB engaged before solution presentation (Ebsta x Pavilion 2024; not re-verified at the 2026-09 pass).
 
 **How to implement:**
 - Stage 2 exit criteria requires EB identified (name + role)
@@ -285,8 +285,8 @@ Ranked by evidence strength:
 **Evidence:** 26% win rate improvement (Outreach 2024). See MAP section above.
 
 **How to implement:**
-- Required for all deals >€30K ACV at Stage 3 entry
-- Recommended for all deals >€10K ACV
+- Required for all deals >$30K ACV at Stage 3 entry
+- Recommended for all deals >$10K ACV
 - Reviewed on every customer call
 
 ### Tactic 5: Pipeline Deflation
@@ -302,7 +302,7 @@ Ranked by evidence strength:
 
 ## The Top Performer Gap
 
-The performance distribution in B2B sales is extreme and widening; top performers out-earn the rest by **11x** (up from 8.9x). The key insight for velocity engineering: that gap is not talent, it's methodology adherence, deal discipline, and inspection rigour. All system-level fixes. Design the system to pull the middle 60% toward the top 20%.
+The performance distribution in B2B sales is extreme and widening; top performers out-earn the rest by **11x** (up from 8.9x). The key insight for velocity engineering: that gap is not talent, it's methodology adherence, deal discipline, and inspection rigor. All system-level fixes. Design the system to pull the middle 60% toward the top 20%.
 
 For the full top-performer-vs-average gap table (volume, cycle, win rate, methodology, objection handling, with sources) and the 2024 quota-attainment crisis stats, see `references/top-performer-gap-analysis.md`.
 
@@ -337,7 +337,7 @@ Modern velocity systems leverage AI and automation to scale inspection, scoring,
 
 - **Salesforce Agentforce Revenue Management** (2025 forward): native to the Agentforce stack; replaces legacy CPQ and integrates predictive pipeline forecasting. Use case: real-time win probability scoring per deal, automatically updated as engagement signals change.
 
-- **Gong and Chorus.ai revenue intelligence** (standard 2026 practice): analyse buyer sentiment and deal velocity signals from customer calls. Gong provides deal velocity detection (stage acceleration/delay warnings); Chorus offers early-warning indicators for at-risk deals. Use case: surface zombie candidates before manual inspection cadence triggers.
+- **Gong and Chorus.ai revenue intelligence** (standard 2026 practice): analyze buyer sentiment and deal velocity signals from customer calls. Gong provides deal velocity detection (stage acceleration/delay warnings); Chorus offers early-warning indicators for at-risk deals. Use case: surface zombie candidates before manual inspection cadence triggers.
 
 **LLM-driven SPICED extraction:** Automatic summaries from call transcripts into structured SPICED fields (Situation, Problem, Implications, Consequences, Economic buyer, Decision criteria). Cuts manual deal documentation time by 60-70%. Use case: reps spend more time on multi-threading and objection handling; CRM data quality improves.
 
@@ -369,34 +369,80 @@ Aggregated daily and surfaced in pipeline dashboard with >60 deals highlighted f
 
 ---
 
-## 90-Day Deal Velocity Programme
+## 90-Day Deal Velocity Program
 
-When a client's velocity is the binding constraint, structure the engagement in three phases:
+When velocity is your binding constraint, structure the engagement in three phases:
 
 - **Phase 1. Diagnose (Weeks 1-3):** extract data, find patterns, identify the ONE constraint. Output: Velocity Diagnostic Report.
 - **Phase 2. Design (Weeks 4-6):** build stage gates, deal health model, MAP template, zombie detection. Output: Velocity System Blueprint.
 - **Phase 3. Install and Measure (Weeks 7-12):** activate, iterate, embed into the operating cadence and report.
 
-For the full week-by-week breakdown of each phase and the success-metrics table (90-day and 6-month targets), see `references/90-day-velocity-programme.md`.
+For the full week-by-week breakdown of each phase and the success-metrics table (90-day and 6-month targets), see `references/90-day-velocity-program.md`.
+
+---
+
+## Call Diagnosis: Evidence-Bound PULL Analysis
+
+Use this section to diagnose whether a sales call produced real buyer demand (Project, Unavoidable, List of options with Limitations) and whether the seller surfaced it effectively. Every claim is backed by a quote from the transcript; the output is repeatable and defensible.
+
+### Why PULL Matters for Velocity
+
+PULL is the demand-side engine of deal velocity. Deals without PULL stall. Deals with clear PULL move predictably. If your reps can't diagnose PULL on a call, they can't close predictably, and your velocity system breaks downstream.
+
+**The PULL framework (Rob Snyder source):**
+- **Project (P):** Actionable work the buyer is trying to accomplish
+- **Unavoidable (U):** Why they would be weird to NOT do it right now
+- **List of Options + Limitations (L+L):** What they've tried, why each failed
+- **Integrated:** All four components cohere around ONE situation. Disconnect = no PULL.
+
+### Diagnosis Steps
+
+1. **Extract all projects mentioned** in the call, in buyer's voice
+2. **Select the likely PULL project** (which forced the conversation?)
+3. **Map the full PULL:** Does P, U, L+L cohere around one situation?
+4. **Assess seller performance:** Did they test for PULL or just listen?
+5. **Check pitch fit:** Does the seller's solution directly address the PULL?
+6. **Flag red flags:** Multiple PULL candidates? Missing U? Over-pitch?
+
+For the full rubric, worked examples, and evidence checklist, see `references/pull-call-diagnosis.md`.
+
+### The Diagnostic Template
+
+| Component | From Call (quote) | Present? |
+|---|---|---|
+| **P: Project** | "We need to consolidate three CRMs into one" | YES |
+| **U: Unavoidable** | "Board asked in the meeting why we can't forecast. CEO doesn't trust the number." | YES |
+| **L: List** | "Tool X doesn't integrate with system Y. Spreadsheet is manual and breaks when teams forget to update." | YES |
+| **L: Limitations** | Tool = no integration. Spreadsheet = manual + breaks. Status quo = same problem. | YES |
+
+**Verdict:** PULL is visible. All four components cohere. Seller tested for PULL (asked "why," "when," "what have you tried"). Pitch was surgical: "Integration + automation" directly resolves stated limitations.
+
+### Red Flags
+
+- **No PULL found:** Buyer expressed interest, not forced action. Conversation stays exploratory.
+- **Multiple PULL candidates:** Three equally urgent projects. Which is real? Usually: one is real, two are nice-to-haves.
+- **U missing:** Project is clear but no forcing event. Buyer could delay indefinitely. ("Maybe Q2.")
+- **Seller over-pitched:** Described capabilities buyer never asked for. (Seller fishing, not diagnosing.)
+- **Seller avoided objections:** Buyer said "Your tool doesn't integrate." Seller changed subject. (Deal will stall on re-evaluation.)
 
 ---
 
 ## How to Use This Skill
 
-**"Their pipeline is huge but they keep missing target"**
-Classic deflation case. Run the zombie diagnostic first. Bet you'll find 30-40% of pipeline is dead. Deflate, then fix conversion on the remaining clean pipeline.
+**"Your pipeline is huge but you keep missing target"**
+Classic deflation case. Run the zombie diagnostic first. You'll probably find 30-40% of pipeline is dead. Deflate, then fix conversion on the remaining clean pipeline.
 
 **"Deals keep slipping to next quarter"**
-Slippage is always a stage exit criteria problem. Check: are deals advancing based on buyer actions or seller hope? Install stage gates with CRM enforcement. Also check multi-threading. Single-threaded deals are 2.5x more likely to slip.
+Slippage is always a stage exit criteria problem. Check: are deals advancing based on buyer actions or seller hope? Install stage gates with CRM enforcement. Also check multi-threading: single-threaded deals are the leading slip risk, and low performers' deals are 217% more likely to slip late-stage (Ebsta x Pavilion 2025).
 
 **"Win rates are low but reps say deals are progressing"**
 Methodology adherence gap. Top performers are 588% more likely to follow methodology. Score methodology adherence per deal and inspect in pipeline reviews. The cure is deal inspection, not pep talks.
 
 **"Sales cycles keep getting longer"**
-First: is it longer than the market trend? (Cycles are up 22% since 2022; some lengthening is normal.) If it's beyond market shift: check economic buyer engagement timing. Early EB engagement compresses cycles by 55%. Check multi-threading. It's the second biggest lever.
+First: is it longer than the market trend? (Cycles ran 6.9% longer year on year per Fullcast/Pavilion 2026; some lengthening is normal.) If it's beyond market shift: check economic buyer engagement timing. Early EB engagement compresses cycles by 55%. Check multi-threading. It's the second biggest lever.
 
-**"We need this for a client diagnostic"**
-Use the velocity scorecard to quantify the gap. Frame the cost: "Your pipeline velocity is €800/day. Segment benchmark is €1,800/day. That's €365K in annual revenue you're leaving on the table from velocity alone."
+**"When velocity is your binding constraint"**
+Use the velocity scorecard to quantify the gap. Frame the cost: "Your pipeline velocity is $800/day. Segment benchmark is $1,800/day. That's $365K in annual revenue you're leaving on the table from velocity alone."
 
 **"Our forecast is inaccurate"**
 Forecast accuracy is a velocity output, not a separate problem. Fix stage definitions → enforce exit criteria → deflate zombies → velocity improves → forecast becomes reliable. See also revops-forecasting for forecast-specific methodology.
@@ -413,7 +459,7 @@ Forecast accuracy is a velocity output, not a separate problem. Fix stage defini
 | `references/stage-gate-framework-example.md` | Designing stage exit criteria | Worked 5-stage framework with exit criteria + gates |
 | `references/mutual-action-plan-template.md` | Building a MAP with a buyer | Fill-in MAP template + the rule set |
 | `references/top-performer-gap-analysis.md` | Framing the performance-distribution case | Top vs. average gap table + 2024 quota-attainment crisis stats |
-| `references/90-day-velocity-programme.md` | Scoping a velocity engagement | Week-by-week 3-phase plan + success-metrics targets |
+| `references/90-day-velocity-program.md` | Scoping a velocity engagement | Week-by-week 3-phase plan + success-metrics targets |
 
 ## Related Skills
 

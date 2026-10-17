@@ -11,6 +11,32 @@ You are a monetization operations specialist. Pricing is strategy. Monetization 
 
 The core challenge: **Consumption pricing is only as good as your metering, billing, and reconciliation infrastructure.** Get the plumbing wrong and you overshare with some customers, underbill others, break revenue recognition, and spend your quarter in spreadsheets trying to reconcile.
 
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | This skill does not apply pre-product-market fit. Instead, confirm that customers can be invoiced transparently at all (even manually), verify that usage can be tracked without custom metering infrastructure, and communicate billing clearly on each invoice. Skip Layers 2-5 entirely. Use Layer 1 only if you need to aggregate usage for transparency; otherwise invoice based on manual observation. Do not select a billing platform, model revenue recognition, or plan migrations. |
+| Start-up, product-market fit | The company has one proven motion and can run metering and basic invoicing. Focus on Layer 1 (build or buy metering that deduplicates events and maps them to customers), Layer 2 (implement one or two contract types, not all six), and Layer 3 (generate invoices with auditable line items). Run Operational Playbook 1 (migration) if moving from fixed to usage pricing. Defer Layers 4-5 and Playbooks 2-4 until your first scale-up milestone. Platform options: Lago (self-hosted or managed), a warehouse-native SQL pipeline, or a small invoice-generation tool. |
+| Scale-up | Run all five layers. Your team owns each: engineering (metering deduplication and mediation), sales (contract terms and rating rules), finance (revenue reconciliation and ASC 606), and RevOps (collections, data governance, CRM integration). Execute all four operational playbooks as relevant. Use a unified billing platform or build warehouse-native metering with a billing specialist. Revenue recognition must survive audit; invoice volume is 1,000+/month. |
+| Enterprise | Same as scale-up plus multi-entity billing architecture (parent, subsidiary, regional, and product-line specific contracts handled in parallel). Implement transfer pricing and intercompany settlement rules, consolidated revenue reconciliation across entities, and formal pricing change governance through a steering committee with finance and legal. Finance function owns revenue forecasting and ASC 606 compliance for consolidated group reporting. |
+
+Skip before product-market fit: Layer 2: Rating and Pricing Engine; Layer 4: Collections and Payment; Layer 5: Revenue Reconciliation and ASC 606; Operational Playbook 2: Packaging Changes and Price Increases; Operational Playbook 3: Data Quality and Billing-Grade Standards; Operational Playbook 4: EU/GDPR Considerations.
+
 ## The Monetization Stack
 
 Every B2B company running consumption or hybrid pricing has five interconnected layers:
@@ -127,6 +153,8 @@ For high-volume usage (APIs, AI, compute):
 - Audit trail is built in (warehouse logs every query).
 - Cost is lower than a purpose-built metering platform when volume is high.
 
+This skill consumes: raw usage events from application logs or analytics platforms (reliability: high if application-emitted, medium if inferred from product telemetry), customer ID mappings from your CRM or identity system (reliability depends on sync currency; flag mismatches), metered aggregates (generated by this skill; audit trail built in), billing system records and invoices (reliability depends on platform auditability).
+
 ## Layer 2: Rating and Pricing Engine
 
 Once you have metered quantities, you need to apply billing rules. Billing rules are contracts. Contracts vary wildly.
@@ -141,6 +169,8 @@ Once you have metered quantities, you need to apply billing rules. Billing rules
 | **Hybrid: Seats + Usage** | Fixed seats (e.g., 5 users at $100/user) plus usage overage (e.g., $0.01 per extra user-day) | 5 users × $100 + (actual_users - 5) × $0.01 per day if over quota | High: separate seat + usage tiers, multi-dimensional aggregation |
 | **Outcome-Based** | Price anchored to customer success metrics, not raw usage | $1.00 per resolved customer-support ticket (HubSpot, April 2026) | Very High: requires a success indicator, lag in measurement, dispute handling |
 | **Hybrid with Credits** | Monthly allowance (credit pool), then pay-as-you-go for usage beyond | 10,000 credits/month (prepaid), then $0.001 per credit overage | High: credit accounting, rollover rules, expiration rules |
+
+Example: MidMarket Company, Enterprise contract. Terms: GBP5,000/month base + GBP0.001 per API call above 10M included. Metering (Layer 1): May 2026, total usage = 15M calls. Rating: base_charge = GBP5,000; overage_units = max(0, 15M - 10M) = 5M; overage_charge = 5M × GBP0.001 = GBP5,000; total_charge = GBP5,000 + GBP5,000 = GBP10,000. Invoice (Layer 3): line item 1 = 'Base monthly charge (May 2026)' GBP5,000; line item 2 = 'API calls overage (5M calls @ GBP0.001/call)' GBP5,000; contract reference = 'Enterprise Agreement, Jan 2026'; total due = GBP10,000.
 
 ### Rating Engine: The Spec
 
@@ -433,7 +463,7 @@ Existing customer (renewing in August):
 - Low-usage customers (who are price-sensitive) see a smaller increase or none.
 - Requires cohort analysis and segmentation in the billing system.
 
-**Gotcha:** Communicate price increases 60+ days before execution. Surprise increases drive churn. In one study, proactive communication reduced churn from a 15% impact to 5%.
+**Gotcha:** Communicate price increases 60+ days before execution. Surprise increases drive churn. Proactive communication reduces price-increase churn (practice-based; no traceable study quantifies the effect).
 
 ## Operational Playbook 3: Data Quality and Billing-Grade Standards
 
@@ -543,16 +573,18 @@ Read the Billing System Checklist. Map your contract types to platform capabilit
 **"Our billing data is a mess. Where do we start?":**
 Run the Billing Data Quality Audit. Which check fails worst? Start there. Usually it's event deduplication or customer mapping accuracy. Fix that, then move to the next.
 
+Do not use this skill if: (1) the customer's contract is pure flat-fee annual with no usage component; start with a GTM harness tool instead. (2) Usage tracking is not actually happening in the product yet; first build usage instrumentation, then return here. (3) You are billing a marketplace or regulatory compliance workflow; these require specialist skills with domain-specific metering. (4) The company is still deciding whether to offer consumption pricing; use a GTM harness tool to model the strategic case first.
+
 ---
 
 ## References
 
-- Ledgerup (2026). Consumption Pricing Adoption Report: 77% of largest software companies using consumption-based pricing. Market sizing: $6.5B in 2026, projected $15.3B by 2032.
-- Chargebee (2025). State of Subscriptions: 43% of companies using hybrid pricing models today; projected 61% by end of 2026.
+- Metronome (2025). State of Usage-Based Pricing 2025 Report (vendor research): 77% of the largest software companies have some form of usage-based pricing.
+- Ledgerup (2026), relaying third-party market research (forecast): usage-based billing software market about $6.5B, projected $15.3B by 2032.
+- Growth Unhinged (2026). The 2026 State of B2B SaaS and AI Monetization Report (survey, n=230): hybrid is the most common primary pricing model at 37%, up from 25% a year earlier.
 - Zuora (2026). Metered Billing Guide: Architecture and implementation patterns for usage tracking and deduplication.
-- Gartner (2026). Revenue Ops Platform Landscape: CPQ consolidation trends and ASC 606 compliance requirements.
-- HubSpot (April 2026). Breeze Agent pricing shift: $0.50 per resolved conversation (Customer Agent), $1.00 per recommended lead (Prospecting Agent).
-- Zylo (2026). SaaS Management Index: 78% of IT leaders experienced unexpected consumption or AI charges in the past year.
+- HubSpot (April 2026). Breeze Agent pricing shift: about $0.50 per resolved conversation (Customer Agent), $1.00 per recommended lead (Prospecting Agent).
+- Zylo (2026). SaaS Management Index: 78% of IT leaders reported unexpected charges tied to consumption or AI pricing in the past 12 months.
 - Normative estimates on revenue recognition complexity: Based on practice patterns across 5,000+ consumption contracts per customer. Re-estimation required monthly for ASC 606 compliance.
 
 See also: `references/benchmarks-sourced.md` for detailed sourcing on all quantitative claims.

@@ -13,6 +13,32 @@ Most scale-ups ($15M-150M ARR) built revenue systems without building data gover
 
 This skill is prevention, detection, and correction working together.
 
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | Pre-product-market fit companies need data hygiene, not governance structure. Run Section 4b (Identity Resolution Gate) to prevent duplicate accounts and contacts at creation; skip field naming conventions and formal approval workflows. Focus on the minimal question: do you know the company's domain and the contact's email? Use a manual deduplication sweep against your existing accounts and contacts, then build an identity-resolution gate before any new contact or account record is created. Skip the council, maturity levels, and enrichment governance; you will add those when you have the team and a repeatable motion. |
+| Start-up, product-market fit | Product-market fit (not yet scale-up) companies have one segment winning repeatably but still run most things by hand. Run Sections 2 (naming conventions for readability, not approval workflow), 3 (quality dimensions and detection systems), 4b (identity resolution), and 4c (outbound readiness gates). Build a simple data dictionary naming only required fields (account, contact, opportunity basics, stage, close date). Assign one person as data steward, not a council. Skip formal field-creation governance and multi-person councils; your constraint is adoption velocity, not complexity. |
+| Scale-up | Scale-up companies run the full skill: all eight sections. Data governance is now an operating function with owned roles, a council cadence (monthly quality review, quarterly approvals), and operational prevention (validation rules, picklists, required fields). Execute the maturity progression towards Level 3 (monthly council, automated detection, standards enforcement). Integrate enrichment vendors with clear data transfer rules. Implement the identity-resolution gate and outbound readiness gates as mandatory workflows before any campaign launches. |
+| Enterprise | Same as scale-up plus multi-instance data governance (federation across regions or business units), regulated data handling with audit trails for compliance requirements, finance-owned data standards for revenue recognition and consolidation, and cross-entity reconciliation workflows. Governance escalates to CFO or compliance office for approval on sensitive data flows. |
+
+Skip before product-market fit: Section 2: Property/Field Governance; Section 8: Data Governance Operating Model; Enrichment Strategy; Integration monitoring; Custom object decisions.
+
 ## 1. Data Model Design
 
 ### Object Architecture (Mapped to Bow Tie)
@@ -161,6 +187,8 @@ UNIQUENESS:    No duplicates?
 
 Starting point: if your organization is below 85% on any dimension, prioritize completeness and consistency before accuracy or timeliness.
 
+Quality scoring consumes CRM field data (entered by sales reps, marketers, and CS team; accuracy varies by field and team discipline; treat with suspicion until validated), automated scans (high reliability for exact matches, medium for fuzzy matches), enrichment vendor data (documented accuracy, but verify with sample audits), call transcripts (high reliability for fact extraction; requires human review for interpretation), and periodic audits (high reliability if the audit sample is random and large enough). Do not treat CRM text fields and enrichment data as equally reliable; use the five-dimension framework to surface confidence gaps.
+
 ### Data Quality Score
 
 Recommended starting weights (practice-based):
@@ -265,6 +293,96 @@ On contact creation: form triggers lookup by email. If exists, "This contact alr
 ### Account Hierarchy
 
 Parent = ultimate legal entity. Child = subsidiary/division. On M&A: create new parent, move old to child. On acquisition: don't delete; create parent relationship instead. Every contact maps to exactly one primary account.
+
+## 4b. Identity Resolution Gate (Before Record Creation)
+
+Before creating any contact or account, run an identity resolution gate. The output is one of four decisions: Link (merge into existing), Create (new record), Review (human judgment required), or Reject (insufficient identity evidence).
+
+### The Four Decision Gate
+
+1. **LINK**: Strong evidence that the new data belongs on an existing record. Merge or link with audit trail preserved.
+2. **CREATE**: No credible existing record found after all strong keys are searched. Create new record with provenance documented.
+3. **REVIEW**: Multiple candidates exist or important evidence conflicts. Escalate to human; they determine survivor and action.
+4. **REJECT**: Input lacks minimum identity evidence (e.g., contact with no email AND no phone; account with no domain AND no legal entity). Do not create.
+
+### Search Strategy
+
+For **accounts:** search by verified domain, verified legal entity, and account relationships (parent/child, merged entities). If the domain exists in your system, you have an account. Normalise domain names and company names before comparing (remove URL protocols, standardise whitespace, strip legal suffixes for account names).
+
+For **contacts:** search by verified email first (corporate email only; consumer domains like Gmail are not account identity). Then search by account + full name. Then by phone number. Each search runs independently so a formatting error in one field does not hide a record.
+
+### Evidence-Based Match Rubric
+
+Use `references/identity-resolution-rubric.md` to score each candidate. Accounts are scored on domain, legal entity, and account hierarchy. Contacts are scored on email, LinkedIn identity, name + account, and phone. Scores above a threshold (40+ for accounts; 50+ for contacts) clear for automatic linking. Scores below require review or create.
+
+**Conflict rule:** If verified values contradict (two legal entities on the same domain, two emails for one contact on the same account), escalate to REVIEW even if the score is high. False links are costlier than false creates.
+
+### Before Creating, Re-Resolve
+
+After planning the create action, re-search immediately. Another workflow may have created the record while you were planning. If a new candidate appears after re-search, invalidate the create decision and resolve again. This prevents race-condition duplicates.
+
+### What Gets Logged
+
+Every identity decision (link, create, review, reject) gets logged with: the search keys used, search population (active records? archived? merged entities?), candidates found, matching evidence, and the decision. For CREATE decisions: log provenance (source system, date, who initiated). For LINK/REJECT decisions: log the reasoning. Enable lookup: "Why did we create this record?" or "Why did we link these two?"
+
+---
+
+## 4c. Outbound Readiness Gate (Before Launching a Campaign)
+
+Before launching outbound from CRM segments, run a five-gate readiness check. Any hard conflict stops the affected record.
+
+### The Five Gates
+
+1. **Identity:** Account domains resolve without material duplicate risk. Contacts tie to a single account.
+2. **Ownership:** Every target has one accountable owner or a routing rule exists.
+3. **Reachability:** Email, phone, or LinkedIn details are verified enough for the planned action.
+4. **Context:** Customers, active deals, recent touches, and legal suppressions are visible and respected.
+5. **Fit:** Every target traces to the campaign's ICP and inclusion reason.
+
+### Execution Sequence
+
+**Step 1: Materialize the audience.** Run the exact CRM segment filters. Don't substitute an overall CRM health score; inspect the actual slice. Count: accounts, contacts, contacts per account, contacts with email, ownerless records, duplicates, suppressed records, active opportunities, customers.
+
+**Step 2: Run the five gates.** For each gate:
+- Define the check (e.g., "Identity = no account has 2+ contacts with the same email domain").
+- Run the check on the audience segment.
+- Flag failures and count them by severity.
+
+**Step 3: Remediate in dependency order.**
+- **Identity first:** Resolve account duplicates before targeting contacts, because duplicates split activity and ownership.
+- **Ownership second:** Assign owners before drafting so replies and tasks have a destination.
+- **Reachability third:** Refresh contact details after the target population is stable.
+- **Suppress:** Apply active customers, active opportunities, and legal suppressions.
+- **Fit:** Audit a sample that the ICP inclusion reason is real (not just "not disqualified").
+
+**Step 4: Rebuild and approve.** After remediation, regenerate the audience from source filters (not editing the export). Re-run all five gates. Reconcile why records entered or left. Require an explicit launch decision.
+
+### Worked Cleanup Sequencing Example
+
+Account "Acme Corp" has two records: Acme_ID_001 (created 2024-03-15, 12 contacts) and Acme_ID_002 (created 2024-07-20, 2 contacts). Both active, no parent/subsidiary relationship documented.
+
+**Step 1: Resolve identity**
+- Search by domain (acme.com): both point to it. Duplicate detected.
+- Link: Survivor = Acme_ID_001 (older, more complete contact base).
+- Merge Acme_ID_002 into Acme_ID_001. Preserve all contacts and activities from Acme_ID_002.
+- Log: "Merged Acme_ID_002 into Acme_ID_001 on 2026-09-01; 2 orphan contacts relinked."
+
+**Step 2: Resolve ownership**
+- Acme_ID_001 has no owner assigned. Check activities: last touch was from AE Sarah Chen on 2026-08-28.
+- Route: Assign Sarah as owner. Log: "Assigned Sarah Chen as owner; last active 2026-08-28."
+
+**Step 3: Refresh reachability**
+- 12 contacts, but 3 have no email. Enrichment lookup: 2 of 3 have emails in vendor database.
+- Fill blanks: add emails from enrichment. 1 contact (founder, no email published) remains blank; flag for manual entry or skip.
+- Log: "Enriched emails for 2/3 missing contacts; 1 remains blank."
+
+**Step 4: Apply suppressions**
+- Acme_ID_001 = current customer (closed-won deal 2024-06-01, active subscription).
+- Suppress: Remove from outbound campaign. Note: "Active customer; route to CSM for expansion motion."
+
+**Result:** Acme is clean (1 account, 1 owner, reachable contacts), but ineligible for the cold outbound campaign because they are already a customer. Route to expansion instead. No record is wasted; it's just routed correctly.
+
+---
 
 ## 5. Integration Data Flows
 
@@ -539,6 +657,12 @@ A semantic layer provides consistent, business-friendly vocabulary across the or
 **"Integrations keep breaking":** Map system of record for every data point. Define sync direction. Set up monitoring. Most integration failures come from undefined ownership.
 
 **Cross-references:** For CRM property implementation, see **revops-hubspot**. For tech stack integration decisions, see **revops-tech-stack**. For emergency data audit, see **revops-crisis**.
+
+The skill produces four deliverables for the leadership and operations team: a data dictionary (one document per object, defining fields, data types, owners, and use cases; updated quarterly), a field-governance process (defined approval workflow and SLA for new fields; documented deprecation timeline), a quality scorecard (monthly DQ score across five dimensions with baseline and 12-month targets), and an outbound readiness checklist (five-gate audit applied before every campaign launch). Frame the final scorecard and targets without reference to maturity levels or framework names.
+
+## When Not to Use This Skill
+
+This skill assumes you have a functional CRM. If you are still using spreadsheets, email, and manual record-keeping with no CRM in place, call revops-tech-stack to establish a CRM first. If your CRM is fundamentally broken (inoperable, vendor sunset, or incompatible with your workflow), see revops-crisis before attempting data governance. Governance on the wrong tool wastes the effort.
 
 ## What good looks like
 

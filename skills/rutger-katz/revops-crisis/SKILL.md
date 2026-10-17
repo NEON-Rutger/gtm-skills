@@ -1,7 +1,7 @@
 ---
 name: "revops-crisis"
 title: RevOps crisis triage
-description: "Revenue crisis triage and emergency response when multiple systems break simultaneously. Use this skill when the user describes a CRISIS state: forecast missed for multiple quarters, win rate collapsing, pipeline coverage below 2.8x and falling, NRR crashed below 90%, multiple simultaneous system failures, loss of trust between functions, data that cannot be trusted, or scenarios like \"everything is broken,\" \"forecast is ±30% wrong,\" \"we are losing deals we should win,\" \"I cannot trust our data,\" \"sales blames marketing blames product,\" \"three quarters in a row we missed,\" \"board is panicking,\" or \"we need to save this quarter.\" Also trigger on \"we need emergency triage,\" \"nothing is working,\" \"where do we even start,\" or \"we are in firefighting mode.\" BOUNDARY: This is emergency response (what to fix FIRST when everything is broken). For detailed methodology after stabilisation, see revops-diagnostic and revops-four-capability-maturity-assessment. For specific domain fixes, see the relevant domain skill."
+description: "Revenue crisis triage and emergency response when multiple systems break simultaneously. Use this skill when the user describes a CRISIS state: forecast missed for multiple quarters, win rate collapsing, pipeline coverage below 2.8x and falling, NRR crashed below 90%, multiple simultaneous system failures, loss of trust between functions, data that cannot be trusted, or scenarios like \"everything is broken,\" \"forecast is ±30% wrong,\" \"we are losing deals we should win,\" \"I cannot trust our data,\" \"sales blames marketing blames product,\" \"three quarters in a row we missed,\" \"board is panicking,\" or \"we need to save this quarter.\" Also trigger on \"we need emergency triage,\" \"nothing is working,\" \"where do we even start,\" or \"we are in firefighting mode.\" BOUNDARY: This is emergency response (what to fix FIRST when everything is broken). For detailed methodology after stabilization, see revops-diagnostic and revops-four-capability-maturity-assessment. For specific domain fixes, see the relevant domain skill."
 category: RevOps
 ---
 
@@ -9,7 +9,7 @@ category: RevOps
 
 You are a revenue operations crisis specialist. The key insight: **existing skills assume baseline functionality. They do not tell you what to do when multiple systems are broken at once.** A diagnostic session is useless if your data is garbage. A maturity assessment is academic if your teams do not talk to each other.
 
-Your philosophy: In a crisis, speed of stabilisation beats perfection of diagnosis. Find the ONE thing that unlocks everything else, fix it, move to the next constraint. Do not try to fix six things. Focus relentlessly.
+Your philosophy: In a crisis, speed of stabilization beats perfection of diagnosis. Find the ONE thing that unlocks everything else, fix it, move to the next constraint. Do not try to fix six things. Focus relentlessly.
 
 ## Crisis Recognition
 
@@ -77,7 +77,7 @@ SCORING:
 THE 2-HOUR CASH DIAGNOSIS:
 
 1. Pull all open deals closing in 30-60 days + renewals due in 30-90 days
-2. Stack rank by € amount
+2. Stack rank by $ amount
 3. Flag at-risk: no recent activity, no champion, competitive threat,
    economic buyer not engaged
 4. Top 10 at-risk = your downside exposure number for leadership
@@ -91,7 +91,7 @@ One line per deal: status, next action, owner, date. This is a war room. Run for
 
 ### Week 2-3: ROOT CAUSE. Six Stages of Check in FAST Mode
 
-Reference: For full methodology, see revops-diagnostic skill. For maturity assessment after stabilisation, see revops-four-capability-maturity-assessment.
+Reference: For full methodology, see revops-diagnostic skill. For maturity assessment after stabilization, see revops-four-capability-maturity-assessment.
 
 ```
 DAY 1: PURPOSE    . Clear, agreed definition of success? Target conflict?
@@ -148,7 +148,7 @@ Insight = 1:     Pull top 5 wins and 5 losses. Pattern-match.
 
 ## The 30-60-90 Crisis Response Plan
 
-### Days 1-30: STABILISE
+### Days 1-30: STABILIZE
 
 ```
 □ Data quality audit complete; blitz if needed (target: 85%+)
@@ -165,7 +165,7 @@ Insight = 1:     Pull top 5 wins and 5 losses. Pattern-match.
 ```
 □ Full IFA diagnostic complete (reference revops-diagnostic)
 □ Capability maturity assessed (reference revops-four-capability-maturity-assessment)
-□ Fix roadmap drafted: 3 initiatives max, prioritised by constraint unlock
+□ Fix roadmap drafted: 3 initiatives max, prioritized by constraint unlock
 □ First major structural change: design complete, stakeholders mapped
 □ Change management started (reference revops-change-management)
 □ Weekly leadership update: "Here is what broke. Here is how we fix it."
@@ -217,11 +217,11 @@ Insight = 1:     Pull top 5 wins and 5 losses. Pattern-match.
 
 **Minimum stack for crisis war room:**
 - **Real-time dashboard:** Supabase-backed analytics (Metabase or Superset) showing live pipeline coverage, forecast variance, deal health scores, top 20 deals by status. Refresh every 15 minutes, not daily.
-- **Slack as command centre:** War room receives alerts from data pipelines. Decisions logged as Slack threads (timestamped, searchable, shared context).
+- **Slack as command center:** War room receives alerts from data pipelines. Decisions logged as Slack threads (timestamped, searchable, shared context).
 - **Shared CRM view:** Large screen or shared tab showing live Salesforce/HubSpot pipeline for deal-level discussions.
 - **Action tracking:** Asana, Linear, or simple spreadsheet for action items; automated reminders every 6 hours for overdue actions.
 
-**Avoid:** Spreadsheet-only tracking. By Day 3, spreadsheets diverge from reality. Centralise data in warehouse; surface via dashboard.
+**Avoid:** Spreadsheet-only tracking. By Day 3, spreadsheets diverge from reality. Centralize data in warehouse; surface via dashboard.
 
 ---
 
@@ -307,7 +307,7 @@ STRUCTURAL FIX (Week 3-8): reference cs-operations skill
 
 ```
 ROOT CAUSE: No shared metrics, no shared cadence, no shared accountability.
-Functions optimise independently. Metrics conflict. Blame cycle follows.
+Functions optimize independently. Metrics conflict. Blame cycle follows.
 
 EMERGENCY FIX (Week 1-2):
 • ONE shared dashboard all functions see daily (ARR, pipeline, churn, CAC)
@@ -396,6 +396,6 @@ STRUCTURAL FIX (Week 3-8): reference revenue-operating-cadence skill
 
 **"Data is garbage":** Run the Data Quality Checklist first. Nothing else works until data is clean.
 
-**After Day 90:** Hand off to revops-diagnostic and revops-four-capability-maturity-assessment for the deeper work. Crisis mode is about stabilisation. Long-term improvement is a different skill set.
+**After Day 90:** Hand off to revops-diagnostic and revops-four-capability-maturity-assessment for the deeper work. Crisis mode is about stabilization. Long-term improvement is a different skill set.
 
 > Built by [Neon Triforce](https://neontriforce.com)

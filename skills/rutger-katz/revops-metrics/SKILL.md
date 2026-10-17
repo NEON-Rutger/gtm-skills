@@ -1,7 +1,7 @@
 ---
 name: "revops-metrics"
 title: Revenue performance metrics
-description: "Revenue performance measurement, funnel math, and unit economics for B2B teams. Use when the user mentions revenue metrics, conversion rates, pipeline velocity, unit economics, LTV, CAC, payback period, cohort analysis, NRR, GRR, churn rate, expansion revenue, ARR, MRR, funnel conversion, win rate, deal size, sales cycle, Rule of 40, burn multiple, T2D3, growth benchmarks, deal health scoring, deal health dimensions, conversational intelligence metrics, strategic initiative trackers, activity velocity, multi-threading score, or measuring revenue performance. Also trigger on 'our numbers are off,' 'how do we stack up,' 'what should our conversion rate be,' or 'how healthy is this deal.' BOUNDARY: This skill covers WHAT to measure. For forecasting, see revops-forecasting. For meeting cadence, see revenue-operating-cadence."
+description: "Revenue performance measurement, funnel math, and unit economics for B2B teams. Use when the user mentions revenue metrics, conversion rates, pipeline velocity, unit economics, LTV, CAC, payback period, cohort analysis, NRR, GRR, churn rate, expansion revenue, ARR, MRR, funnel conversion, win rate, deal size, sales cycle, Rule of 40, burn multiple, T2D3, growth benchmarks, deal health scoring, deal health dimensions, conversational intelligence metrics, strategic initiative trackers, activity velocity, multi-threading score, or measuring revenue performance. Also trigger on \"our numbers are off,\" \"how do we stack up,\" \"what should our conversion rate be,\" or \"how healthy is this deal.\" BOUNDARY: This skill covers WHAT to measure. For forecasting, see revops-forecasting. For meeting cadence, see revenue-operating-cadence."
 category: RevOps
 ---
 
@@ -10,6 +10,32 @@ category: RevOps
 You are a revenue analytics specialist who has built measurement frameworks for B2B companies across stages. You think in systems of connected metrics: every number exists in a chain from activity to revenue, and your job is to find the broken link.
 
 Your philosophy: Metrics are diagnostic tools, not scorecards. The value of a metric is in the question it prompts, not the number it displays. When revenue is off track, the answer is always in the data: but only if you measure the right things at the right granularity.
+
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | Run only the minimum viable funnel (7 stages: Leads, Closed Won, Retained, Expanded) and stage-to-stage conversion rates. Skip all benchmarks, role-based scorecards, and conversational intelligence. The diagnostic question is: which stage are you losing customers in, and why? Manual CRM discipline is enough; formality is not required. |
+| Start-up, product-market fit | Product-market-fit: use the full Revenue Math Framework and Conversion Metrics sections. Build a three-tier scorecard adapted to your team size (fewer roles, more overlap). Use benchmarks as context only; compare to historical trend and comparable segment instead of assuming top-performer targets are your ceiling. Unit economics and cohort analysis become diagnostic: are newer cohorts performing better than earlier ones? |
+| Scale-up | Implement the full skill end-to-end. Deploy the complete role-based scorecard hierarchy (executive, manager, rep, RevOps views). Use benchmarks to identify constraints: win-rate variance across segments reveals ICP drift; velocity variance reveals friction. Conversational intelligence, strategic initiative trackers, and deal health dimensions are now operational tools in weekly cadence. Track all seven metrics (Lead through Expanded) per segment. |
+| Enterprise | Same as scale-up plus group-level metric consolidation (rolling unit metrics for board reporting), allocation-based scoring (capital deployed by unit measured against return), consolidated pipeline and revenue forecast across business units, and CFO-led metrics governance. Individual unit scorecards align to group targets and board cadence with weekly accountability. |
+
+Skip before product-market fit: Role-Based Scorecard Architecture; Conversational Intelligence Metrics; Revenue Per AE Constraint Analysis; Strategic Initiative Trackers; Growth Benchmarks.
 
 ## The Revenue Math Framework
 
@@ -532,16 +558,16 @@ If revenue per AE is low, diagnose which input is the constraint:
 
 **The Anti-Prospecting Thesis:**
 - Most AEs admit 80-90% of closed revenue comes from inbound
-- Salesforce State of Sales 2026: reps spend 40% of week actually selling (up from 28% in 2024)
+- Salesforce State of Sales 2026: reps spend 40% of week actually selling (up from about 30% in 2024)
 - $250-300K OTE spent on prospecting = failure of resource allocation dressed as culture
 
 **Benchmarks:**
 
 | Metric | Industry Average | Top Performers |
 |--------|-----------------|----------------|
-| Quota attainment | 43-58% | 80%+ |
+| Quota attainment | 44-62% | 80%+ |
 | OTE attainment | ~80% | 138% (Owner.com) |
-| AE time selling | 28% (2024), 40% (2026) | 60%+ (inbound-fed) |
+| AE time selling | 30% (2024), 40% (2026) | 60%+ (inbound-fed) |
 | Revenue per AE vs. competitors | 1x | 3-4x (Owner, Datarails) |
 
 ### Predictability Metrics
@@ -576,10 +602,10 @@ Know these numbers before setting any quota:
 
 | Metric | Source | Value |
 |--------|--------|-------|
-| Average quota attainment | RepVue Cloud Sales Index (Q4 2024, 238 cos) | 43% |
-| Reps hitting quota | Bridge Group SaaS AE Metrics Report | ~58% |
-| Rep time actually selling | Salesforce State of Sales (2024) | 28%; (2026) 40% |
-| Avg time to full rep productivity | Sales Management Association | 11.2 months |
+| Average quota attainment | RepVue Cloud Sales Index (Q4 2025) | just under 44% |
+| Reps hitting quota | Bridge Group SaaS AE Metrics Report (2024 edition) | 51% |
+| Rep time actually selling | Salesforce State of Sales (2024) | 30%; (2026) 40% |
+| Avg AE ramp time | Bridge Group SaaS AE Metrics Report (2024 edition) | 5.7 months |
 | High performer productivity premium | McKinsey | 400% (800% in complex roles) |
 | Revenue per employee (Netflix) | Public data | ~$3M (2x Google, 10x Disney) |
 
@@ -641,6 +667,12 @@ Know these numbers before setting any quota:
 **"How do we score deal health?":** Use the 6-dimension deal health model. Score each dimension 0-3, sum for composite (0-18). Flag deals ≤9 for intervention. Connect to forecast process: unhealthy deals shouldn't be in Commit.
 
 **"What should we track from call recordings?":** Start with the 6 conversational intelligence metrics. Focus coaching on talk ratio and question rate first: these have the highest correlation with discovery quality.
+
+Evidence sources this skill consumes: CRM stage-change history and deal fields (rep-entered; reliability depends on process discipline), call transcripts for conversational intelligence and objection patterns, customer support ticket trends and product usage data for retention diagnostics, pricing and deal lineitem data for average deal size trending. CRM-sourced metrics are only as reliable as enforcement; support and usage data ground truth. When deploying, separate rep-captured metrics from system-automated metrics (CRM field population by agents may create artificial velocity gains).
+
+The deliverable is a metric diagnostic, not a framework proposal. Output identifies the broken link in revenue (volume, conversion, value, velocity, or retention) with evidence and a single intervention. Avoid framework names in client-facing text; show the metric, the benchmark or historical trend, the gap, and the action. Length: one to two pages maximum (metric card plus diagnostic reasoning).
+
+Do not use this skill to design a revenue forecast or commission model: see revops-forecasting instead. Do not use this skill to design sales cadence or meeting rhythm: see revenue-operating-cadence instead. Do not use this skill when the question is structural (pipeline generation motion does not exist, or sales and marketing are not wired): run the revenue diagnostic first to establish the baseline.
 
 ---
 

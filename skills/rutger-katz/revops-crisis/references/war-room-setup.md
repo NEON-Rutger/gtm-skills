@@ -1,10 +1,5 @@
----
-title: "War Room Setup & Operations Guide"
-description: (reference)
----
-
 # War Room Setup & Operations Guide
-**For: B2B scale-ups €15M–150M ARR**
+**For: B2B scale-ups EUR15M-EUR150M ARR**
 
 Operational checklist for activating and running an effective crisis war room.
 
@@ -16,35 +11,35 @@ Operational checklist for activating and running an effective crisis war room.
 - Pipeline coverage drops below 2x coverage (Q at risk)
 - Forecast miss detected mid-quarter (>10% gap to guidance)
 - Revenue-critical system fails (CRM outage, forecasting system down)
-- Major customer churn event (>€250k/mo at risk)
+- Major customer churn event (>$250k/mo at risk)
 - Rep attrition crisis (>3 reps departing in 30 days)
 - Board-level notification required
 
 **Do NOT activate if:**
 - Single deal is lost (handle in regular weekly forecast)
 - Routine month-end reconciliation issues
-- Low-impact data quality issue (<€50k affected)
+- Low-impact data quality issue (<$50k affected)
 
 ---
 
 ## PHYSICAL/VIRTUAL WAR ROOM SETUP
 
 ### Core Team (Non-Negotiable)
-- **CRO or VP Sales** — Decision authority; crisis owner
-- **RevOps Lead** — Data, analytics, reporting
-- **Finance/CFO** — Revenue verification, board communication
-- **Sales Manager(s)** — Territory intel, rep support
-- **Marketing Lead** (if pipeline-driven) — Demand gen support options
+- **CRO or VP Sales**: Decision authority; crisis owner
+- **RevOps Lead**: Data, analytics, reporting
+- **Finance/CFO**: Revenue verification, board communication
+- **Sales Manager(s)**: Territory intel, rep support
+- **Marketing Lead** (if pipeline-driven): Demand gen support options
 
 ### Extended Team (Add as Needed)
-- **Product Lead** (if churn/data crisis) — Customer needs, roadmap
-- **CS Lead** (if churn crisis) — Customer health, retention strategies
-- **IT/Systems Admin** (if data/system crisis) — Data integrity, backups
-- **CEO** (if forecast miss) — Board strategy, capital decisions
+- **Product Lead** (if churn/data crisis): Customer needs, roadmap
+- **CS Lead** (if churn crisis): Customer health, retention strategies
+- **IT/Systems Admin** (if data/system crisis): Data integrity, backups
+- **CEO** (if forecast miss): Board strategy, capital decisions
 
 ### Physical War Room Setup
 - **Location:** Dedicated space with large displays, whiteboard
-- **Duration:** 1–2 week daily standups; then 3x weekly
+- **Duration:** 1-2 weeks daily standups; then 3x weekly
 - **Technology:**
   - Laptop/desktop per core team member
   - Large screen(s) showing live dashboards
@@ -102,7 +97,7 @@ Operational checklist for activating and running an effective crisis war room.
 - **Forecast variance:** Current forecast vs. guidance
 - **Blockers identified:** Number of deals stuck; by reason
 
-### Daily (Weeks 1–2)
+### Daily (Weeks 1-2)
 - **Pipeline coverage:** Movement toward 2x
 - **New pipeline generated:** Outbound meetings set, partner pipeline activated
 - **Deal acceleration:** Deals moved up in timeline
@@ -138,7 +133,7 @@ Operational checklist for activating and running an effective crisis war room.
 
 ### CEO Escalation (When to Involve)
 - **Forecast miss** (>5% of annual guidance): Brief CEO immediately; daily updates
-- **Major customer churn** (>€500k): Executive-level save play required
+- **Major customer churn** (>$500k): Executive-level save play required
 - **Board notification required:** CEO + CFO decide timing and disclosure
 - **System/data crisis** (data integrity loss): CEO briefed same day; stakeholder comms
 
@@ -174,7 +169,7 @@ Operational checklist for activating and running an effective crisis war room.
 **Date:** [Date war room closed]
 **Crisis type:** [Pipeline / Forecast / Churn / Rep attrition / Data]
 **Duration:** [X days active]
-**Revenue impact prevented/recovered:** [€XXX]
+**Revenue impact prevented/recovered:** [$XXX]
 
 ### What We Did Right
 - [ ] Quick escalation and war room activation

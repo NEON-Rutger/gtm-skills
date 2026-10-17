@@ -33,7 +33,7 @@ Base/Variable Split:  50/50 (standard for full-cycle closers)
                       60/40 (for enterprise AEs with longer cycles)
                       40/60 (for transactional, high-volume sales)
 
-Quota-to-OTE Ratio:  5:1 (standard: €500K quota for €100K OTE)
+Quota-to-OTE Ratio:  5:1 (standard: $500K quota for $100K OTE; Bridge Group 2026 AE median is 4.6x, $960K quota on $200K OTE)
                       4:1 (enterprise or complex sales)
                       6:1 (transactional, SMB)
                       8:1+ (self-serve or high-velocity)
@@ -51,7 +51,7 @@ Quota-to-OTE Ratio:  5:1 (standard: €500K quota for €100K OTE)
 120%+ of quota:    2x base rate (e.g., 20%); strong pull for top performers
 ```
 
-**Decelerators** (below threshold): Use sparingly. A common approach is to pay 50% of the base commission rate below 50% attainment. This means a rep earning €1,000 in commission at full quota would earn €500 in commission if they close deals totalling 50% of quota or less. This prevents reps from earning meaningful commission on a terrible quarter while not completely zeroing out early-stage deals.
+**Decelerators** (below threshold): Use sparingly. A common approach is to pay 50% of the base commission rate below 50% attainment. This means a rep earning $1,000 in commission at full quota would earn $500 in commission if they close deals totalling 50% of quota or less. This prevents reps from earning meaningful commission on a terrible quarter while not completely zeroing out early-stage deals.
 
 **Multi-year deals:** Pay commission on the first-year ACV, not TCV. If you pay on TCV, reps will push multi-year deals at steep discounts to inflate the commission number. For the same reason, pay on net-new ARR, not bookings that include renewals.
 
@@ -62,7 +62,7 @@ Month 2:   100% of base, 50% of variable against reduced quota
 Month 3:   100% of base, 75% of variable against reduced quota
 Month 4+:  Full comp plan
 ```
-Ramp quotas should be 25-50-75-100% of full quota over the first four months. The timeline extends for enterprise (6-month ramp is common) and compresses for SMB/transactional (2-month ramp).
+Ramp quotas should be 25-50-75-100% of full quota over the first four months. The timeline extends for enterprise (6-month ramp is common; the Bridge Group 2026 median AE ramp across segments is 6.2 months) and compresses for SMB/transactional (2-month ramp).
 
 ### Sales Development Representatives (SDRs/BDRs)
 
@@ -85,7 +85,7 @@ Quota: Measured in Qualified Meetings (SALs) or Qualified Opportunities (SQLs)
 
 ### The AI SDR Manager: Emerging Compensation Model (2026-2027)
 
-The AI SDR market evolved significantly in 2026. Autonomous agents that promised set-and-forget deployment largely failed; survivors are hybrid human-in-loop copilots (cost $1-3K monthly per agent) paired with specialised roles (SaaStr AI Agent Playbook, 2025-2026; Artisan, AiSDR vendor data).
+The AI SDR market evolved significantly in 2026. Autonomous agents that promised set-and-forget deployment largely failed; survivors are hybrid human-in-loop copilots (cost $1-3K monthly per agent) paired with specialized roles (SaaStr AI Agent Playbook, 2025-2026; Artisan, AiSDR vendor data).
 
 **2026 market adoption data:**
 - Only 22% of teams have fully replaced traditional SDRs (LeanData, 2026)
@@ -123,10 +123,10 @@ The AI SDR market evolved significantly in 2026. Autonomous agents that promised
 | Team ratio | 1 SDR : 1-2 AEs | 1 AI SDR Manager : 3-5 AEs |
 | Risk of displacement | High (12-24 months) | Low (they ARE the displacement) |
 
-**When to advise clients on this model:**
-- If they're currently hiring traditional SDRs: advise they evaluate AI SDR hybrid pilots first rather than committing to full headcount; full replacement remains unproven at scale
-- If they're piloting AI SDRs: help them cost the human-in-loop layer (agent management overhead) and plan the comp transition from activity-based to output-based metrics
-- If they're already running AI agents at scale: help them design the AI SDR Manager role and compensation structure
+**When to consider this model for your organization:**
+- If you're currently hiring traditional SDRs: evaluate AI SDR hybrid pilots first rather than committing to full headcount; full replacement remains unproven at scale
+- If you're piloting AI SDRs: calculate the human-in-loop layer cost (agent management overhead) and plan the comp transition from activity-based to output-based metrics
+- If you're already running AI agents at scale: design the AI SDR Manager role and compensation structure
 
 Note: This role remains emerging and pilot-stage as of 2026. Only 22% adoption of full SDR replacement means the proven AI SDR Manager comp band is not yet available from market benchmarks. Use practice-based estimates only when advising on this model.
 
@@ -160,9 +160,9 @@ Base/Variable Split:  70/30 (if CSM owns renewal number)
 CSM comp design faces a strategic choice that must be made explicitly, not defaulted:
 
 - **Gross Revenue Retention (GRR) focus (40-50% of variable):** Compensates CSMs for stopping churn. This is defense. Use this structure if your unit economics demand churn reduction first.
-- **Net Revenue Retention (NRR) or Expansion Revenue focus (30-40% of variable):** Compensates CSMs for growth within the existing base. This incentivises expansion and upsell. Use this if your business model targets growth revenue.
+- **Net Revenue Retention (NRR) or Expansion Revenue focus (30-40% of variable):** Compensates CSMs for growth within the existing base. This incentivizes expansion and upsell. Use this if your business model targets growth revenue.
 
-The key: these behaviours are opposite. A CSM compensated on GRR prioritises staying in touch, health monitoring, and risk mitigation. A CSM compensated on NRR prioritises discovery calls, expansion conversations, and growing wallet share. Pick one as the primary metric (60%+ of variable), use the other as a secondary check.
+The key: these behaviors are opposite. A CSM compensated on GRR prioritizes staying in touch, health monitoring, and risk mitigation. A CSM compensated on NRR prioritizes discovery calls, expansion conversations, and growing wallet share. Pick one as the primary metric (60%+ of variable), use the other as a secondary check.
 
 - **Health Score / Adoption Metrics:** Weight 10-20% of variable. Only include if you have reliable, objective measurement.
 
@@ -190,9 +190,9 @@ Team development metrics:  10-20% (rep ramp time, rep retention, quota distribut
 
 ## Benchmark Ranges (B2B SaaS)
 
-These benchmarks are for B2B SaaS companies in 2026. Ranges shift based on geography (US benchmarks run 15-30% higher than Western Europe), company stage, deal complexity, and market competitiveness for talent.
+These benchmarks are for B2B SaaS companies in 2026. Ranges shift based on geography (practice-based: US benchmarks run 15-30% higher than Western Europe; not traced to a source), company stage, deal complexity, and market competitiveness for talent.
 
-**Source note:** US ranges are market composite data from vendor surveys (Radford, Mercer, Payscale, salary databases). European ranges are derived from comparable market analysis and practice-based data from €15M-€150M ARR companies. For the most current market data, cross-reference against Radford benchmark database (if your company subscribes) or conduct a custom compensation survey every 12-18 months.
+**Source note:** The US ranges are practice-based composites, with sourced medians noted under the block where they exist (The Bridge Group, RepVue; USD). The European block now uses sourced medians (RepVue country pages, Ravio Compensation Trends 2026) in the currency published, with practice-based rows labeled. Full figures, URLs, data-updated dates and source caveats are in `references/ote-benchmarks.md`. RepVue data is self-reported and skews to larger vendors; Ravio is vendor data from European tech companies. Validate against a current survey for your country and role (Ravio, Radford/Aon, Mercer, or national statistics office wage data) every 12-18 months.
 
 ### US Benchmarks by Role and Seniority
 
@@ -234,27 +234,30 @@ CRO:
   Base: $220-320K | OTE: $350-550K
 ```
 
+Sourced US medians (USD) to check the practice-based ranges against: SDR OTE $80K at 68:32 (The Bridge Group, 2025); AE OTE $200K, quota $960K, quota-to-OTE 4.6x (The Bridge Group, 2026); AE mix 53:47 (The Bridge Group, 2024 edition); Sales Manager $150K base, $280K OTE (RepVue, 2026), which is above the Frontline Manager range shown. See `references/ote-benchmarks.md` for URLs.
+
 ### European Benchmarks (Western Europe, 2026)
 
-European comp typically runs 15-30% below US for equivalent roles, partly offset by stronger employment protections and benefits. Variable percentages are often lower (less aggressive pay mix). These ranges have been updated for 2026 market conditions and should be validated against your region's talent market before implementation.
+European comp typically runs 15-30% below US for equivalent roles (practice-based), partly offset by stronger employment protections and benefits. Sourced European medians show a pay mix close to US norms (SDR about 70:30, AE about 52-56% base), so do not assume a less aggressive mix without checking. Validate against your region's talent market before implementation.
 
 ```
-ACCOUNT EXECUTIVES:
-Junior AE:  Base: €45-65K | OTE: €70-100K
-Mid-Level:  Base: €60-85K | OTE: €100-150K
-Senior/Enterprise: Base: €85-120K | OTE: €150-220K
+Median base | median OTE, by country (RepVue, 2026, self-reported)
+SDR/BDR:          NL €49,927 | €71,769   DE €46,789 | €66,951   UK £39,988 | £60,078
+AE (SMB):         NL €54,787 | €106,038  DE €60,816 | €108,820  UK £54,173 | £98,608
+AE (Mid-Market):  NL €76,116 | €136,637  DE €75,196 | €139,663  UK £67,688 | £120,997
+AE (Enterprise):  NL €99,433 | €181,904  DE €105,393 | €201,610 UK £97,669 | £181,374
+Account Manager:  DE €91,048 | €167,852
+CSM:              UK £70,964 | £97,776  (no NL/DE country median found; practice-based)
 
-SDR/BDR:    Base: €35-50K | OTE: €50-70K
+Base salary only, not OTE (Ravio Compensation Trends 2026)
+Sales Executive (P3, mid-level IC): NL €56,700  DE €57,800  UK £52,800
+Sales Manager (M3):                 NL €89,500  DE €90,200  UK £90,700
 
-CUSTOMER SUCCESS:
-CSM:        Base: €55-80K | OTE: €65-95K
-Senior CSM: Base: €75-100K | OTE: €90-125K
-
-SALES LEADERSHIP:
-Manager:    Base: €90-130K | OTE: €130-190K
-Director:   Base: €120-160K | OTE: €170-240K
-VP Sales:   Base: €140-200K | OTE: €210-320K
+Director / VP Sales: no European source found; practice-based.
+  VP Sales OTE $110-330K (USD) across $15M-$150M ARR bands, see reference stage tables
 ```
+
+The practice-based stage tables in `references/ote-benchmarks.md` (USD, by ARR band) sit well below these sourced medians for SDR and AE roles (for example SMB AE OTE $42-65K versus RepVue SMB AE medians of about €106-109K in NL and DE). Use the sourced medians for market positioning and the stage tables only as lean-company floor values.
 
 **Netherlands-specific note:** Dutch comp sits in the middle-to-upper range of European benchmarks. The Dutch market is competitive for English-speaking GTM talent due to Amsterdam's tech hub status, which pushes OTEs closer to UK levels.
 
@@ -281,7 +284,7 @@ VP Sales:   Base: €140-200K | OTE: €210-320K
    or the pipeline plan is insufficient
 ```
 
-**Pipeline coverage requirement:** Reps should enter a quarter with 3x pipeline coverage against their quota (minimum). If a rep has a €200K quarterly quota, they need €600K in qualified pipeline. Below 2.5x, start the quarter with a pipeline generation sprint.
+**Pipeline coverage requirement:** Reps should enter a quarter with 3x pipeline coverage against their quota (minimum). If a rep has a $200K quarterly quota, they need $600K in qualified pipeline. Below 2.5x, start the quarter with a pipeline generation sprint.
 
 ### Common Quota Mistakes
 
@@ -372,7 +375,7 @@ Designing the plan is 30% of the work. Rolling it out successfully is the harder
 - Document the reason for the adjustment in writing (all-hands email or letter). This builds credibility for future changes.
 
 **True-up mechanics for commission acceleration:**
-- Example: A rep earns €40K commission by Q3. In Q4, the company launches a new product and you want to accelerate adoption. You introduce a SPIF on new-product revenue. The SPIF commission is paid on TOP of the base plan, not instead of it. Never claw back or reduce a rep's earnings once they're already in the bank.
+- Example: A rep earns $40K commission by Q3. In Q4, the company launches a new product and you want to accelerate adoption. You introduce a SPIF on new-product revenue. The SPIF commission is paid on TOP of the base plan, not instead of it. Never claw back or reduce a rep's earnings once they're already in the bank.
 
 **Underperformer conversation:**
 - If a rep is tracking below 80% of quota by month 2 of the quarter, don't wait until month 4 to address it. Escalate to the manager for a performance conversation. Is the rep capable, or is the quota unrealistic? Is the plan creating perverse incentives?
@@ -385,7 +388,7 @@ If your GTM team spans European jurisdictions, compensation design must account 
 **EU Pay Transparency Directive (adopted 2023; enforcement deadline June 7, 2026):**
 - Mandatory salary range disclosure in all job postings (no "competitive salary" or unspecified range)
 - Ban on salary history questions during recruitment (cannot use prior compensation to justify new salary)
-- Gender pay gap reporting requirement for organisations with 250+ employees
+- Gender pay gap reporting requirement for organizations with 250+ employees
 - Right to information: job candidates must receive salary ranges before interviews
 - Compliance failure: fines up to EUR20,000 or higher depending on member state
 
@@ -405,7 +408,7 @@ If your GTM team spans European jurisdictions, compensation design must account 
 
 **Designing a new comp plan:** Walk through: role → OTE structure → pay mix → quota methodology → variable components → accelerators → clawbacks → model the economics. Always ask: what's the company stage, what GTM motion, and what behavior needs to change?
 
-**Benchmarking questions:** Provide specific ranges based on role, seniority, geography, and company stage. Don't give a single number; give a range and explain what drives position within the range. For EU clients, cross-reference data against current Radford regional splits or custom regional surveys if available.
+**Benchmarking questions:** Provide specific ranges based on role, seniority, geography, and company stage. Don't give a single number; give a range and explain what drives position within the range. For EU-based organizations, cross-reference data against current Radford regional splits or custom regional surveys if available.
 
 **Diagnosing a broken plan:** Start with symptoms (high attrition? sandbagging? wrong customer profile?). Map back to incentive misalignment. Recommend specific structural changes with projected impact.
 
@@ -413,18 +416,16 @@ If your GTM team spans European jurisdictions, compensation design must account 
 
 **Headcount budgeting:** Help model fully-loaded cost per rep (OTE + benefits + ramp cost + tools + management overhead) and expected productivity curves. A new AE hire typically costs 1.5-2x OTE in the first year when you include ramp, training, and overhead.
 
-**For EU-based clients:** Always ask about team geography and cross-border tax structure early. Compensation cannot be designed in isolation from employment law and tax treatment.
-
-> Built by [Neon Triforce](https://neontriforce.com)
+**For EU-based organizations:** Always ask about team geography and cross-border tax structure early. Compensation cannot be designed in isolation from employment law and tax treatment.
 
 ---
 
 ## Operator Templates: Bonus/Incentive Calculator
 
-For compensation modelling in client engagements:
-`Frameworks/Templates/cro-school/bonus-incentive-calculator-neon.xlsx`
+A compensation modeling template is useful for quick scenario analysis. The formula is straightforward:
 
-Formula: Quarterly Comp Amount × Proportion × Attainment. Useful for modelling variable comp scenarios quickly.
+**Quarterly Comp Amount × Proportion × Attainment**
 
-Original source: `Sources/Courses/CRO-School/CRO School Class #4 Template - CS Fundamentals - Basic Bonus_Incentive Calculator.xlsx`
-Attribution: Adapted from Pavilion CRO School. Original author: Carter/Nalbandian/Dick.
+This template helps operators model different variable compensation structures and their cost impact. Build one in your spreadsheet tool of choice (Excel, Sheets, etc.) to quickly test different base/variable splits, commission rates, and payout multipliers before rolling out a plan company-wide.
+
+> Built by [Neon Triforce](https://neontriforce.com)

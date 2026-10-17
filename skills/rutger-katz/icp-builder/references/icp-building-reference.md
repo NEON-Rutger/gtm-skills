@@ -54,7 +54,7 @@ The way you build an ICP depends on how you go to market. Here are motion-specif
 
 | Motion | ICP Building Challenge | Strategic Response |
 |--------|---|---|
-| **No Touch / PLG** | Behavioral signals are sparse; no sales conversations to mine | Build behavioral ICP from product analytics. Use whatever product analytics you already run; analyze feature adoption depth, cohort retention curves, and expansion velocity. A hybrid motion — self-serve with sales assist on product-qualified accounts — typically retains and expands better than pure self-serve, so treat the PQL threshold as the real ICP boundary: below it the product sells itself, above it a human should. Where that line sits is a function of your ACV and cost to serve, not a published number. |
+| **No Touch / PLG** | Behavioral signals are sparse; no sales conversations to mine | Build behavioral ICP from product analytics. Use whatever product analytics you already run; analyze feature adoption depth, cohort retention curves, and expansion velocity. A hybrid motion (self-serve with sales assist on product-qualified accounts) typically retains and expands better than pure self-serve, so treat the PQL threshold as the real ICP boundary: below it the product sells itself, above it a human should. Where that line sits is a function of your ACV and cost to serve, not a published number. |
 | **Low Touch / 1-Stage** | Many tire-kickers; lightweight sales process means limited depth | Cluster by role, use case, retention curves. Identify micro-segments with 70%+ 12-mo retention. Double-down there. |
 | **Medium Touch / 2-Stage** | Balancing limited data against depth of signal | Blend 8-15 SPICED interviews with win/loss reviews. Surface patterns across competitive wins + expansion. |
 | **High Touch / Sales** | Few closed deals; each customer is precious data | Treat every deal as a test case. Iterate ICP quarterly. Build from pilot customers + expansion proof. |
@@ -537,7 +537,7 @@ Once you have defined your ICP, encode it operationally in your CRM and enable a
 
 **HubSpot + Breeze:**
 - Encode ICP criteria as Lead Scoring (standard or custom) and Account Scoring properties
-- The prospecting agent can score inbound leads and prospects against ICP fit; these are consumption-priced, so check the current per-unit rate before turning them loose on a large list
+- The prospecting agent can score inbound leads and prospects against ICP fit; these agents are consumption-priced, so check the current per-unit rate before turning them loose on a large list
 - The customer-facing agent supports customer interviews and can extract SPICED language from transcripts when configured with domain knowledge
 - The data-operations hub provides data management, automation, and governance
 - Recommend Agentic Automation Builder (workflows + agents together) as the architecture for ICP-powered routing and nurture

@@ -1,7 +1,7 @@
 ---
 name: "revops-revenue-planning"
 title: Revenue planning
-description: "Annual and quarterly revenue plan construction, top-down vs bottoms-up reconciliation, plan versioning, stretch goal handling, and FP&A-RevOps collaboration for B2B revenue teams. Use when the user mentions annual planning, revenue targets, capacity planning, planning calendar, stretch goals, plan versions, plan of record, reforecasting triggers, FP&A collaboration, or revenue reconciliation. Also trigger on 'we need to build our plan', 'our forecast and budget don't align', 'how do we set targets', 'what's our plan of record', 'we got a stretch from finance', 'when should we start planning', or 'we need to reforecast'. BOUNDARY: Covers plan construction, versioning, and reconciliation. For in-quarter/weekly forecasting mechanics, see revops-forecasting. For GTM structure and capacity mechanics, see gtm-planning. For compensation and quotas, see gtm-compensation."
+description: "Annual and quarterly revenue plan construction, top-down vs bottoms-up reconciliation, plan versioning, stretch goal handling, and FP&A-RevOps collaboration for B2B revenue teams. Use when the user mentions annual planning, revenue targets, capacity planning, planning calendar, stretch goals, plan versions, plan of record, reforecasting triggers, FP&A collaboration, or revenue reconciliation. Also trigger on \"we need to build our plan\", \"our forecast and budget don't align\", \"how do we set targets\", \"what's our plan of record\", \"we got a stretch from finance\", \"when should we start planning\", or \"we need to reforecast\". BOUNDARY: Covers plan construction, versioning, and reconciliation. For in-quarter/weekly forecasting mechanics, see revops-forecasting. For GTM structure and capacity mechanics, see gtm-planning. For compensation and quotas, see gtm-compensation."
 category: RevOps
 ---
 
@@ -24,6 +24,34 @@ Your philosophy: Revenue planning is not a board presentation exercise. It is a 
 5. **Reforecasting is disciplined, not reactive.** Specific triggers (coverage below 3x, CAC payback above threshold, NRR drop below 105%, actual variance exceeds plan by 15% for two consecutive periods) drive reforecasts. The calendar blocks reforecasting windows. Continuous re-planning creates chaos and erodes ownership.
 
 6. **FP&A and RevOps are joint decision-makers, not separate processes.** RevOps owns pipeline reality and call quality. FP&A owns financial implications. A forecast that doesn't reconcile across both functions gets revised, not approved.
+
+Evidence types this skill consumes: CRM deal history (stage, close date, deal size) at scale-up stage; customer interviews and retention data (monthly cohort survival) at PMF stage; sales rep estimates of capacity and win rate (confidence scoring required); finance top-down targets; customer feedback on expansion themes. Reliability: CRM history is high-confidence if deals are aged >30 days; rep estimates are medium-confidence without validation against actuals; customer feedback is high-confidence only when unsolicited.
+
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | Pre-PMF is customer-discovery mode, not planning mode. Skip the full skill. Instead, interview your five to ten earliest customers on willingness to repurchase at 1.5x and 2x current price, and ask which features would unlock expansion within their business. Document retention (month-over-month survival) and the unit of expansion (per-seat, per-org, per-department). A three-month survival rate above 80% and two or more customers asking for expansion features signals PMF. Do NOT run capacity models, reconciliation meetings, or annual planning cycles; those formalise a motion that does not yet exist. |
+| Start-up, product-market fit | Product-market fit with one proven motion means your bottoms-up plan is real. Use the Bottoms-Up Build Process. Skip the reconciliation meeting because you do not have a formal finance function. Build three versions of the plan (baseline capacity, conservative, optimistic scenario) and share with your one sales owner or founder. Run the 10-question diagnostic to identify which planning disciplines are missing, then prioritise the three that matter most (typically: locked capacity model, version control, and monthly reforecasts on trigger). |
+| Scale-up | Run the full skill as written: the 12-week planning calendar backwards from board approval, bottoms-up build with capacity model and segment assumptions, top-down reconciliation meeting with finance, plan versioning (three versions locked), and disciplined reforecasting on explicit triggers. Embed AI forecasting into your monthly forecast call to reduce surprise and variance. |
+| Enterprise | Multi-unit and multi-region planning requires consolidation layers above each unit's bottoms-up plan. Finance owns the consolidated target; RevOps orchestrates the reconciliation across regions, products, or business units with formal governance gates (steering committee, works council) at each rollup. Planning cycles extend to 18 months, locking quarterly targets while maintaining scenario flexibility for annual board reviews. The skill gains weight in: Plan Versioning and Governance (managing three versions across multiple instances or CRM systems), Reforecasting Governance (formal approval processes for out-of-plan changes, cross-unit impact analysis), and Finance Collaboration (ASC 606 compliance, multi-currency conversion, inter-company elimination). |
+
+Skip before product-market fit: Annual Planning Calendar; The Bottoms-Up Build Process; Top-Down Forecasting and Reconciliation; Plan Versioning and Governance; Reforecasting: Triggers, Cadence, and Constraints; Benchmarks: When to Trigger a Full Reforecast.
 
 ## Annual Planning Calendar
 
@@ -281,15 +309,15 @@ Mixing locked and flexible parameters is the primary cause of reforecasting chao
 - Below 2.5x: Critical; reforecast immediately
 - 2.5x to 3.0x: At-risk; escalate and plan pipeline generation response
 - 3.0x to 3.5x: Healthy baseline
-- 3.5x+: Strong (banding is a practice-based threshold informed by Ebsta slippage data: 36% deals slip quarterly, 50% best-case close rate)
+- 3.5x+: Strong (banding is a practice-based threshold informed by Ebsta slippage data: 36% of deals slip past their forecast close date)
 
 **Forecast Accuracy Benchmarks (Monthly Actuals vs Month-Start Forecast):**
-- ±5%: Elite (only 7% of companies reach 90%+ accuracy; Gartner via ORM Technologies, 2025)
-- ±10%: Strong; ±15-20%: Normal; ±25%+: Process broken, structural fix required (practice-based banding, informed by the Ebsta 2025 accuracy distribution)
+- ±5%: Elite (only 7% of sales organizations reach 90%+ accuracy; Gartner State of Sales Operations survey, via ORM Technologies)
+- ±10%: Strong; ±15-20%: Normal; ±25%+: Process broken, structural fix required (practice-based banding, informed by the Gartner median accuracy of 70-79%)
 
 **Quota Attainment Benchmarks (Rep-Level Performance):**
 - Healthy: 70-80% of reps hit quota (aspirational target)
-- Median market: 46% of reps hit quota in 2025, down from 52% in 2024 (Ebsta 2025 GTM Benchmarks Report)
+- Median market: 78% of sellers missed quota in 2025, up from 69% in 2024 (Ebsta x Pavilion 2025 GTM Benchmarks); 62% of ramped AEs hit quota in 2025 (ICONIQ State of Go-to-Market 2026)
 - Signal: If below 50% organization-wide, quota-setting process is flawed (The Revenue Leadership Podcast E64, 2026)
 
 **Reforecasting Frequency Boundaries:**
@@ -381,6 +409,12 @@ See `references/planning-diagnostic-full.md` for the detailed interpretation gui
 
 ---
 
+## When NOT to Use This Skill
+
+Do not use this skill to set quotas for individual reps; see gtm-compensation. Do not use for in-month or week-to-week forecast accuracy; see revops-forecasting. Do not use to diagnose why a plan missed; run the diagnostic tool instead after the fiscal year closes.
+
+---
+
 ## How to Use This Skill
 
 **"We need to build our annual plan from scratch."** Start with the planning calendar (backwards from board approval date). Then run the bottoms-up build (Sections 2.1-2.4). Overlay capacity model from gtm-planning. Then reconcile against top-down target using the playbook. End with Plan of Record and three versions locked.
@@ -393,6 +427,8 @@ See `references/planning-diagnostic-full.md` for the detailed interpretation gui
 
 **"We don't know if we're on track."** Implement monthly forecast review against Plan of Record. Compare actual close rate to forecast. Track pipeline coverage week-to-week. Escalate on trigger (coverage drops below 2.5x, accuracy exceeds ±20%). This is what RevOps + FP&A sync owns.
 
+Deliverables per stage: Pre-PMF produces one-page customer retention assessment and expansion themes. PMF produces bottoms-up plan (one sheet per revenue type), three plan scenarios, and a monthly reforecast cadence schedule. Scale-up produces Plan of Record (locked, board-signed), three versioned documents (bottoms-up original, finance stretch, plan of record), and quarterly reforecasts compared against baseline.
+
 ---
 
 ## Reference Files
@@ -404,11 +440,12 @@ See `references/planning-diagnostic-full.md` for the detailed interpretation gui
 | `references/reconciliation-playbook.md` | Running the top-down vs bottoms-up meeting | 5-step structure, conflict resolution, handling when gap will not close, stretch scenario assignment |
 | `references/plan-versioning-governance.md` | Setting up version control and governance | Three-version system, file-naming conventions, access controls, reforecast preservation |
 | `references/reforecasting-triggers.md` | Defining when to reforecast mid-year | Trigger matrix (revenue, unit-economics, execution, external), examples per trigger type, process per trigger |
-| `references/reforecasting-benchmarks.md` | Pipeline coverage and forecast accuracy thresholds | Coverage benchmarks (Ebsta 2025), accuracy benchmarks (Gartner 2025), when each benchmark triggers escalation |
+| `references/reforecasting-benchmarks.md` | Pipeline coverage and forecast accuracy thresholds | Coverage benchmarks (Ebsta 2025), accuracy benchmarks (Gartner, via ORM Technologies), when each benchmark triggers escalation |
 | `references/fpa-revops-collaboration-charter.md` | Building joint FP&A-RevOps ownership | Roles, joint-decision matrix, weekly sync template, quarterly reconciliation meeting format |
 | `references/planning-diagnostic-full.md` | Running full 10-question diagnostic | Detailed interpretation per question, scoring guide, remediation playbook for process gaps |
 | `references/planning-assumptions-template.md` | Creating single-source-of-truth assumption sheet | Template, example, owner assignment, confidence scoring |
 | `references/benchmarks-sourced.md` | Reference data for planning benchmarks | Only sourced numbers: quota attainment, forecast accuracy, pipeline coverage, reforecasting frequency, sales cycle length |
+| `references/stage-check.md` | When the one-line situation summaries are not enough to place the company | Full definitions of the four situations and the yes/no sorting questions |
 
 ---
 
@@ -435,8 +472,7 @@ To implement your annual planning:
 - Assumption documentation
 - Links to capacity model for rollup validation
 
-**Reconciliation Template:**
-`Frameworks/Templates/revops-revenue-planning/reconciliation-meeting-template.md`
+**Reconciliation Template** (build it from this outline; the skill ships no file for it):
 - Pre-meeting prep checklist
 - 5-step meeting structure
 - Gap analysis table
@@ -445,6 +481,6 @@ To implement your annual planning:
 
 Use in: Annual planning kickoff, revenue-finance alignment sessions, board preparation, mid-year reforecasting.
 
-Benchmark source: Ebsta 2025 GTM Benchmarks Report.
+Benchmark sources: Ebsta x Pavilion 2025 GTM Benchmarks, Fullcast 2026 Revenue Benchmark Report, ICONIQ State of Go-to-Market 2026, Gartner (via ORM Technologies), SaaS Capital 2025, Benchmarkit and Aleph 2026.
 
 > Built by [Neon Triforce](https://neontriforce.com)

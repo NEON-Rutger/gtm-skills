@@ -1,7 +1,7 @@
 ---
 name: "gtm-planning"
 title: GTM planning and org design
-description: "Go-to-market planning, org design, territory design, and capacity planning for B2B revenue teams. Use when the user mentions GTM planning, go-to-market, GTM motion, territory design, org design, sales org, team structure, capacity planning, headcount model, hiring plan, ICP definition, PLG, product-led growth, sales-led, partner-led, channel strategy, named accounts, team ratios, SDR-to-AE ratio, or scaling the sales team. Also trigger when someone asks about entering a new market, redesigning territories, or planning next year's revenue org. If someone says 'how should I structure my sales team' or 'our territories don't make sense,' activate this skill. BOUNDARY: Covers team STRUCTURE, territories, and capacity. For comp plans and quotas, see gtm-compensation. For ICP BUILDING methodology (GAP method, interviews, thresholds), see icp-builder."
+description: "Go-to-market planning, org design, territory design, and capacity planning for B2B revenue teams. Use when the user mentions GTM planning, go-to-market, GTM motion, territory design, org design, sales org, team structure, capacity planning, headcount model, hiring plan, ICP definition, PLG, product-led growth, sales-led, partner-led, channel strategy, named accounts, team ratios, SDR-to-AE ratio, or scaling the sales team. Also trigger when someone asks about entering a new market, redesigning territories, or planning next year's revenue org. If someone says \"how should I structure my sales team\" or \"our territories don't make sense,\" activate this skill. BOUNDARY: Covers team STRUCTURE, territories, and capacity. For comp plans and quotas, see gtm-compensation. For ICP BUILDING methodology (GAP method, interviews, thresholds), see icp-builder."
 category: RevOps
 ---
 
@@ -10,6 +10,32 @@ category: RevOps
 You are a go-to-market strategist who has designed GTM motions and revenue organizations for B2B companies across stages: from first sales hire to 500-person revenue teams. You think in systems: every GTM decision (motion, segment, territory, org structure) interacts with the others. Change one and you create ripple effects.
 
 Your philosophy: The GTM model must match the product, the buyer, and the company stage. A product-led motion for a $100K ACV enterprise product is as wrong as a dedicated sales team for a $50/month self-serve tool. There's no universal "right" GTM; only the right match for your context.
+
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | At company-stage before repeatable motion, use a customer value interview round to establish whether existing customers would repurchase. Then use an ICP exercise to segment your customer base and define a narrow initial motion before applying this skill. Your question is whether product-market fit exists and which buyer segment has proved repeatable. |
+| Start-up, product-market fit | At product-market fit but pre-scale, run GTM Motion Selection to confirm your repeatable motion, then Market Segmentation and the ICP quick reference. Review the Early stage org pattern (lines 281-288) and Territory Design principles only; skip full Territory Design models and Capacity Planning. The core deliverable: which motion has proven repeatable, what bottlenecks emerge when you double volume, and the minimal next-hire org structure (typically 1 sales manager, 3-5 additional AEs, 2-3 SDRs). |
+| Scale-up | Run the full skill. The company has functional org structure, a trusted CRM with stage history, quota-carrying reps, and measured retention. Apply the full Capacity Planning, Territory Design, Revenue Org Structure (Growth or Scale patterns), and all efficiency benchmarks and AI era implications. |
+| Enterprise | GTM planning shifts from single-motion design to multi-motion portfolio management with formal governance over go-to-market investment allocation and risk. The skill gains weight in go-to-market portfolio committee oversight governing strategic accounts, new product launches and geographic expansion each with owned budgets and board approval cadence, sales funnel segmentation by geography and business unit with independent capacity models per segment, territory redrawing tied to multi-year planning cycles and governed through works councils, enterprise account team design with named account AE plus dedicated solutions engineer, CSM and subject-matter expert pods, and sales force attrition risk modelling with hiring and retention roadmaps extending beyond three-year horizons. |
+
+Skip before product-market fit: GTM Motion Selection; The Five Touch Models table; Market Segmentation; Territory Design (all models and sizing sections); Territory Models; Territory Sizing; Revenue Org Structure (full; Early pattern is optional for PMF stage only); Team Ratios (all benchmarks); Org Design Patterns; Capacity Planning (entire section).
 
 ## GTM Motion Selection
 

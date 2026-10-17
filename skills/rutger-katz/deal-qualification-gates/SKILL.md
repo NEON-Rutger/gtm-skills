@@ -1,7 +1,7 @@
 ---
 name: "deal-qualification-gates"
 title: Deal qualification gates
-description: "Install evidence-gated qualification on a live pipeline: score the QUALITY of evidence behind every deal (1-5 per qualification dimension), set minimum scores per stage, and enforce qualify-or-kill at each gate. Triggers on 'zombie deals,' 'pipeline is full of junk,' 'is this deal real,' 'qualify or kill,' 'deals stall at proposal,' 'forecast built on hope,' 'reps say every deal is closing,' 'stage criteria,' 'exit criteria,' 'MEDDIC scoring,' 'SPICED scoring,' 'qualification framework rollout,' or any situation where deals advance on rep optimism instead of buyer evidence. Works with SPICED by default and maps to MEDDICC or BANT. BOUNDARY: icp-builder owns ACCOUNT-level fit (is this the right company) and carries a summary of these gates as its pipeline-enforcement step; this skill is the full deal-level operating system (is this deal real). deal-velocity-engineer treats slow deals as a speed problem; this skill treats false deals as a truth problem, and it runs first, because accelerating an unqualified deal just produces a faster loss. Weekly pipeline reviews consume the scores this skill produces; they read the dashboard, this skill builds the engine under it."
+description: "Install evidence-gated qualification on a live pipeline: score the QUALITY of evidence behind every deal (1-5 per dimension), set minimum scores per stage, and enforce qualify-or-kill at each gate. Triggers on 'zombie deals,' 'pipeline is full of junk,' 'is this deal real,' 'qualify or kill,' 'deals stall at proposal,' 'forecast built on hope,' 'reps say every deal is closing,' 'stage criteria,' 'exit criteria,' 'MEDDIC scoring,' 'SPICED scoring,' 'qualification framework rollout,' or any situation where deals advance on rep optimism instead of buyer evidence. Works with SPICED by default and maps to MEDDICC or BANT. BOUNDARY: icp-builder owns ACCOUNT-level fit (is this the right company); this skill is the deal-level operating system (is this deal real). deal-velocity-engineer treats slow deals as a speed problem; this skill treats false deals as a truth problem, and runs first: accelerating an unqualified deal produces a faster loss. Weekly pipeline reviews consume the scores this skill produces."
 category: Deals
 ---
 
@@ -10,6 +10,34 @@ category: Deals
 The 2025 Ebsta x Pavilion benchmark put average B2B win rates at 19%. Most of that waste is not lost at the negotiation table; it is manufactured months earlier, when a conversation gets logged as a deal and nobody ever checks whether the evidence behind it hardened. CRM stages measure where a deal is. Almost nobody measures how WELL you know what you claim to know about it.
 
 This skill installs that second axis: an evidence-quality score per qualification dimension, minimum scores per stage, and a standing qualify-or-kill discipline. Gates, not fields. Adding more CRM fields will not fix a forecast; minimum evidence per stage will.
+
+---
+
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | Score evidence quality only for the conversations you are already having. Run the Evidence-Quality Scale on your last 5-10 customer conversations to identify which dimensions you never ask about. This diagnostic serves your pre-PMF question: do existing customers perceive value and would they buy again? Skip all stage gates, deployment, and rollout sections until you have a repeatable motion. |
+| Start-up, product-market fit | Install evidence-quality scoring on a single winning motion with one stage gate (typically Discovery to Demo). Score every deal on SPICED dimensions 1-5 as evidence lands from calls and conversations, not from memory. Build a one-page weekly exception report: which deals above this one gate sit below the minimum evidence threshold (14 total for Demo stage). Run weekly qualify-or-kill reviews on those flagged deals with one verdict per deal (re-qualify, downgrade, or kill). |
+| Scale-up | Implement the full skill end-to-end. Install all four stage gates (Inbound to Discovery, Discovery to Demo, Demo to Proposal, Proposal to Commit). Score all six SPICED dimensions on all deals. Build a weekly below-gate exception report and attend a weekly qualify-or-kill review with sales leadership. Automate scoring where your CRM or conversation intelligence tool can extract dimension evidence from call transcripts. Expect to kill 15-30% of your existing pipeline in the first rollout; that trade is the entire point. |
+| Enterprise | Qualification gates expand from individual deal truth-telling to cross-unit pipeline governance and regulatory audit trails. The skill gains weight in multi-unit pipeline consolidation and duplicate detection to prevent the same prospect appearing in multiple units' pipelines, legal and compliance gates including procurement checkpoints and security review evidence scoring, deal desk operations where discount approvals require qualification evidence, and revenue recognition gating for ASC 606 compliance. Forecasting accuracy ties directly to evidence-quality maturity across all units. |
+
+Skip before product-market fit: The Stage Gates; Deployment; Rollout Order; Diagnostic Questions.
 
 ---
 
@@ -82,3 +110,5 @@ Week 4: first qualify-or-kill review over the flagged backlog. Expect to kill 15
 3. When did a deal in this pipeline last move BACKWARD a stage? If the answer is never, stages are being used as a ratchet, and the forecast inherits the fiction.
 4. How many deals older than 2x your median cycle time sit in the pipeline, and what evidence score do they carry?
 5. Who is allowed to kill a deal, and when did that last happen without a manager forcing it?
+
+> Built by [Neon Triforce](https://neontriforce.com)

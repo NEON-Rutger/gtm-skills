@@ -92,7 +92,7 @@ Before building, determine where your company stands using customer count thresh
 
 **At or above threshold = real ICP territory.** Enough data to identify repeatable patterns.
 
-For the full maturity framework, read `references/icp-building-operational-reference.md` Sections 1-2. For AI-native techniques, see Section 4.5.
+For the full maturity framework, read `references/icp-building-reference.md` Sections 1-2. For AI-native techniques, see Section 4.5.
 
 ### Step 1: Gather Data (GAP Phase G)
 
@@ -106,7 +106,7 @@ Collect from four sources:
 
 **Conversation Data** : Customer interviews (the gold), sales recordings, support tickets, win/loss reviews. If none exist, move to Step 3 (Interview Pipeline).
 
-For detailed collection guidance, read `references/icp-building-operational-reference.md` Section 3 (Phase G).
+For detailed collection guidance, read `references/icp-building-reference.md` Section 3 (Phase G).
 
 ### Step 2: Analyze Patterns (GAP Phase A)
 
@@ -114,7 +114,7 @@ Analyze across 8 dimensions: Industry/Vertical, Company Size, Tech Stack, Revenu
 
 Key outputs: pattern map (what predicts success), segment clusters (micro-ICPs forming), confidence scores, data gaps.
 
-For the full framework, read `references/icp-building-operational-reference.md` Section 3 (Phase A).
+For the full framework, read `references/icp-building-reference.md` Section 3 (Phase A).
 
 ### Step 3: Customer Interview Pipeline (If Needed)
 
@@ -128,7 +128,7 @@ When conversation data is missing or shallow, run the 7-step pipeline:
 6. **Build Case Studies** : Problem-focused 1-2 pagers (with consent)
 7. **Feed Back** : Add language to SPICED library, update personas, sharpen positioning
 
-For the complete interview guide, read `references/icp-building-operational-reference.md` Section 5.
+For the complete interview guide, read `references/icp-building-reference.md` Section 5.
 
 **Pain language enrichment:** Reference your own collection of raw customer pain quotes.
 
@@ -143,13 +143,13 @@ Synthesize into 4 deliverables:
 - **T2 (Good Fit):** Score 50-79. Most criteria. Win rate target: 30-50%.
 - **T3 (Opportunistic):** Score below 50. Win rate target: 10-30%. Don't chase.
 
-For the model build (best-customer scorecard, attribute extraction, weighting, banding), read `references/icp-building-operational-reference.md` Section 3, Phase P, Output 2a. Validate tiers with journey cycle times (Output 2b) every quarter.
+For the model build (best-customer scorecard, attribute extraction, weighting, banding), read `references/icp-building-reference.md` Section 3, Phase P, Output 2a. Validate tiers with journey cycle times (Output 2b) every quarter.
 
 **Output 3: Buyer Personas** : Role-level profiles with goals, pains, decision criteria, buying committee, proof needed. Tied to SPICED.
 
 **Output 4: Informational Needs per Buying Phase** : Content/proof needed at Awareness, Consideration, Decision, Onboarding.
 
-For detailed templates, read `references/icp-building-operational-reference.md` Section 3 (Phase P).
+For detailed templates, read `references/icp-building-reference.md` Section 3 (Phase P).
 
 ### Step 5: Goldilocks Zone Check
 
@@ -160,13 +160,13 @@ Before finalizing, validate ICP size matches your company's stage:
 - Cost-to-serve proportional to ACV? (>30% = ICP too small)
 - 100+ addressable targets? (Fewer = TAM too small)
 
-For the full Goldilocks framework, read `references/icp-building-operational-reference.md` Section 7.
+For the full Goldilocks framework, read `references/icp-building-reference.md` Section 7.
 
 ### Step 6: Produce the TAM List
 
 An ICP that only ever filters inbound is an opinion about whoever showed up. Convert it into a working market list: define the universe (industry, size, geography) from the source that matches where your buyers show up, enrich in bulk (contact data plus the free website-quality signal), score every company 0-100, select tiers to activate against real campaign capacity, and keep the list alive quarterly (re-enrich, re-score on new signals, add new companies, remove dead ones).
 
-For the full seven-step loop and the funnel shape to expect, read `references/icp-building-operational-reference.md` Section 7.5.
+For the full seven-step loop and the funnel shape to expect, read `references/icp-building-reference.md` Section 7.5.
 
 ---
 
@@ -181,7 +181,7 @@ Only relevant when the current ICP is mature and showing saturation signals. Fou
 
 **Expansion triggers:** Win rate plateaus, pipeline saturates, NRR signals expansion, competitive pressure, TAM exhaustion, product expansion.
 
-For the full framework, read `references/icp-building-operational-reference.md` Section 6.
+For the full framework, read `references/icp-building-reference.md` Section 6.
 
 ---
 
@@ -237,7 +237,7 @@ Tiers say whether the account fits; gates say whether the deal is real. Once tie
 
 | File | When to read | What's inside |
 |------|-------------|---------------|
-| `references/icp-building-operational-reference.md` | Always for Mode 2 : full methodology | GAP method, 8-dimension analysis, fit scoring model (0-100, Output 2a), cycle-time tier validation (Output 2b), interview pipeline, expansion, Goldilocks zone, TAM list production (Section 7.5), thresholds |
+| `references/icp-building-reference.md` | Always for Mode 2 : full methodology | GAP method, 8-dimension analysis, fit scoring model (0-100, Output 2a), cycle-time tier validation (Output 2b), interview pipeline, expansion, Goldilocks zone, TAM list production (Section 7.5), thresholds |
 
 ## Related Skills
 

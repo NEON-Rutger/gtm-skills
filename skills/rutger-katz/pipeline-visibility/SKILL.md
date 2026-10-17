@@ -13,6 +13,32 @@ The difference: dashboards show numbers; visibility drives decisions.
 
 ---
 
+## Stage check: do this before anything else in this skill
+
+This skill was written for a company that already has a repeatable motion and named owners. Applied at face value to a company that does not, it prescribes governance, scoring and cadences the team cannot run, and it hides the one question that matters at that stage. Sort the company into one of four situations first, state the situation in the first paragraph of the deliverable, and run only the version the table names.
+
+The four situations (full definitions and signals in `references/stage-check.md`):
+
+1. Start-up, pre product-market fit: fewer than roughly 30 comparable customers, wins from the founders' network, no measured win rate, cycle time or retention, nobody on quota. The only question: do existing customers get the promised outcome and would they buy again? Run the minimum version, or do not run it.
+2. Start-up, product-market fit: one segment with 10 or more customers won the same way, a known win rate and cycle time, retention measured monthly, one CRM owner. Run the skill for that one motion; thresholds are guidance, not rules.
+3. Scale-up: named owners for sales, marketing, customer success and operations; trusted CRM stage history; reps on quota; a forecast someone is held to. Run the full skill.
+4. Enterprise: situation 3 plus more than one revenue organisation, a governance layer above go-to-market decisions, and finance owning the board revenue target. Run the full skill with the enterprise deltas in the table.
+
+If the evidence is thin, ask three yes or no questions: Is there a segment with 10 or more customers won the same way? Is retention measured monthly? Does someone own the CRM as part of their job? Three no answers means situation 1. One or two yes answers means situation 2. Three yes answers means situation 3 or 4; then ask three more: Is there more than one business unit or region with its own revenue plan and leader? Do go-to-market decisions pass through a formal governance layer? Does finance own the revenue target for board reporting? Two or more yes answers means situation 4; otherwise situation 3.
+
+The full skill applies to both scale-up and enterprise. Not every skill applies at every stage; the table below says what this skill does at each, and "do not run" is a valid answer.
+
+What this skill does per situation:
+
+| Situation | What this skill does |
+|---|---|
+| Start-up, pre product-market fit | Do not build dashboards or automation yet. Instead, run a quarterly manual pipeline review: list all open opportunities, document which have activity in the past fortnight, and ask each owner 'Will this close in the next 60 days?' Store results in a shared spreadsheet. Capture close dates and loss reasons after each outcome. Skip all dashboard sections, pipeline hygiene automation, pipeline intelligence, and AI patterns. Focus only on understanding which deals close, why, and whether existing customers would buy again. |
+| Start-up, product-market fit | Build a single-page sales manager dashboard showing pipeline by stage and stale deals only. Implement stale-deal detection on your Qualification stage; start with a 10-14-day threshold and calibrate to your historical cycle time within 30 days (the skill's recommended ranges at lines 166-174 are practice-based, not prescriptive). Run weekly manual pipeline reviews with your sales manager; document stage, close date, next step, and activity per deal. Calculate your historical stage-to-close conversion rates from closed deals in the past 12 months. Skip executive dashboard, pipeline intelligence, big deal alerts, and forecast accuracy reporting. Run Layer 1 (stage design from your data), basic Layer 2 (manager dashboard only), basic Layer 3 (stale-deal detection only), and Layer 4 (weekly signal review in meetings). |
+| Scale-up | Run the full skill as written. All four visibility layers, all dashboard audiences, complete hygiene automation (stale deals, overdue close dates, pipeline quality scoring), pipeline intelligence signals, forecast accuracy tracking, and AI-powered patterns. Layer in AI-Powered Deal Scoring (Section: AI and Automation Patterns) in month 2 once hygiene is stable. Adopt async deal review in a shared channel (Pattern 3, same section) to replace synchronous weekly calls. Calibrate all thresholds to your historical win rate and sales cycle length, not to published benchmarks. |
+| Enterprise | Enterprise organisations operate multiple business units, regions or product lines with separate P&L ownership, and pipeline visibility scales to a federated architecture. Each business unit runs the full skill with its own stage definitions (unit A: 5-stage B2B model, unit B: 8-stage enterprise model; both report their historical conversion rates). Deploy a consolidated executive dashboard (one layer above unit dashboards) showing pipeline by business unit, cross-unit pipeline coverage ratio (aggregate pipeline against aggregate bookings target), win rate variance across units (flags execution inconsistency), and big-deal escalation matrix (enterprise deals over threshold route through group CFO or steering committee). Implement formal deal quality governance: enterprise deals undergo an additional review gate (legal, finance, product) before deal registration; board-level deals are approved by CRO and CFO before commit. |
+
+Skip before product-market fit: Dashboard Architecture; Pipeline Hygiene Automation; Pipeline Intelligence; AI and Automation Patterns; Forecast Accuracy Reporting.
+
 ## The Visibility Stack
 
 Pipeline visibility has four layers. Most teams only build the first two and wonder why their forecast is wrong.
@@ -49,7 +75,7 @@ Within your first 90 days, calculate your own stage probabilities from closed op
 1. Query all deals closed in the past 12 months (Won and Lost)
 2. For each stage, calculate: Deals closed from this stage / Total deals that entered this stage
 3. Plot these as your probability curve; use these numbers instead of the common defaults above
-4. Update quarterly as your pipeline matures; probability movements signal changes in sales execution or buyer behaviour
+4. Update quarterly as your pipeline matures; probability movements signal changes in sales execution or buyer behavior
 
 ### Layer 2: Pipeline Reporting (What most teams stop at)
 Reports and dashboards that show pipeline state.
@@ -144,7 +170,7 @@ n> *Based on Clari's vetted pipeline benchmark of 3.2× (2024-2025) and the 3-5�
 
 ### The Hygiene Problem
 
-Pipeline rots silently. Deals go stale, close dates pass without update, amounts stay at placeholder values. Without automated hygiene, your "€5M pipeline" might be worth €2M in reality.
+Pipeline rots silently. Deals go stale, close dates pass without update, amounts stay at placeholder values. Without automated hygiene, your "$5M pipeline" might be worth $2M in reality.
 
 ### Stale Deal Detection
 
@@ -184,7 +210,7 @@ Deals with close dates in the past are the single biggest source of forecast err
 
 ### Pipeline Quality Score
 
-A composite deal health metric informed by Gong and Ebsta's published deal health research. Gong analyses 300+ signals (split ~50/50 between conversation intelligence and CRM/activity data). Ebsta's Deal Score (1-99) is based on 655K+ analysed opportunities.
+A composite deal health metric informed by Gong and Ebsta's published deal health research. Gong analyzes 300+ signals (split ~50/50 between conversation intelligence and CRM/activity data). Ebsta's Deal Score (1-99) is based on 655K+ analyzed opportunities.
 
 **Six core dimensions** (based on Gong and Ebsta research):
 
@@ -208,7 +234,7 @@ A composite deal health metric informed by Gong and Ebsta's published deal healt
 Automatically surface high-value deals that need executive attention:
 
 **Trigger conditions**:
-- Deal value exceeds configurable threshold (e.g., >€50K for mid-market; >€200K for enterprise)
+- Deal value exceeds configurable threshold (e.g., >$50K for mid-market; >$200K for enterprise)
 - Deal advances to Qualification or beyond
 - Deal value increases by >25%
 - Deal close date moves into current quarter
@@ -266,7 +292,7 @@ Move beyond descriptive reporting to predictive signals:
 | **Amount decreased** | Scope shrink or competitive pressure | Win strategy review |
 | **New competitor mentioned in notes** | Competitive threat | Competitive positioning resources |
 | **Stage regression** | Qualification lost | Re-qualify or close |
-| **Champion went dark** | Organisational change or lost interest | Executive sponsor outreach |
+| **Champion went dark** | Organizational change or lost interest | Executive sponsor outreach |
 | **Activity spike from buyer** | Evaluation intensifying | Accelerate; ensure access to resources |
 
 ### Pipeline Movement Analysis
@@ -285,13 +311,13 @@ Track weekly changes to pipeline to understand momentum:
 
 **Weekly pipeline waterfall**:
 ```
-Starting Pipeline: €4.2M
-  + Created:  +€800K
-  + Advanced: €1.1M moved forward
-  - Pushed:   -€300K pushed to next quarter
-  - Lost:     -€450K closed lost
-  - Won:      -€600K closed won
-= Ending Pipeline: €4.45M
+Starting Pipeline: $4.2M
+  + Created:  +$800K
+  + Advanced: $1.1M moved forward
+  - Pushed:   -$300K pushed to next quarter
+  - Lost:     -$450K closed lost
+  - Won:      -$600K closed won
+= Ending Pipeline: $4.45M
 ```
 
 This waterfall, reviewed weekly, is the single most powerful pipeline visibility tool.
@@ -328,11 +354,11 @@ Capture forecast snapshots at regular intervals:
 
 ### Beyond Point Accuracy: Probabilistic Forecasting
 
-Most forecasts report a single number ("We forecast €2.5M"). Probabilistic forecasting replaces that with a scenario:
+Most forecasts report a single number ("We forecast $2.5M"). Probabilistic forecasting replaces that with a scenario:
 
-- **Conservative case** (25th percentile): €1.8M (low-confidence deals only)
-- **Most likely** (50th percentile): €2.5M (base case)
-- **Upside case** (75th percentile): €3.2M (includes at-risk but likely deals)
+- **Conservative case** (25th percentile): $1.8M (low-confidence deals only)
+- **Most likely** (50th percentile): $2.5M (base case)
+- **Upside case** (75th percentile): $3.2M (includes at-risk but likely deals)
 
 Bayesian models combine historical conversion rates, deal stage, deal age, rep performance, and pipeline velocity to generate probability distributions per deal. Ensemble methods (combining AI forecasting with rep forecasts) now outperform either alone.
 
@@ -373,13 +399,13 @@ The minimum reporting set every B2B revenue team needs:
 ## References
 
 - **Pipeline coverage**: Clari, "Sales Pipeline Coverage Ratio" (2024-2025). 3.2× for vetted opportunities. Industry range: 3-5×.
-- **Deal slippage**: Ebsta 2025 GTM Benchmarks. 36% slippage rate (down from 44% in 2024). 655K opportunities, $43B pipeline analysed.
+- **Deal slippage**: Ebsta 2025 GTM Benchmarks. 36% slippage rate (down from 44% in 2024). 655K opportunities, $43B pipeline analyzed.
 - **Forecast accuracy tiers**: Fullcast, "Forecast Accuracy Benchmarks" (2024-2025). 80-85% acceptable; 85-95% good; 95%+ world-class.
 - **Forecast variance and AI adoption**: AI-driven forecasting now mainstream; teams using AI forecasting report variance reduction from 30-40% to under 10% (Forrester, 2026). Hybrid model standard: annual budget plus rolling 12-18 month driver-based forecast (Pigment, Sage, 2026).
 - **Close date push impact**: Deal extension beyond 50 days correlates with lower win rates; Ebsta 2025 GTM Benchmarks report deals closed within 50 days achieve 47% win rate vs 20% or lower when extended beyond 50 days.
 - **Deal health scoring approach**: Gong Deal Likelihood Score (300+ signals, dynamic weighting); Ebsta Deal Score (1-99, 7 published attributes across 655K+ opportunities).
-- **Ebsta 2023 B2B Benchmark Report**: Single-threaded deals ~8% win rate; 3+ contacts = 2.4× higher close rates (based on 655K+ analysed opportunities).
-- **Ebsta 2025 GTM Benchmarks**: Early decision-maker involvement: +55% win rates. Delayed deals extend cycle length materially. Top performers close 11× faster. A-players manage 164% more pipeline (655K opportunities analysed, $43B pipeline).
+- **Ebsta 2023 B2B Benchmark Report**: Single-threaded deals ~8% win rate; 3+ contacts = 2.4× higher close rates (based on 655K+ analyzed opportunities).
+- **Ebsta 2025 GTM Benchmarks**: Early decision-maker involvement: +55% win rates. Delayed deals extend cycle length materially. Top performers close 11× faster. A-players manage 164% more pipeline (655K opportunities analyzed, $43B pipeline).
 - **Pipeline health management**: Salesforce research: teams actively managing pipeline health metrics achieve 18% higher win rates and 28% more accurate forecasts.
 
 > Built by [Neon Triforce](https://neontriforce.com)

@@ -7,7 +7,7 @@ category: RevOps
 
 # Revenue Handoff Operations: Full Bow-Tie Model
 
-You are a revenue handoff architect. Handoffs are where revenue leaks. Standardised handoff protocols improve implementation success by ~45% and cut first-year churn by 35-40%. Your job: design the SLAs, context packets, routing rules, ownership models, and automation for every transition in the bow tie.
+You are a revenue handoff architect. Handoffs are where revenue leaks. Standardized handoff protocols are the main lever on implementation success and first-year churn (practice-based; no primary study quantifies the effect). Your job: design the SLAs, context packets, routing rules, ownership models, and automation for every transition in the bow tie.
 
 **Reference files** (read before giving detailed implementation advice):
 - `references/handoff-slas-and-benchmarks.md`: SLA targets, speed-to-lead data, metrics per handoff, leading indicators of failure, measurement dashboards
@@ -46,7 +46,7 @@ Reality check (historical baseline, 2011): average B2B response is 42 hours, 23%
 ### Lead Tiers
 
 **Hand-raisers**: bypass scoring, route directly to sales. 5-minute SLA.
-**MQLs**: firmographic fit + behavioural intent + third-party intent. Common starting split: 40/40/20 (operational template; optimise through conversion analysis against your closed-won data). Route to SDR/AE by territory. Scoring drives 39-40% MQL-to-SQL vs 15-21% without (Forrester/SiriusDecisions Demand Waterfall).
+**MQLs**: firmographic fit + behavioral intent + third-party intent. Common starting split: 40/40/20 (operational template; optimize through conversion analysis against your closed-won data). Route to SDR/AE by territory. Measure scoring's lift on MQL-to-SQL against your own pre-scoring baseline (the widely quoted 39-40% vs 15-21% Forrester/SiriusDecisions figure could not be traced to a primary source).
 **PQLs** (hybrid PLG): usage-based triggers. Convert at 15-30%.
 
 ### Context Packet
@@ -93,12 +93,12 @@ Partner receives: full SPICED brief + technical requirements + stakeholder map +
 ### Sales Involvement Model
 
 **Warm overlay** (default): AE at kickoff, introductions, steps back, CC'd 2 weeks.
-**Pre-sale CS** (enterprise >€50K ACV): CSM in late-stage calls.
-**Clean break** (SMB <€10K): automated handoff.
+**Pre-sale CS** (enterprise >$50K ACV): CSM in late-stage calls.
+**Clean break** (SMB <$10K): automated handoff.
 
 ## 3. Implementation to CS
 
-Least standardised, most consequential. Early value realisation (within first 30 days) correlates with higher CLV.
+Least standardized, most consequential. Early value realization (within first 30 days) correlates with higher CLV.
 
 ### Context Packet
 
@@ -114,7 +114,7 @@ Don't wait for steady-state. Track: milestone completion rate, stakeholder engag
 
 ## 4. CS to Sales (Expansion)
 
-Expansion costs $0.27/$1 ACV vs $1.16 new (Pacific Crest, 2016, historical baseline); modern data shows 50-60% of new ARR from expansion sourced from existing customers (OpenView 2023, KeyBanc 2024), up from historical 35-40%.
+Expansion costs $0.27/$1 ACV vs $1.16 new (Pacific Crest, 2016, historical baseline); expansion's share of revenue rises with scale: about 23% at $1-5M ARR, 34% at $5-20M, 40% at $20-50M, and it overtakes new-customer revenue above $50M (High Alpha 2025 SaaS Benchmarks, 800+ companies; https://www.highalpha.com/blog/how-expansion-revenue-drives-sustainable-saas-growth).
 
 ### Three Expansion Types: Critical
 
@@ -132,9 +132,9 @@ A cross-sell with a completely new DMU is a **new-logo sale inside a known compa
 
 | ACV | Owner | CS role |
 |---|---|---|
-| <€10K | CSM closes | End-to-end |
-| €10K-50K | AM/AE + CSM | Context, stays in meetings |
-| >€50K | AE full cycle | Introduces, advisory |
+| <$10K | CSM closes | End-to-end |
+| $10K-50K | AM/AE + CSM | Context, stays in meetings |
+| >$50K | AE full cycle | Introduces, advisory |
 
 Define thresholds in governance. Ambiguity = nobody closes.
 
@@ -183,7 +183,7 @@ Read `references/hubspot-workflows.md` for detailed specs. Architecture summary:
 
 **Three pipelines**: New Business, Expansion (with `expansion_type` driving conditional stages), Renewals (auto-created on Closed Won).
 
-**Deal-to-deal associations** (Professional+) link expansion → original deal for lineage and Δt7 measurement.
+**Deal-to-deal associations** (Professional+) link expansion → original deal for lineage and time-to-expansion measurement.
 
 **Key workflows**: MQL routing (5-min SLA, Breeze AI summary, Slack notify, 24h escalation), Closed-Won handoff (validate completeness → create onboarding ticket + renewal deal), expansion signal (company property → auto-create deal → assign + notify), renewal automation (date-triggered at T-90).
 
@@ -198,7 +198,7 @@ Read `references/hubspot-workflows.md` for detailed specs. Architecture summary:
 | Mktg to Sales | Speed-to-lead, MQL-to-SQL conversion, unworked rate | <5 min (hand-raisers), 25-35% conversion, <5% unworked |
 | Sales to Impl | Time-to-kickoff, info completeness, quality score | <7 days, >90%, ≥4.0/5 |
 | Impl to CS | TTFV, go-live rate, onboarding churn | Segment-dependent, >85%, <3% |
-| CS to Sales | Expansion pipeline from CS, handoff time, expansion win rate, NRR | Growing QoQ, <48h, >40% upsell / >20% new-DMU, 110-130%+ |
+| CS to Sales | Expansion pipeline from CS, handoff time, expansion win rate, NRR | Growing QoQ, <48h, >40% upsell / >20% new-DMU, 110-130%+ (110% = top quartile, Benchmarkit 2026) |
 
 ### Leading Indicators of Failure
 
@@ -225,15 +225,13 @@ Receiving team rates each handoff 1-5 across: information completeness, promise 
 - Dr. James Oldroyd, MIT Sloan (2007). Lead Response Management study. 15,000+ leads across 6 companies. Published via InsideSales.com.
 - Velocify (circa 2012). Responding within 1 minute increases conversion by 391%.
 - HBR (2011). "The Short Life of Online Sales Leads." 2,241 companies tested. Average B2B response: 42 hours. 23% never responded.
-- Workato (2024). Speed-to-lead study: 114 B2B companies. Only 1 sent personalised email within 5 min. Average personalised response: 11h 54m.
+- Workato (2024). Speed-to-lead study: 114 B2B companies. Only 1 sent personalized email within 5 min. Average personalized response: 11h 54m.
 - Chili Piper (2025). 2025 Benchmark Report: ~4M form submissions. Instant booking converts 66.7% vs ~30% industry average.
 - Justin Norris, RevOps FM (2025). "A Complete Guide to Speed-to-Lead." 10-min hand-raiser SLA to 40% conversion lift.
 - Optifai Pipeline Study (Q2 2025-Q1 2026, 939 companies). <5 min response = 32% close rate, 2.6x higher than 24+ hours.
 - Pacific Crest / David Skok & Matrix Partners (2016). SaaS Survey: expansion costs $0.27 per $1 ACV vs $1.16 new logos.
 - OpenView Partners (2023). SaaS Benchmarks (700+ companies): 50-60% of new ARR from expansion (best-in-class).
 - KeyBanc (2024). Expansion = 52% of new ARR.
-- Rework (2025). "Deal Handoff Protocol: Standardizing Post-Close Transitions." 45% implementation improvement, 35-40% churn reduction.
-- Forrester/SiriusDecisions. Demand Waterfall: MQL→SQL 39-40% with scoring vs 15-21% without.
 
 ## What good looks like
 
